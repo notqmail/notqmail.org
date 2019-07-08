@@ -1,6 +1,6 @@
 # What is notqmail?
 
-It's not qmail. It's also not netqmail.
+It's not [qmail](https://cr.yp.to/qmail.html). It's also not [netqmail](http://netqmail.org).
 
 notqmail is a collaborative effort by qmail devotees to defend what's valuable, add what's needed, and ship trustworthy updates everyone can run.
 
@@ -29,7 +29,7 @@ DJB's code was trustworthy. netqmail's small, conservative patchset was trustwor
 
 # Why not Postfix?
 
-Postfix is very good. We also really like qmail.
+[Postfix](http://www.postfix.org) is very good. We also really like qmail.
 
 # Goals
 
