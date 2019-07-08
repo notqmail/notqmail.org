@@ -33,7 +33,7 @@ DJB's code was trustworthy. netqmail's small, conservative patchset was trustwor
 
 # What happens to my custom patchset?
 
-Expect your patchset to
+Expect your patchset to:
 
 - Mostly continue to apply
 - Gradually shrink as new notqmail releases include more of the features and bugfixes you need
