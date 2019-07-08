@@ -93,15 +93,15 @@ Given the reasons qmail is valuable to us, the cost of a change that exhibits an
 
 We intend to:
 
-- Import qmail and netqmail into git, with tags at each historical version.
-- Release notqmail 1.07: bit-identical to netqmail 1.06.
-- Add new interfaces and seams for use by future "plugins".
-- Release notqmail 1.08: no functional change.
-- Help several developers of active qmail forks each get one notqmail plugin (adapted from their existing code) committed.
-- Release notqmail 1.09: our first few plugins for new functionality.
-- Help developers convert more of their existing code to plugins.
-- Release notqmail 1.10: several more new plugins.
-- Keep it up.
+1. Import qmail and netqmail into git, with tags at each historical version.
+2. Release notqmail 1.07: bit-identical to netqmail 1.06.
+3. Add new interfaces and seams for use by future "plugins".
+4. Release notqmail 1.08: no functional change.
+5. Help several developers of active qmail forks each get one notqmail plugin (adapted from their existing code) committed.
+6. Release notqmail 1.09: our first few plugins for new functionality.
+7. Help developers convert more of their existing code to plugins.
+8. Release notqmail 1.10: several more new plugins.
+9. Keep it up.
 
 # How to join
 
