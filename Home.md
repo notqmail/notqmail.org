@@ -31,6 +31,39 @@ DJB's code was trustworthy. netqmail's small, conservative patchset was trustwor
 
 [Postfix](http://www.postfix.org) is very good. We also really like qmail.
 
+# What happens to my custom patchset?
+
+Expect your patchset to
+
+- Mostly continue to apply
+- Gradually shrink as new notqmail releases include more of the features and bugfixes you need
+- Eventually shrink to zero, if your needs are widely shared by others
+
+In other words, you can stop maintaining your qmail fork as soon as notqmail has everything you need (which may take longer than you expect). Until then, keep it. And if you're interested to participate in notqmail development, sharing your needs and/or patches is a great place to start.
+
+# Which features will be implemented?
+
+Some known big ones:
+
+- AUTH
+- TLS
+- SPF
+- SRS
+- DKIM
+- DMARC
+- EAI
+- SNI
+- DANE
+
+Need something else? Tell us about it.
+
+# Which implementations will not be merged?
+
+There are many, many patches out there. Needless to say, not all of them are suitable for inclusion in netqmail. Two examples of popular, well-loved patches we've personally used and appreciated that don't match notqmail's goals:
+
+- The [Qmail-TLS patch](http://inoa.net/qmail-tls/), because a more qmail-ish design is available: [Erwin Hoffmann's ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html) implements UCSPI-TLS, handling TLS in a separate and privilege-separated address space
+- Any of the usual SMTP AUTH patches, because a more qmail-ish design is available: [Amitai Schleier's acceptutils](https://schmonz.com/qmail/acceptutils/) extends qmail's POP3 authentication architecture to SMTP and OFMIP, enabling new user-controlled features
+
 # Goals
 
 We prioritize:
@@ -43,6 +76,7 @@ We prioritize:
 - Providing a safe update path for qmail and netqmail users
 - Providing safe, easy, regular updates for notqmail users
 - Being easily packaged by OS integrators
+- Meeting all common needs with OS-provided packages
 - Earning community trust as the authoritative open-source successor to qmail and netqmail
 
 # Non-goals
