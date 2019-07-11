@@ -111,8 +111,8 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 ## 1.08
 ### Fix incorrect behavior
 - Link with [syncdir](http://untroubled.org/syncdir/)
-- [TAI system clock](netqmail-1.05-TAI-leapsecs.patch)
-- [Revised Maildir protocol](qmail-1.03-maildir-uniq.patch)
+- [TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
+- [Revised Maildir protocol](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
 - [Big DNS](https://www.ckdhr.com/ckd/qmail-103.patch)
 
 ## 1.09
