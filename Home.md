@@ -114,6 +114,7 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - [TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
 - [Revised Maildir protocol](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
 - [Big DNS](https://www.ckdhr.com/ckd/qmail-103.patch)
+- [qmail-remote: avoid recoding CRLF to CRCRLF](https://github.com/notqmail/notqmail/pull/18)
 
 ## 1.09
 ### Introduce new programming interfaces for use by "plugins"
