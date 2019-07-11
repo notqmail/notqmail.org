@@ -89,19 +89,37 @@ We wish to avoid:
 
 Given the reasons qmail is valuable to us, the cost of a change that exhibits any of the preceding non-goals is high. Proposing one such change will require unusually strong justification, documentation, testing, and design. For the community to accept such a change, the risk must be demonstrably _very_ low and the benefit _very_ high.
 
-# First steps
+# Release plans
 
-We intend to:
+We've imported qmail and netqmail into git, with tags at each historical version. Our starting point for notqmail is netqmail 1.06.
 
-1. Import qmail and netqmail into git, with tags at each historical version
-2. Release notqmail 1.07: bit-identical to netqmail 1.06
-3. Add new interfaces and seams for use by future "plugins"
-4. Release notqmail 1.08: no functional change
-5. Help several developers of active qmail forks each get one notqmail plugin (adapted from their existing code) committed
-6. Release notqmail 1.09: our first few plugins for new functionality
-7. Help developers convert more of their existing code to plugins
-8. Release notqmail 1.10: several more new plugins
-9. Keep it up
+Our current intentions, which we'll update periodically as we get better ideas, are:
+
+## 1.07
+### Fix broken builds
+- FreeBSD
+- Mac OS X
+### Make packaging easier
+- DESTDIR staged install
+- Runtime UID/GID lookups
+- FHS-compatible symlink farm in `/var/qmail`
+- Optionally, off by default, run FHS-only (no `/var/qmail` at all)
+- `./configure && make && make install` as syntax sugar
+
+## 1.08
+### Safely introduce new interfaces and seams for use by "plugins"
+- No functional change intended
+
+## 1.09
+### Add some plugins
+- Help developers adapt some code of theirs and get it merged
+
+## 1.10
+### Add more plugins
+- Help developers convert more of their existing code to plugins
+
+## ...
+### Merge multiple implementations of a feature into one plugin
 
 # How to join
 
