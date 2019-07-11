@@ -107,18 +107,28 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - Configuration sugar: `./configure && make && make install`
 
 ## 1.08
-### Safely introduce new interfaces and seams for use by "plugins"
-- No functional change intended
+### Fix incorrect behavior
+- Link with [syncdir](http://untroubled.org/syncdir/)
+- [TAI system clock](netqmail-1.05-TAI-leapsecs.patch)
+- [Revised Maildir protocol](qmail-1.03-maildir-uniq.patch)
+- [Big DNS](https://www.ckdhr.com/ckd/qmail-103.patch)
 
 ## 1.09
+### Introduce new programming interfaces for use by "plugins"
+- No functional changes intended
+- [Specify an alternate qmail-remote](https://schmonz.com/qmail/remote/netqmail-1.06-qmailremote-20170716.patch) (just like QMAILQUEUE)
+- [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
+- [Plugin API for qmail-smtpd](http://qmail-spp.sourceforge.net)
+
+## 1.10
 ### Add some plugins
 - Help developers adapt some code of theirs and get it merged
 
-## 1.10
+## 1.11
 ### Add more plugins
 - Help developers convert more of their existing code to plugins
 
-## ...
+## Later
 ### Merge multiple implementations of a feature into one plugin
 
 # How to join
