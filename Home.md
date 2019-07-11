@@ -130,8 +130,10 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 ### Add more plugins
 - Help developers convert more of their existing code to plugins
 
-## Later
-### Merge multiple implementations of a feature into one plugin
+## Maybe later
+- Merge multiple implementations of a feature into one "blessed" plugin
+- Freely and invasively modernize to C99
+- Freely and invasively fix all compiler warnings
 
 # How to join
 
