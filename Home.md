@@ -100,11 +100,11 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - FreeBSD
 - Mac OS X
 ### Make packaging easier
-- DESTDIR staged install
-- Runtime UID/GID lookups
-- FHS-compatible symlink farm in `/var/qmail`
-- Optionally, off by default, run FHS-only (no `/var/qmail` at all)
-- `./configure && make && make install` as syntax sugar
+- Stage installation into `${DESTDIR}`
+- Look up UIDs and GIDs at runtime (and build as non-`root`)
+- FHS-aware (default on): `/var/qmail` contains symlinks to FHS-compatible paths
+- FHS-strict (default off): `/var/qmail` does not exist
+- Configuration sugar: `./configure && make && make install`
 
 ## 1.08
 ### Safely introduce new interfaces and seams for use by "plugins"
