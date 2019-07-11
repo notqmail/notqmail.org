@@ -64,6 +64,8 @@ There are many, many patches out there. Needless to say, not all of them are sui
 - The [Qmail-TLS patch](http://inoa.net/qmail-tls/), because a more qmail-ish design is available: [Erwin Hoffmann's ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html) implements UCSPI-TLS, handling TLS in a separate and privilege-separated address space
 - Any of the usual SMTP AUTH patches, because a more qmail-ish design is available: [Amitai Schleier's acceptutils](https://schmonz.com/qmail/acceptutils/) extends qmail's POP3 authentication architecture to SMTP and OFMIP, enabling new user-controlled features
 
+Well, maybe you could submit plugins (once we're ready for those) making use of those patches. They almost certainly won't be the winning implementations of those features, but they could be plenty useful in the meantime.
+
 # Goals
 
 We prioritize:
