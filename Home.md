@@ -132,6 +132,8 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 
 ## Maybe later
 - Merge multiple implementations of a feature into one "blessed" plugin
+- Delete unused plugins
+- Delete unused qmail code (`idedit`, `install-big`...)
 - Freely and invasively modernize to C99
 - Freely and invasively fix all compiler warnings
 
