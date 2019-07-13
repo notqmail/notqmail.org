@@ -42,3 +42,4 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - Delete unused qmail code (`idedit`, `install-big`...)
 - Freely and invasively modernize to C99
 - Freely and invasively fix all compiler warnings
+- Merge changes for high-volume installations that are harmless defaults in 2019 (taking care to migrate smoothly)
