@@ -42,6 +42,7 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - add queue repair tool.
 -- including the ability to upgrade a 1.x queue to 2.x in-place.
 - merge big-todo (changes queue layout)
+- increase default conf-split to 31 (changes queue layout)
 - merge ext-todo
 - merge netqmail-big-concurrency
 - Merge changes for high-volume installations that are harmless defaults in 2019 (taking care to migrate smoothly)
