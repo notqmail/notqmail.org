@@ -12,6 +12,7 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - FHS-aware (default on): `/var/qmail` contains symlinks to FHS-compatible paths
 - FHS-strict (default off): `/var/qmail` does not exist
 - Configuration sugar: `./configure && make && make install`
+- Delete unused qmail code (`idedit`, `install-big`...)
 
 # 1.08
 ## Fix incorrect behavior
@@ -36,10 +37,20 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 ## Add more plugins
 - Help developers convert more of their existing code to plugins
 
+# 2.0
+## queue-breaker release
+- add queue repair tool.
+-- including the ability to upgrade a 1.x queue to 2.x in-place.
+- merge big-todo (changes queue layout)
+- merge ext-todo
+- merge netqmail-big-concurrency
+- Merge changes for high-volume installations that are harmless defaults in 2019 (taking care to migrate smoothly)
+
+# 2.1
+## code modernization and ...
+- Freely and invasively modernize to C99
+- Freely and invasively fix all compiler warnings
+
 # Maybe later
 - Merge multiple implementations of a feature into one "blessed" plugin
 - Delete unused plugins
-- Delete unused qmail code (`idedit`, `install-big`...)
-- Freely and invasively modernize to C99
-- Freely and invasively fix all compiler warnings
-- Merge changes for high-volume installations that are harmless defaults in 2019 (taking care to migrate smoothly)
