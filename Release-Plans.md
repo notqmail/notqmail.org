@@ -32,6 +32,7 @@ The notqmail release roadmap:
 - [Specify an alternate qmail-remote](https://schmonz.com/qmail/remote/netqmail-1.06-qmailremote-20170716.patch) (just like QMAILQUEUE)
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
+- publish qmail-qmtpd and qmail-qmtpc as extensions.
 
 # 1.2
 ## Port unmerged, blessed netqmail patches to the extension interface
