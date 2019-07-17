@@ -12,7 +12,6 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - FHS-aware (default on): `/var/qmail` contains symlinks to FHS-compatible paths
 - FHS-strict (default off): `/var/qmail` does not exist
 - Configuration sugar: `./configure && make && make install`
-- Delete unused qmail code (`idedit`, `install-big`...)
 
 # 1.08
 ## Fix incorrect behavior
@@ -21,19 +20,21 @@ Our current intentions, which we'll update periodically as we get better ideas, 
 - [Revised Maildir protocol](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
 - [Big DNS](https://www.ckdhr.com/ckd/qmail-103.patch)
 - [qmail-remote: avoid recoding CRLF to CRCRLF](https://github.com/notqmail/notqmail/pull/18)
+- Delete obsolete qmail binaries (`idedit`, `install-big`, ...).
+- Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition), when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
 
-# 1.09
-## Introduce new programming interfaces for use by "plugins"
+# 1.1
+## Introduce new programming interfaces for use by extensions
 - No functional changes intended
 - [Specify an alternate qmail-remote](https://schmonz.com/qmail/remote/netqmail-1.06-qmailremote-20170716.patch) (just like QMAILQUEUE)
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 - [Plugin API for qmail-smtpd](http://qmail-spp.sourceforge.net)
 
-# 1.10
+# 1.2
 ## Add some plugins
 - Help developers adapt some code of theirs and get it merged
 
-# 1.11
+# 1.3
 ## Add more plugins
 - Help developers convert more of their existing code to plugins
 
