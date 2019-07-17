@@ -68,8 +68,8 @@ There are many, many patches out there. Needless to say, not all of them meet no
 
 We prioritize:
 
-- Implementing new features (or alternatives to core components) as "plugins"
-- Adding interfaces and seams, where needed, to make plugins possible
+- Implementing new features (or alternatives to core components) as "extensions"
+- Adding interfaces and seams, where needed, to make extensions possible
 - Encouraging multiple initial implementations of X, for any X
 - Following consensus, merging the best aspects into one implementation
 - Providing sensible defaults and easily configured runtime options
