@@ -9,7 +9,7 @@
 - Builds in TravisCI
 - Matches the conventions of surrounding code, where we're still trying to do that
 - Uses new and improved conventions, where we're trying to do that
-- Has at least one reviewer's approval, and no significant objections
+- Has at least one reviewer's (maybe two now?) approval, and no significant objections
 
 
 # To iterate on a PR, we...
