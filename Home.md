@@ -4,21 +4,14 @@ _---It's not [qmail](https://cr.yp.to/qmail.html). It's also not [netqmail](http
 
 notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail family.  notqmail is a community-assembled distribution to provide an extensible, packaged qmail.  Our goal is to provide stable, compatible, regular releases that will not break or conflict with your local site customization.
 
-# How to install
+# How to install notqmail
 
 The release notes for [[notqmail-1.07]] describe how to install notqmail.  Your existing qmail build scripts still work.
 
-# Release plans
+# Release roadmap
 
 Our [[release roadmap|Release-Roadmap]] describes when we plan on releasing particular features, and our [[tested distributions|Tested-Distributions]] show which platforms we've built, tested, or run notqmail on.
 The notqmail git repository contains an import of qmail and netqmail, with tags or branches at each historical release. notqmail is a fork of netqmail 1.06.
-
-# Who is involved?
-
-We invite everyone to join us. We especially hope for:
-
-- Ideas and feedback from those of you running (or not quite running) qmail
-- Code from those of you with custom patchsets or forks
 
 # Why should I trust notqmail?
 
@@ -92,11 +85,16 @@ We wish to avoid:
 
 Given the reasons qmail is valuable to us, the cost of a change that exhibits any of the preceding non-goals is high. Proposing one such change will require unusually strong justification, documentation, testing, and design. For the community to accept such a change, the risk must be demonstrably _very_ low and the benefit _very_ high.
 
-# How to join
+# Getting involved
 
-We're active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Freenode's](https://freenode.net/) `#qmail`. If you're reading this, you've found our GitHub repo. (We'll have a separate list where our commits get sent.)
+Our [git repository](https://github.com/notqmail/notqmail) and [issue tracker](https://github.com/notqmail/notqmail/issues) are hosted by GitHub.  Various contributors to notqmail are active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Freenode's](https://freenode.net/) `#qmail` IRC channel.
 
-Say hi on the list and/or IRC and one of us will help you get started on your first contribution.
+We invite users or enthusiasts of qmail to join us. We especially hope for:
+
+- Ideas and feedback from those of you running (or not quite running) qmail
+- Code from those of you with custom patchsets or forks
+
+Say hi on the list or IRC and one of us will help you get started on your first contribution.
 
 # Are djb or any of the netqmail authors involved?
 
