@@ -2,7 +2,7 @@ notqmail is a fork of netqmail-1.06.  Prior releases of netqmail and qmail are a
 
 The notqmail release roadmap:
 
-# 1.07
+# [[1.07|notqmail-1.07]]
 ## Fix broken builds
 - FreeBSD
 - Mac OS X
