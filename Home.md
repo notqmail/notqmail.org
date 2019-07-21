@@ -2,11 +2,11 @@
 
 _---It's not [qmail](https://cr.yp.to/qmail.html). It's also not [netqmail](http://netqmail.org).---_
 
-notqmail is a collaborative effort by qmail devotees to defend what's valuable, add what's needed, and ship trustworthy updates everyone can run.
+notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail family.  notqmail is a community-assembled distribution to provide an extensible, packaged qmail.  Our goal is to provide stable, compatible, regular releases that will not break or conflict with your site customization.
 
-# Are DJB and/or any of the netqmail authors involved?
+# Release plans
 
-No. We'd be extremely happy to have them, of course.
+We've imported qmail and netqmail into git, with tags at each historical version. Our starting point for notqmail is netqmail 1.06. Read more about [our release roadmap](https://github.com/notqmail/notqmail/wiki/Release-Plans).
 
 # Who is involved?
 
@@ -26,10 +26,6 @@ We trust qmail, as you do, for at least these reasons:
 It's for these reasons that we're motivated to continue developing qmail to meet modern needs.
 
 DJB's code was trustworthy. netqmail's small, conservative patchset was trustworthy. We intend for our development process to be trustworthy. If you find otherwise, we'd be extremely grateful to hear your doubts and concerns. But if you decide we're being consistently careful, thoughtful, reasonable, and practical, we hope you'll update to notqmail.
-
-# Why not Postfix?
-
-[Postfix](http://www.postfix.org) is very good. We also really like qmail.
 
 # What happens to my custom patchset?
 
@@ -66,6 +62,8 @@ There are many, many patches out there. Needless to say, not all of them meet no
 
 # Goals
 
+_---We're capable of installing in to /var/qmail---_
+
 We prioritize:
 
 - Implementing new features (or alternatives to core components) as "extensions"
@@ -83,22 +81,26 @@ We prioritize:
 
 We wish to avoid:
 
-- Breaking compatibility (such as by moving away from `/var/qmail`)
+- Breaking compatibility
 - Breaking existing features of the architecture
 - Modifying or replacing core components
 
 Given the reasons qmail is valuable to us, the cost of a change that exhibits any of the preceding non-goals is high. Proposing one such change will require unusually strong justification, documentation, testing, and design. For the community to accept such a change, the risk must be demonstrably _very_ low and the benefit _very_ high.
 
-# Release plans
-
-We've imported qmail and netqmail into git, with tags at each historical version. Our starting point for notqmail is netqmail 1.06. Read more about [our plans as we currently understand them](https://github.com/notqmail/notqmail/wiki/Release-Plans).
-
 # How to join
 
-We're active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on Freenode `#qmail`. If you're reading this, you've found our GitHub repo. (We'll have a separate list where our commits get sent.)
+We're active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Freenode's](https://freenode.net/) `#qmail`. If you're reading this, you've found our GitHub repo. (We'll have a separate list where our commits get sent.)
 
 Say hi on the list and/or IRC and one of us will help you get started on your first contribution.
 
 # How to install
 
 Wait for our first notqmail release. Then build and install it just like qmail.
+
+# Are djb or any of the netqmail authors involved?
+
+Neither netqmail nor djb were asked to approve of this distribution.
+
+# Why not Postfix?
+
+[Postfix](http://www.postfix.org) is very good. We also really like qmail.
