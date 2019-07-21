@@ -22,6 +22,8 @@ notqmail-1.07 now builds on FreeBSD and Mac OS X.
     * Add missing function arguments, Makefile dependencies, and missing header files.
     * Remove precompiled var qmail package support.
 
+All netqmail-1.07 [closed PRs](https://github.com/notqmail/notqmail/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.07).
+
 ## How to install
 
 The instructions for building and installing notqmail on a single host are unchanged.  This release introduces the option to perform a staged install, allowing notqmail to be built and packaged on one machine and run on another.
