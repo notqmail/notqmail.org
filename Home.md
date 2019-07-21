@@ -6,7 +6,7 @@ notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail f
 
 # Release plans
 
-Our [[release roadmap|Release-Plans]] describes when we plan on releasing particular features, and our [[tested distributions|Tested-Distributions]] show which platforms we've built, tested, or run notqmail on.
+Our [[release roadmap|Release-Roadmap]] describes when we plan on releasing particular features, and our [[tested distributions|Tested-Distributions]] show which platforms we've built, tested, or run notqmail on.
 The notqmail git repository contains an import of qmail and netqmail, with tags or branches at each historical release. notqmail is a fork of netqmail 1.06.
 
 # Who is involved?
