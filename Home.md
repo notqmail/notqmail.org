@@ -6,6 +6,8 @@ notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail f
 
 # How to install notqmail
 
+_---notqmail is capable of installing in to /var/qmail---_
+
 The release notes for [[notqmail-1.07]] describe how to install notqmail.  Your existing qmail build scripts still work.
 
 # Release roadmap
@@ -59,8 +61,6 @@ There are many, many patches out there. Needless to say, not all of them meet no
 - Any of the usual SMTP AUTH patches, because a more qmail-ish design is available: [Amitai Schleier's acceptutils](https://schmonz.com/qmail/acceptutils/) extends qmail's POP3 authentication architecture to SMTP and OFMIP, enabling new user-controlled features
 
 # Goals
-
-_---We're capable of installing in to /var/qmail---_
 
 We prioritize:
 
