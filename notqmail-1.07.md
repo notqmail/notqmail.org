@@ -30,15 +30,24 @@ The instructions for building and installing notqmail on a single host are uncha
 
 On the build host:
 
+    # run the build.
     make it man
+
+    # package it.
     DESTDIR=/path/to/staging/directory make package
+
     # create a tar archive of the staging directory.
     tar czf notqmail-1.07.tar.gz -C/path/to/staging/directory
 
 
 On the install host:
 
+copy notqmail-1.07.tar.gz and instchown from the build host to the install host.
+
     # untar the contents of the staging directory in to conf-qmail.
     tar xf notqmail-1.07.tar.gz -C/ --no-overwrite-dir
+
     # create qmail system accounts.
+
+    # fix ownership and file permissions.
     ./instchown
