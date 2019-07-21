@@ -6,7 +6,7 @@ notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail f
 
 # How to install notqmail
 
-_---notqmail is capable of installing in to /var/qmail---_
+_---[notqmail](http://notqmail.org) is capable of installing in to /var/qmail---_
 
 The release notes for [[notqmail-1.07]] describe how to install notqmail.  Your existing qmail build scripts still work.
 
