@@ -1,6 +1,6 @@
 # What is notqmail?
 
-It's not [qmail](https://cr.yp.to/qmail.html). It's also not [netqmail](http://netqmail.org).
+_---It's not [qmail](https://cr.yp.to/qmail.html). It's also not [netqmail](http://netqmail.org).---_
 
 notqmail is a collaborative effort by qmail devotees to defend what's valuable, add what's needed, and ship trustworthy updates everyone can run.
 
