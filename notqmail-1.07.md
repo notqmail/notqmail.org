@@ -18,6 +18,9 @@ notqmail-1.07 now builds on FreeBSD and Mac OS X.
 * Build platforms
     * FreeBSD: build on utmpx-only systems.
     * Mac OS X: build on case-insensitive filesystems, enable compatibility mode for name resolution, work around linker error.
+* Correctness and cleanup
+    * missing function arguments, Makefile dependencies, and missing header files.
+    * remove precompiled var qmail package support.
 
 ## How to install
 
