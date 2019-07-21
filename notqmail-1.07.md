@@ -28,7 +28,7 @@ All netqmail-1.07 [closed PRs](https://github.com/notqmail/notqmail/pulls?q=is%3
 
 The instructions for building and installing notqmail on a single host are unchanged from qmail's.
 
-notqmail-1.07 also makes it easy to build a package on one machine and run it easily on others.
+notqmail-1.07 also makes it easy to build a package on one machine and run it on others.
 
 ### On the build host:
 
