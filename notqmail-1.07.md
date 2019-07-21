@@ -1,4 +1,4 @@
-> _It's not [qmail](https://cr.yp.to/qmail.html). It's also not [netqmail](http://netqmail.org)._
+> It's not [qmail](https://cr.yp.to/qmail.html) and it's not [netqmail](http://netqmail.org).
 
 notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail family.  notqmail is a community-assembled distribution to provide an extensible, packaged qmail.  Our goal is to provide stable, compatible, regular releases that will not break or conflict with your local site customization.
 
@@ -26,28 +26,26 @@ All netqmail-1.07 [closed PRs](https://github.com/notqmail/notqmail/pulls?q=is%3
 
 ## How to install
 
-The instructions for building and installing notqmail on a single host are unchanged.  This release introduces the option to perform a staged install, allowing notqmail to be built and packaged on one machine and run on another.
+The instructions for building and installing notqmail on a single host are unchanged from qmail's.
 
-On the build host:
+notqmail-1.07 also makes it easy to build a package on one machine and run it easily on others.
 
-    # run the build.
-    make it man
+### On the build host:
 
-    # package it.
-    DESTDIR=/path/to/staging/directory make package
+Customize `conf-users` and `conf-groups`, if needed, and note the names. Then build, stage, and create a tarball:
 
-    # create a tar archive of the staging directory.
-    tar czf notqmail-1.07.tar.gz -C/path/to/staging/directory
+    $ make it man
+    $ export DESTDIR=/path/to/staging/directory
+    $ make package
+    $ tar -C ${DESTDIR} -czf notqmail-1.07.tar.gz .
 
 
-On the install host:
+### On the install host:
 
-copy notqmail-1.07.tar.gz and instchown from the build host to the install host.
+Copy over `notqmail-1.07.tar.gz` and `instchown` from the build host. Extract the tarball:
 
-    # untar the contents of the staging directory in to conf-qmail.
-    tar xf notqmail-1.07.tar.gz -C/ --no-overwrite-dir
+    # gnutar -C / --no-overwrite-dir -xzf notqmail-1.07.tar.gz
 
-    # create qmail system accounts.
+Create users and groups with the names to match the build. Then set permissions on installed files:
 
-    # fix ownership and file permissions.
-    ./instchown
+    # ./instchown
