@@ -42,9 +42,9 @@ Customize `conf-users` and `conf-groups`, if needed, and note the names. Then bu
 
 ### On the install host:
 
-Copy over `notqmail-1.07.tar.gz`, `instchown`, and `instcheck` from the build host. Extract the tarball:
+Copy over `notqmail-1.07.tar.gz`, `instchown`, and `instcheck` from the build host. Extract the tarball -- e.g., with GNU Tar:
 
-    # gnutar -C / --no-overwrite-dir -xzf notqmail-1.07.tar.gz
+    # tar -C / --no-overwrite-dir -xzf notqmail-1.07.tar.gz
 
 Create users and groups with names to match the build. Then set permissions on installed files, and verify the installation just as with a traditional qmail install:
 
