@@ -4,6 +4,10 @@ _---It's not [qmail](https://cr.yp.to/qmail.html). It's also not [netqmail](http
 
 notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail family.  notqmail is a community-assembled distribution to provide an extensible, packaged qmail.  Our goal is to provide stable, compatible, regular releases that will not break or conflict with your local site customization.
 
+# How to install
+
+The release notes for [[notqmail-1.07]] describe how to install notqmail.  Your existing qmail build scripts still work.
+
 # Release plans
 
 Our [[release roadmap|Release-Roadmap]] describes when we plan on releasing particular features, and our [[tested distributions|Tested-Distributions]] show which platforms we've built, tested, or run notqmail on.
@@ -93,10 +97,6 @@ Given the reasons qmail is valuable to us, the cost of a change that exhibits an
 We're active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Freenode's](https://freenode.net/) `#qmail`. If you're reading this, you've found our GitHub repo. (We'll have a separate list where our commits get sent.)
 
 Say hi on the list and/or IRC and one of us will help you get started on your first contribution.
-
-# How to install
-
-Wait for our first notqmail release. Then build and install it just like qmail.
 
 # Are djb or any of the netqmail authors involved?
 
