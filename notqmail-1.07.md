@@ -46,6 +46,8 @@ Copy over `notqmail-1.07.tar.gz` and `instchown` from the build host. Extract th
 
     # gnutar -C / --no-overwrite-dir -xzf notqmail-1.07.tar.gz
 
-Create users and groups with the names to match the build. Then set permissions on installed files:
+Create users and groups with names to match the build. Then set permissions on installed files:
 
     # ./instchown
+
+Like traditional qmail installs, staged installations may be checked with `./instcheck`.
