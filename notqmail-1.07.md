@@ -32,11 +32,13 @@ On the build host:
 
     make it man
     DESTDIR=/path/to/staging/directory make package
-    # create a tar archive of the staging directory and instchown.
+    # create a tar archive of the staging directory.
+    tar czf notqmail-1.07.tar.gz -C/path/to/staging/directory
 
 
 On the install host:
 
     # untar the contents of the staging directory in to conf-qmail.
+    tar xf notqmail-1.07.tar.gz -C/ --no-overwrite-dir
     # create qmail system accounts.
     ./instchown
