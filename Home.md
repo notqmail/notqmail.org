@@ -6,7 +6,7 @@ _---It's not [qmail](https://cr.yp.to/qmail.html) and it's not [netqmail](http:/
 
 # How to install notqmail
 
-_---notqmail still installs into `/var/qmail` by default---_
+_---notqmail is capable of installing to `/var/qmail`---_
 
 The release notes for [[notqmail-1.07]] describe how to install notqmail.  Your existing qmail build scripts still work.
 
