@@ -1,6 +1,6 @@
 > It's not [qmail](https://cr.yp.to/qmail.html) and it's not [netqmail](http://netqmail.org).
 
-notqmail, a Unix mail transfer agent (MTA), is a fork of qmail in the netqmail family.  notqmail is a community-assembled distribution to provide an extensible, packaged qmail.  Our goal is to provide stable, compatible, regular releases that will not break or conflict with your local site customization.
+[notqmail](http://notqmail.org) is a community-driven fork of qmail, the well-known Unix mail transfer agent (MTA). notqmail begins where netqmail left off: we will provide stable, compatible, small releases that do not conflict with or break your local site customization or the other software you run in your mail system. notqmail also aims higher: we are developing a qmail-derived system that is extensible, easily packaged, and increasingly applicable to a wide variety of modern needs.
 
 _NOTE: This release is under development and not yet published._
 
