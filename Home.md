@@ -6,7 +6,7 @@
 
 # How to install notqmail
 
-> notqmail is capable of installing to `/var/qmail`.
+> It's not incapable of installing to `/var/qmail`.
 
 The release notes for [[notqmail-1.07]] describe how to install notqmail.  Your existing qmail build scripts still work.
 
