@@ -3,7 +3,6 @@
 - Solves an agreed problem, in an agreed way, in an agreed sequence
 - Serves our goals, without broaching any of our non-goals
 - Includes a very brief description in `CHANGES`
-- Adds any new source files to `FILES` (and the `shar` target, while we still have one)
 - Adds any new system-dependent portability headers to `SYSDEPS`
 - Adds any new object (or otherwise generated) files to `TARGETS`
 - Builds in TravisCI
