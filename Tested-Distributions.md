@@ -12,7 +12,7 @@ _NOTE: Entries without a Build+Package entry are a call for testing._
 | Debian       |    Stretch 9 | amd64 | elf    |               |              |              |         |
 | Devuan       |            2 | amd64 | elf    |               |              |              |         |
 | Fedora       |           29 | amd64 | elf    |               |              |              |         |
-| Fedora       |           30 | amd64 | elf    |               |              |              |         |
+| Fedora       |           30 | amd64 | elf    | notqmail-1.07 |              |              |         |
 | FreeBSD      |         11.2 | amd64 | elf    |               |              |              |         |
 | FreeBSD      |         12.0 | amd64 | elf    |               |              |              |         |
 | Mac OS X     | Sierra 10.12 | amd64 | mach-o |               |              |              |         |
