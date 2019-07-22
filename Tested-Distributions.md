@@ -12,6 +12,7 @@ The following distributions have been tested with notqmail:
 | Fedora       |           30 | amd64 | elf    |               |              |              |         |
 | FreeBSD      |         11.2 | amd64 | elf    |               |              |              |         |
 | FreeBSD      |         12.0 | amd64 | elf    |               |              |              |         |
+| Mac OS X     | Sierra 10.12 | amd64 | mach-o |               |              |              |         |
 | NetBSD       |          8.1 | amd64 | elf    |               |              |              |         |
 | NixOS        |        19.03 | amd64 | elf    |               |              |              |         |
 | Ubuntu       | Trusty 14.04 | amd64 | elf    |               |              |              |         |
