@@ -1,5 +1,7 @@
 The following distributions have been tested with notqmail:
 
+_NOTE: Entries without a Build+Package entry are a call for testing._
+
 | Distribution | Version      | Arch  | BinFmt | Build+Package | TEST.deliver | TEST.receive | Running |
 | ------------ | -----------: | ----- | ------ | ------------: | -----------: | -----------: | ------: |
 | Alpine Linux |       3.10.0 | amd64 | elf    |               |              |              |         |
