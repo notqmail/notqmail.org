@@ -17,6 +17,7 @@ The notqmail release roadmap:
 - Configuration sugar: `./configure && make && make install`
 - Add package builds to tree.
 ## Fix incorrect behavior
+- [Don't let qmail-pop3d run as root](https://github.com/notqmail/notqmail/issues/47)
 - Link with [syncdir](http://untroubled.org/syncdir/)
 - [TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
 - [Revised Maildir protocol](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
