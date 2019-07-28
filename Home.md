@@ -49,6 +49,7 @@ In other words, you can stop maintaining your qmail fork as soon as notqmail has
 
 Some known big ones:
 
+- SMTP recipient validation
 - AUTH
 - TLS
 - SPF
