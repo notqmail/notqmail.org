@@ -24,6 +24,37 @@ DJB's code was trustworthy. netqmail's small, conservative patchset was trustwor
 Our starting point for this project is [netqmail 1.06](https://github.com/notqmail/notqmail/tree/netqmail-1.06), with previous netqmail and qmail releases also tagged in the repo.
 
 
+# What are the project's goals?
+
+> We'll trade away other things to get these.
+
+We prioritize:
+
+- Implementing new features (or alternatives to core components) as "extensions"
+- Adding interfaces and seams, where needed, to make extensions possible
+- Encouraging multiple initial implementations of X, for any X
+- Following consensus, merging the best aspects into one implementation
+- Providing sensible defaults and easily configured runtime options
+- Providing a safe update path for qmail and netqmail users
+- Providing safe, easy, regular updates for notqmail users
+- Being easily packaged by OS integrators
+- Meeting all common needs with OS-provided packages
+- Earning community trust as the authoritative open-source successor to qmail and netqmail
+
+
+# What are the project's non-goals?
+
+> We'll trade very little of these to get other things.
+
+We wish to avoid:
+
+- Breaking compatibility
+- Breaking existing features of the architecture
+- Modifying or replacing core components
+
+Given the reasons qmail is valuable to us, the cost of a change that exhibits any of the preceding non-goals is high. Proposing one such change will require unusually strong justification, documentation, testing, and design. For the community to accept such a change, the risk must be demonstrably _very_ low and the benefit _very_ high.
+
+
 # Which features will eventually be implemented?
 
 > All the important ones.
@@ -76,37 +107,6 @@ In other words, you can stop maintaining your qmail fork as soon as notqmail has
 Your existing build scripts will still work. 
 We've [[tested many platforms|Tested-Distributions]].
 See the release notes for [[notqmail-1.07]] (not yet released).
-
-
-# What are the project's goals?
-
-> We'll trade away other things to get these.
-
-We prioritize:
-
-- Implementing new features (or alternatives to core components) as "extensions"
-- Adding interfaces and seams, where needed, to make extensions possible
-- Encouraging multiple initial implementations of X, for any X
-- Following consensus, merging the best aspects into one implementation
-- Providing sensible defaults and easily configured runtime options
-- Providing a safe update path for qmail and netqmail users
-- Providing safe, easy, regular updates for notqmail users
-- Being easily packaged by OS integrators
-- Meeting all common needs with OS-provided packages
-- Earning community trust as the authoritative open-source successor to qmail and netqmail
-
-
-# What are the project's non-goals?
-
-> We'll trade very little of these to get other things.
-
-We wish to avoid:
-
-- Breaking compatibility
-- Breaking existing features of the architecture
-- Modifying or replacing core components
-
-Given the reasons qmail is valuable to us, the cost of a change that exhibits any of the preceding non-goals is high. Proposing one such change will require unusually strong justification, documentation, testing, and design. For the community to accept such a change, the risk must be demonstrably _very_ low and the benefit _very_ high.
 
 
 # How can I get more involved?
