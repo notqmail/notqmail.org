@@ -46,7 +46,7 @@ Need something else? Tell us about it.
 Our [[release roadmap|Release-Roadmap]] describes our plans in somewhat more detail.
 
 
-# Which implementations probably won't last forever?
+# Which implementations won't last forever?
 
 > Some designs are more _qmail_ than others.
 
