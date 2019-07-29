@@ -24,9 +24,9 @@ DJB's code was trustworthy. netqmail's small, conservative patchset was trustwor
 Our starting point for this project is [netqmail 1.06](https://github.com/notqmail/notqmail/tree/netqmail-1.06), with previous netqmail and qmail releases also tagged in the repo.
 
 
-# Which features will notqmail implement?
+# Which features will eventually be implemented?
 
-> All the important ones. Eventually.
+> All the important ones.
 
 Some known big ones:
 
