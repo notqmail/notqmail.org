@@ -2,7 +2,9 @@
 
 > It's not [qmail](https://cr.yp.to/qmail.html) and it's not [netqmail](http://netqmail.org).
 
-[notqmail](http://notqmail.org) is a community-driven fork of qmail, the well-known Unix mail transfer agent (MTA). notqmail begins where netqmail left off: we will provide stable, compatible, small releases that do not conflict with or break your local site customization or the other software you run in your mail system. notqmail also aims higher: we are developing a qmail-derived system that is extensible, easily packaged, and increasingly applicable to a wide variety of modern needs.
+[notqmail](http://notqmail.org) is a community-driven fork of qmail, the well-known Unix [mail transfer agent](https://en.wikipedia.org/wiki/Message_transfer_agent) (MTA). notqmail begins where netqmail left off: we will provide stable, compatible, small releases that do not conflict with or break your local site customization or the other software you run in your mail system. notqmail also aims higher: we are developing a qmail-derived system that is extensible, easily packaged, and increasingly applicable to a wide variety of modern needs.
+
+notqmail is an email _server_. We all have email, so we all have email servers; here are [some reasons and one way to run your own](https://arstechnica.com/information-technology/2014/02/how-to-run-your-own-e-mail-server-with-your-own-domain-part-1/). Someday, if we do a good job, articles like this will recommend notqmail.
 
 # How to install notqmail
 
