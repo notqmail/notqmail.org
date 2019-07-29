@@ -1,6 +1,6 @@
 # What is notqmail?
 
-> It's not qmail. It's also not netqmail.
+_It's not qmail. It's also not netqmail._
 
 We all use email, so we all use email servers. notqmail is software for running an [email server](https://en.wikipedia.org/wiki/Message_transfer_agent). Someday, if we do a good job, some of the many [articles about how and why to run your own](https://arstechnica.com/information-technology/2014/02/how-to-run-your-own-e-mail-server-with-your-own-domain-part-1/) will recommend notqmail.
 
@@ -9,7 +9,7 @@ We all use email, so we all use email servers. notqmail is software for running 
 
 # Why should I trust notqmail?
 
-> Watch what we do and how we do it; then decide.
+_Watch what we do and how we do it; then decide._
 
 We have come to trust qmail, as you have, for at least these reasons:
 
@@ -26,7 +26,7 @@ Our starting point for this project is [netqmail 1.06](https://github.com/notqma
 
 # What are the project's goals?
 
-> We'll trade away other things to get these.
+_We'll trade away other things to get these._
 
 We prioritize:
 
@@ -44,7 +44,7 @@ We prioritize:
 
 # What are the project's non-goals?
 
-> We'll trade very little of these to get other things.
+_We'll trade very little of these to get other things._
 
 We wish to avoid:
 
@@ -57,7 +57,7 @@ Given the reasons qmail is valuable to us, the cost of a change that exhibits an
 
 # Which features will eventually be implemented?
 
-> All the important ones.
+_All the important ones._
 
 Some known big ones:
 
@@ -79,7 +79,7 @@ Our [[release roadmap|Release-Roadmap]] describes our plans in somewhat more det
 
 # Which implementations won't last forever?
 
-> Some designs are more _qmail_ than others.
+_Some designs are more _qmail_ than others._
 
 There are many, many patches out there. Needless to say, not all of them meet notqmail's design goals. Two examples of popular, well-loved patches we've personally used and appreciated that could make useful "extensions" starting with 1.9, but would likely be superseded in the course of time:
 
@@ -89,7 +89,7 @@ There are many, many patches out there. Needless to say, not all of them meet no
 
 # What happens to my custom patchset?
 
-> Patience.
+_Patience._
 
 Expect your patchset to:
 
@@ -102,7 +102,7 @@ In other words, you can stop maintaining your qmail fork as soon as notqmail has
 
 # How do I install notqmail?
 
-> It's not incapable of installing to `/var/qmail`.
+_It's not incapable of installing to `/var/qmail`._
 
 Your existing build scripts will still work. 
 We've [[tested many platforms|Tested-Distributions]].
@@ -111,7 +111,7 @@ See the release notes for [[notqmail-1.07]] (not yet released).
 
 # How can I get more involved?
 
-> Be part of the revival!
+_Be part of the revival!_
 
 Our [git repository](https://github.com/notqmail/notqmail) and [issue tracker](https://github.com/notqmail/notqmail/issues) are hosted by GitHub.  Various contributors to notqmail are active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Freenode's](https://freenode.net/) `#qmail` IRC channel.
 
@@ -125,13 +125,13 @@ Say hi on the list or IRC and one of us will help you get started on your first 
 
 # Are djb or any of the netqmail authors involved?
 
-> We'd love to have them, of course.
+_We'd love to have them, of course._
 
 Neither netqmail nor djb were asked to approve of this distribution.
 
 
 # Why not Postfix?
 
-> We know you're wondering.
+_We know you're wondering._
 
 [Postfix](http://www.postfix.org) is very good. We also really like qmail.
