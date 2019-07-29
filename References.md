@@ -1,5 +1,15 @@
 Code and documents relevant to the design, implementation, and use of notqmail.
 
+## Forks of qmail
+
+- [netqmail](http://netqmail.org)
+- [IndiMail](http://www.indimail.org) (by [mbhangui](https://github.com/mbhangui))
+- [s/qmail](https://www.fehcom.de/sqmail/sqmail.html) (by Erwin Hoffmann)
+
+## Add-ons for qmail
+- [acceptutils](https://schmonz.com/qmail/acceptutils) (by [schmonz](https://github.com/schmonz))
+- [rejectutils](https://schmonz.com/qmail/rejectutils) (by [schmonz](https://github.com/schmonz))
+- [Qsmtp](https://github.com/DerDakon/Qsmtp) (by [DerDakon](https://github.com/DerDakon))
 
 ## Papers
 
