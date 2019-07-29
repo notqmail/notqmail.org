@@ -4,7 +4,7 @@
 
 [notqmail](http://notqmail.org) is a community-driven fork of qmail, the well-known Unix [mail transfer agent](https://en.wikipedia.org/wiki/Message_transfer_agent) (MTA). notqmail begins where netqmail left off: we will provide stable, compatible, small releases that do not conflict with or break your local site customization or the other software you run in your mail system. notqmail also aims higher: we are developing a qmail-derived system that is extensible, easily packaged, and increasingly applicable to a wide variety of modern needs.
 
-notqmail is an email _server_. We all have email, so we all have email servers. Someday, if we do a good job, [articles explaining why and how to run your own](https://arstechnica.com/information-technology/2014/02/how-to-run-your-own-e-mail-server-with-your-own-domain-part-1/) will recommend notqmail. But first, we have to prove we're a worthy upgrade path for people who are already running qmail or netqmail.
+notqmail is an email _server_. We all have email, so we all have email servers. Someday, if we do a good job, [articles explaining why and how to run your own](https://arstechnica.com/information-technology/2014/02/how-to-run-your-own-e-mail-server-with-your-own-domain-part-1/) will recommend notqmail. But first, we have to prove we're a worthy upgrade for everyone who's running qmail or netqmail.
 
 # How to install notqmail
 
