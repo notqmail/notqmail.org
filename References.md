@@ -1,4 +1,4 @@
-We're collecting (and perhaps semi-organizing) code and documents relevant to the design, implementation, and use of notqmail.
+Code and documents relevant to the design, implementation, and use of notqmail.
 
 
 ## Papers
@@ -8,5 +8,5 @@ We're collecting (and perhaps semi-organizing) code and documents relevant to th
 
 ## Social Media
 
-- [Lobste.rs discussion](https://lobste.rs/s/2r3stk/notqmail_collaborative_open_source)
-- [Hacker News discussion](https://news.ycombinator.com/item?id=20549983)
+- Lobste.rs, Sun 28 Jul 2019: [Notqmail: Collaborative open-source successor to qmail](https://lobste.rs/s/2r3stk/notqmail_collaborative_open_source)
+- Hacker News, Sun 28 Jul 2019: [Notqmail: Collaborative open-source successor to qmail](https://news.ycombinator.com/item?id=20549983)
