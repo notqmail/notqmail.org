@@ -1,6 +1,6 @@
 # What is notqmail?
 
-> It's not qmail. It's also not netqmail.
+_It's not qmail. It's also not netqmail._
 
 We all use email, so we all use email servers. notqmail is software for running an [email server](https://en.wikipedia.org/wiki/Message_transfer_agent). Someday, if we do a good job, some of the many [articles about how and why to run your own](https://arstechnica.com/information-technology/2014/02/how-to-run-your-own-e-mail-server-with-your-own-domain-part-1/) will recommend notqmail.
 
