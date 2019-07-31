@@ -49,6 +49,7 @@ _We'll trade very little of these to get other things._
 We wish to avoid:
 
 - Breaking compatibility
+- Breaking your patches
 - Breaking existing features of the architecture
 - Modifying or replacing core components
 
