@@ -21,7 +21,7 @@ We have come to trust qmail, as you have, for at least these reasons:
 
 It's for these reasons that we're motivated to continue developing qmail to meet modern needs.
 
-None of us can do what DJB did. One mitigating factor here is, we're not trying to do what DJB did. He had to write qmail from scratch; we have the advantage of existing designs, interfaces, implementations, and decades of running in production. We also enjoy the privilege of using the latest techniques and tooling. But the two biggest mitigations we have are:
+None of us can do what [DJB](https://cr.yp.to/djb.html) did. One mitigating factor here is, we're not trying to do what DJB did. He had to write qmail from scratch; we have the advantage of existing designs, interfaces, implementations, and decades of running in production. We also enjoy the privilege of using the latest techniques and tooling. But the two biggest mitigations we have are:
 
 1. Working in public
 2. Shipping frequent small releases
