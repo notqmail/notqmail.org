@@ -37,6 +37,7 @@ We prioritize:
 - Providing sensible defaults and easily configured runtime options
 - Providing a safe update path for qmail and netqmail users
 - Providing safe, easy, regular updates for notqmail users
+- Gradually reducing the marginal cost of developing notqmail
 - Being easily packaged by OS integrators
 - Meeting all common needs with OS-provided packages
 - Earning community trust as the authoritative open-source successor to qmail and netqmail
