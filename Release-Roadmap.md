@@ -45,6 +45,7 @@ The notqmail release roadmap:
 - merge ext-todo
 - merge netqmail-big-concurrency
 - [qmail-ldap](http://www.nrg4u.com), or enough interfaces to let extensions provide LDAP integration
+- make sure everything works with vmailmgr, vpopmail, other approaches to "virtual users"
 - Merge changes for high-volume installations that are harmless defaults in 2019 (taking care to migrate smoothly)
 
 # 2.1
