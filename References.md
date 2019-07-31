@@ -10,6 +10,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 
 ## Other sources of patches
+
 - [qmail.org](http://qmailorg.schmonz.com/top.html)
 - Debian's [netqmail](https://sources.debian.org/src/netqmail/)
 - pkgsrc's [qmail](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) and [qmail-run](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail-run)
@@ -19,14 +20,22 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - [Kyle Wheeler](https://github.com/m3m0ryh0l3)'s [Qmail Patch Explanations and Recommendations](http://www.memoryhole.net/qmail/)
 
 ## Add-ons
+
 - [schmonz](https://github.com/schmonz)'s [acceptutils](https://schmonz.com/qmail/acceptutils)
 - [schmonz](https://github.com/schmonz)'s [rejectutils](https://schmonz.com/qmail/rejectutils)
 - [DerDakon](https://github.com/DerDakon)'s [Qsmtp](https://github.com/DerDakon/Qsmtp)
 
 
+## Community Wisdom
+
+- Dave Sill, 2007: [Life with qmail](http://www.lifewithqmail.org/lwq.html)
+- Henning Brauer, 2004: [Life With qmail-ldap](http://www.lifewithqmail.org/ldap/)
+
+
 ## Papers
 
 - Daniel J. Bernstein, 2007: [Some thoughts on security after ten years of qmail 1.0](https://cr.yp.to/qmail/qmailsec-20071101.pdf)
+
 
 
 ## News & Social Media
