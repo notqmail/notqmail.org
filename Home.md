@@ -107,7 +107,7 @@ _It's not incapable of installing to `/var/qmail`._
 
 Your existing build scripts will still work. 
 We've [[tested many platforms|Tested-Distributions]].
-See the release notes for [[notqmail-1.07]] (not yet released).
+See [[notqmail-1.07]].
 
 
 # How can I get more involved?
