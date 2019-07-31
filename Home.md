@@ -72,7 +72,6 @@ Some known big ones:
 - DMARC
 - EAI
 - SNI
-- DANE
 
 Need something else? Tell us about it. 
 
