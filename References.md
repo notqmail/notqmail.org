@@ -14,7 +14,9 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - Debian's [netqmail](https://sources.debian.org/src/netqmail/)
 - pkgsrc's [qmail](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) and [qmail-run](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail-run)
 - [schmonz](https://github.com/schmonz)'s [patch page](https://schmonz.com/qmail/)
-
+- Roberto Puzzanghera's [qmail notes](https://notes.sagredo.eu)
+- [Bruce Guenter](https://github.com/bruceg)'s [software page](http://untroubled.org/software.php)
+- [Kyle Wheeler](https://github.com/m3m0ryh0l3)'s [Qmail Patch Explanations and Recommendations](http://www.memoryhole.net/qmail/)
 
 ## Add-ons
 - [schmonz](https://github.com/schmonz)'s [acceptutils](https://schmonz.com/qmail/acceptutils)
