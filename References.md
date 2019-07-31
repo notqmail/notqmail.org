@@ -1,15 +1,26 @@
 Code and documents relevant to the design, implementation, and use of notqmail.
 
+
 ## Forks of qmail
 
 - [netqmail](http://netqmail.org)
-- [IndiMail](http://www.indimail.org) (by [mbhangui](https://github.com/mbhangui))
-- [s/qmail](https://www.fehcom.de/sqmail/sqmail.html) (by Erwin Hoffmann)
+- [mbhangui](https://github.com/mbhangui)'s [IndiMail](http://www.indimail.org)
+- [Erwin Hoffmann](https://github.com/ErwinHo)'s [s/qmail](https://www.fehcom.de/sqmail/sqmail.html)
+- [DerDakon](https://github.com/DerDakon)'s [qmail](https://github.com/DerDakon/qmail)
 
-## Add-ons for qmail
-- [acceptutils](https://schmonz.com/qmail/acceptutils) (by [schmonz](https://github.com/schmonz))
-- [rejectutils](https://schmonz.com/qmail/rejectutils) (by [schmonz](https://github.com/schmonz))
-- [Qsmtp](https://github.com/DerDakon/Qsmtp) (by [DerDakon](https://github.com/DerDakon))
+
+## Other sources of patches
+- [qmail.org](http://qmailorg.schmonz.com/top.html)
+- Debian's [netqmail](https://sources.debian.org/src/netqmail/)
+- pkgsrc's [qmail](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) and [qmail-run](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail-run)
+- [schmonz](https://github.com/schmonz)'s [patch page](https://schmonz.com/qmail/)
+
+
+## Add-ons
+- [schmonz](https://github.com/schmonz)'s [acceptutils](https://schmonz.com/qmail/acceptutils)
+- [schmonz](https://github.com/schmonz)'s [rejectutils](https://schmonz.com/qmail/rejectutils)
+- [DerDakon](https://github.com/DerDakon)'s [Qsmtp](https://github.com/DerDakon/Qsmtp)
+
 
 ## Papers
 
