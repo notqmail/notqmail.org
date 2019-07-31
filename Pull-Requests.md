@@ -1,7 +1,9 @@
 # A pull request is ready when it...
 
 - Solves an agreed problem, in an agreed way, in an agreed sequence
+- Describes the costs, risks, and benefits it addresses and/or introduces
 - Serves our goals, without broaching any of our non-goals
+    - (Rare but not impossible: adjusting our goals instead of the proposed patch)
 - Includes a very brief description in `CHANGES`
 - Adds any new system-dependent portability headers to `SYSDEPS`
 - Adds any new object (or otherwise generated) files to `TARGETS`
