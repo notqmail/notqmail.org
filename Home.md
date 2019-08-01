@@ -141,11 +141,18 @@ We invite users or enthusiasts of qmail to join us. We especially hope for:
 Say hi on the list or IRC and one of us will help you get started on your first contribution.
 
 
-# Are djb or any of the netqmail authors involved?
+# Are DJB or any of the netqmail authors involved?
 
 _We'd love to have them, of course._
 
-Neither netqmail nor djb were asked to approve of this distribution.
+Neither netqmail nor DJB were asked to approve of this distribution.
+
+
+# Does the [qmail security guarantee](https://cr.yp.to/qmail/guarantee.html) apply?
+
+_We warrant that we've made a good-faith attempt to ensure that the software behaves correctly._
+
+Sorry, no. We're not DJB, and notqmail is not qmail.
 
 
 # Why not Postfix?
