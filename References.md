@@ -19,7 +19,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - John M. Simpson's [combined patch](https://qmail.jms1.net/patches/combined-details.shtml
 - [Bruce Guenter](https://github.com/bruceg)'s [software page](http://untroubled.org/software.php)
 - [Kyle Wheeler](https://github.com/m3m0ryh0l3)'s [Qmail Patch Explanations and Recommendations](http://www.memoryhole.net/qmail/)
-- [Scott Gifford](https://github.com/scottgifford)'s original [UCSPI-TLS](https://github.com/SuperScript/ucspi-ssl/pull/1) implementation (including `sslclient -y`, not yet merged in Erwin Hoffmann's [ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html))
+- [Scott Gifford](https://github.com/scottgifford)'s original [UCSPI-TLS implementation](https://github.com/SuperScript/ucspi-ssl/pull/1) (including `sslclient -y`, not yet merged in Erwin Hoffmann's [ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html)) and [specification](https://web.archive.org/web/20150311223927/http://www.suspectclass.com/sgifford/ucspi-tls/)
 
 ## Add-ons
 
