@@ -32,7 +32,9 @@ All notqmail-1.07 [closed issues](https://github.com/notqmail/notqmail/issues?q=
 
 The instructions for building and installing notqmail on a single host are unchanged from qmail's.
 
-notqmail-1.07 also makes it easy to build a package on one machine and run it on others.
+At least one assumption has changed in the intervening years: while `nroff` remains a non-optional build dependency, some systems have stopped providing it. We've seen this on at OpenBSD, FreeBSD, and Void Linux. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick.
+
+New in notqmail-1.07, it's now easy to build a package on one machine and run it on others.
 
 ### On the build host:
 
