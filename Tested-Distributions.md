@@ -15,6 +15,9 @@ _NOTE: Entries without a Build+Package entry are a call for testing._
 | Fedora       |           30 | amd64 | elf    | notqmail-1.07 |              |              |         |
 | FreeBSD      |         11.2 | amd64 | elf    |               |              |              |         |
 | FreeBSD      |         12.0 | amd64 | elf    |               |              |              |         |
+| Gentoo       |              | amd64 | elf    | notqmail-1.07 + Gentoo patches | 1.07+Gentoo | 1.07+Gentoo | y |
+| Gentoo       |              | hppa  | elf    | notqmail-1.07 + Gentoo patches | 1.07+Gentoo | 1.07+Gentoo | y |
+| Gentoo       |              | sparc | elf    | notqmail-1.07 + Gentoo patches | 1.07+Gentoo | 1.07+Gentoo | y |
 | Mac OS X     | Sierra 10.12 | amd64 | mach-o |               |              |              |         |
 | Mac OS X     | Mojave 10.14 | amd64 | mach-o |               |              |              |         |
 | NetBSD       |          8.1 | amd64 | elf    |               |              |              |         |
