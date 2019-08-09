@@ -1,6 +1,4 @@
-notqmail is a fork of netqmail-1.06.  Prior releases of netqmail and qmail are available to branch from, with additional branches for published, noteworthy patches to netqmail-1.06.
-
-The notqmail release roadmap:
+notqmail is a fork of netqmail-1.06. The notqmail release roadmap:
 
 # [[1.07|notqmail-1.07]]
 ## Fix broken builds
