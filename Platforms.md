@@ -1,27 +1,27 @@
-The following platforms have been tested with notqmail:
+## [[notqmail 1.07]]
 
-_NOTE: Entries without a Build+Package entry are a call for testing._
+Help us fill this in!
 
-| Platform     | Version      | Arch  | BinFmt | Build+Package | TEST.deliver | TEST.receive | Running |
+| Platform     | Version      | Arch  | BinFmt | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | Running |
 | ------------ | -----------: | ----- | ------ | ------------: | -----------: | -----------: | ------: |
 | Alpine Linux |       3.10.0 | amd64 | elf    |               |              |              |         |
 | Arch Linux   |   2019.07.01 | amd64 | elf    |               |              |              |         |
 | CentOS       |            6 | amd64 | elf    |               |              |              |         |
-| CentOS       |            7 | amd64 | elf    | notqmail-1.07 |              |              |       y |
+| CentOS       |            7 | amd64 | elf    | y             |              |              |       y |
 | Debian       |      Jesse 8 | amd64 | elf    |               |              |              |         |
 | Debian       |    Stretch 9 | amd64 | elf    |               |              |              |         |
 | Devuan       |            2 | amd64 | elf    |               |              |              |         |
 | Fedora       |           29 | amd64 | elf    |               |              |              |         |
-| Fedora       |           30 | amd64 | elf    | notqmail-1.07 |              |              |         |
+| Fedora       |           30 | amd64 | elf    | y             |              |              |         |
 | FreeBSD      |         11.2 | amd64 | elf    |               |              |              |         |
 | FreeBSD      |         12.0 | amd64 | elf    |               |              |              |         |
-| Gentoo       |              | amd64 | elf    | notqmail-1.07 + Gentoo patches | 1.07+Gentoo | 1.07+Gentoo | y |
-| Gentoo       |              | hppa  | elf    | notqmail-1.07 + Gentoo patches | 1.07+Gentoo | 1.07+Gentoo | y |
-| Gentoo       |              | sparc | elf    | notqmail-1.07 + Gentoo patches | 1.07+Gentoo | 1.07+Gentoo | y |
+| Gentoo       |              | amd64 | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
+| Gentoo       |              | hppa  | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
+| Gentoo       |              | sparc | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
 | Mac OS X     | Sierra 10.12 | amd64 | mach-o |               |              |              |         |
 | Mac OS X     | Mojave 10.14 | amd64 | mach-o |               |              |              |         |
 | NetBSD       |          8.1 | amd64 | elf    |               |              |              |         |
-| NetBSD       |          8.1 | pmax  | elf    | 75b8eb4       |              |              |         |
+| NetBSD       |          8.1 | pmax  | elf    | y             |              |              |         |
 | NixOS        |        19.03 | amd64 | elf    |               |              |              |         |
 | OpenBSD      |          6.5 | amd64 | elf    |               |              |              |         |
 | Tribblix     |       0m20.5 | amd64 | elf    |               |              |              |         |
