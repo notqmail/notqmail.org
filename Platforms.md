@@ -1,8 +1,8 @@
-The following distributions have been tested with notqmail:
+The following platforms have been tested with notqmail:
 
 _NOTE: Entries without a Build+Package entry are a call for testing._
 
-| Distribution | Version      | Arch  | BinFmt | Build+Package | TEST.deliver | TEST.receive | Running |
+| Platform     | Version      | Arch  | BinFmt | Build+Package | TEST.deliver | TEST.receive | Running |
 | ------------ | -----------: | ----- | ------ | ------------: | -----------: | -----------: | ------: |
 | Alpine Linux |       3.10.0 | amd64 | elf    |               |              |              |         |
 | Arch Linux   |   2019.07.01 | amd64 | elf    |               |              |              |         |
@@ -21,6 +21,7 @@ _NOTE: Entries without a Build+Package entry are a call for testing._
 | Mac OS X     | Sierra 10.12 | amd64 | mach-o |               |              |              |         |
 | Mac OS X     | Mojave 10.14 | amd64 | mach-o |               |              |              |         |
 | NetBSD       |          8.1 | amd64 | elf    |               |              |              |         |
+| NetBSD       |          8.1 | pmax  | elf    | 75b8eb4       |              |              |         |
 | NixOS        |        19.03 | amd64 | elf    |               |              |              |         |
 | OpenBSD      |          6.5 | amd64 | elf    |               |              |              |         |
 | Tribblix     |       0m20.5 | amd64 | elf    |               |              |              |         |
