@@ -123,7 +123,7 @@ In other words, you can stop maintaining your qmail fork as soon as notqmail has
 _It's not incapable of installing to `/var/qmail`._
 
 Your existing build scripts will still work. 
-We've [[tested many platforms|Tested-Distributions]].
+We've tested many [[platforms]].
 See [[notqmail-1.07]].
 
 
