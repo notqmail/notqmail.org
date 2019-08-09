@@ -52,7 +52,7 @@ Copy over `notqmail-1.07.tar.gz`, `instchown`, and `instcheck` from the build ho
 
     # tar -C / --no-overwrite-dir -xzf notqmail-1.07.tar.gz
 
-Create users and groups with names to match the build. Then set permissions on installed files, and verify the installation just as with a traditional qmail install:
+[Create users and groups](https://github.com/notqmail/notqmail/blob/master/INSTALL.ids) with names to match the build. Set permissions on installed files, then verify the installation just as with a traditional qmail install:
 
     # ./instchown
     # ./instcheck
