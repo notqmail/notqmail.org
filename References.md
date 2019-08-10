@@ -22,6 +22,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - [Kyle Wheeler](https://github.com/m3m0ryh0l3)'s [Qmail Patch Explanations and Recommendations](http://www.memoryhole.net/qmail/)
 - [Scott Gifford](https://github.com/scottgifford)'s original [UCSPI-TLS implementation](https://github.com/SuperScript/ucspi-ssl/pull/1) (including `sslclient -y`, not yet merged in Erwin Hoffmann's [ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html)) and [specification](https://web.archive.org/web/20150311223927/http://www.suspectclass.com/sgifford/ucspi-tls/)
 - Frederik Vermeulen's [Qmail-TLS patch](http://inoa.net/qmail-tls/)
+- Eben Pratt's [list of recipient checkers](http://www.netdevice.com/qmail/rcptck)
 
 ## Add-ons
 
