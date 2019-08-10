@@ -7,7 +7,7 @@ Help us fill this in!
 | Alpine Linux |       3.10.0 | amd64 | elf    |               |              |              |         |
 | Arch Linux   |   2019.07.01 | amd64 | elf    |               |              |              |         |
 | CentOS       |            6 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
-| CentOS       |            7 | amd64 | elf    | y             |              |              |       y |
+| CentOS       |            7 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Debian       |      Jesse 8 | amd64 | elf    |               |              |              |         |
 | Debian       |    Stretch 9 | amd64 | elf    |               |              |              |         |
 | Devuan       |            2 | amd64 | elf    |               |              |              |         |
