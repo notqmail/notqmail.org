@@ -9,8 +9,8 @@ Help us fill this in!
 | CentOS       |            6 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
 | CentOS       |            7 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Debian       |      Jesse 8 | amd64 | elf    |               |              |              |         |
-| Debian       |    Stretch 9 | amd64 | elf    |               |              |              |         |
-| Devuan       |            2 | amd64 | elf    |               |              |              |         |
+| Debian       |    Stretch 9 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
+| Devuan       |            2 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Fedora       |           29 | amd64 | elf    |               |              |              |         |
 | Fedora       |           30 | amd64 | elf    | y             |              |              |         |
 | FreeBSD      |         11.2 | amd64 | elf    |               |              |              |         |
