@@ -14,7 +14,7 @@ Help us fill this in!
 | Fedora       |           29 | amd64 | elf    |               |              |              |         |
 | Fedora       |           30 | amd64 | elf    | y             |              |              |         |
 | FreeBSD      |         11.2 | amd64 | elf    |               |              |              |         |
-| FreeBSD      |         12.0 | amd64 | elf    |               |              |              |         |
+| FreeBSD      |         12.0 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Gentoo       |              | amd64 | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
 | Gentoo       |              | hppa  | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
 | Gentoo       |              | sparc | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
