@@ -28,5 +28,5 @@ Help us fill this in!
 | Ubuntu       | Trusty 14.04 | amd64 | elf    |               |              |              |         |
 | Ubuntu       | Xenial 16.04 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Ubuntu       | Bionic 18.04 | amd64 | elf    |               |              |              |         |
-| Ubuntu       | Bionic 18.04 | aarch64 | elf  | y             |              |              |         |
+| Ubuntu       | Bionic 18.04 | aarch64 | elf  | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Ubuntu       |  Disco 19.04 | amd64 | elf    |               |              |              |         |
