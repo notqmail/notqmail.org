@@ -19,7 +19,7 @@ Help us fill this in!
 | Gentoo       |              | hppa  | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
 | Gentoo       |              | sparc | elf    | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y       |
 | Mac OS X     | Sierra 10.12 | amd64 | mach-o |               |              |              |         |
-| Mac OS X     | Mojave 10.14 | amd64 | mach-o |               |              |              |         |
+| Mac OS X     | Mojave 10.14 | amd64 | mach-o | y+pkgsrc      | y+pkgsrc     |              |       y |
 | NetBSD       |          8.1 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     |       y |
 | NetBSD       |          8.1 | pmax  | elf    | y             |              |              |         |
 | NixOS        |        19.03 | amd64 | elf    |               |              |              |         |
