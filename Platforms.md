@@ -24,7 +24,7 @@ Help us fill this in!
 | NetBSD       |          8.1 | pmax  | elf    | y             |              |              |         |
 | NixOS        |        19.03 | amd64 | elf    |               |              |              |         |
 | OpenBSD      |          6.5 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
-| Tribblix     |       0m20.5 | amd64 | elf    |               |              |              |         |
+| Tribblix     |       0m20.5 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Ubuntu       | Trusty 14.04 | amd64 | elf    |               |              |              |         |
 | Ubuntu       | Xenial 16.04 | amd64 | elf    |               |              |              |         |
 | Ubuntu       | Bionic 18.04 | amd64 | elf    |               |              |              |         |
