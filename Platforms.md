@@ -30,3 +30,4 @@ Help us fill this in!
 | Ubuntu       | Bionic 18.04 | amd64 | elf    |               |              |              |         |
 | Ubuntu       | Bionic 18.04 | aarch64 | elf  | y+pkgsrc      | y+pkgsrc     |              |       y |
 | Ubuntu       |  Disco 19.04 | amd64 | elf    |               |              |              |         |
+| Void         |    4.19.66_1 | amd64 | elf    | y+pkgsrc      | y+pkgsrc     |              |       y |
