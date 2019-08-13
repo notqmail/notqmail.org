@@ -5,12 +5,11 @@
 - Serves our goals, without broaching any of our non-goals
     - (Rare but not impossible: adjusting our goals instead of the proposed patch)
 - Includes a very brief description in `CHANGES`
-- Adds any new system-dependent portability headers to `SYSDEPS`
 - Adds any new object (or otherwise generated) files to `TARGETS`
 - Builds in TravisCI
 - Matches the conventions of surrounding code, where we're still trying to do that
 - Uses new and improved conventions, where we're trying to do that
-- Has at least two reviewers’ approval, and no significant objections
+- Has at least two reviewers' approval, and no significant objections
 
 
 # To iterate on a PR, we...
