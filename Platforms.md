@@ -30,31 +30,31 @@ Help us fill this in!
 
 ### amd64 Mach-O
 
-| Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
 | Mac OS X     | Sierra 10.12 |               |              |              |          |
 | Mac OS X     | Mojave 10.14 | y+pkgsrc      | y+pkgsrc     |              |          |
 
 ### aarch64 ELF
 
-| Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
 | Ubuntu       | Bionic 18.04 | y+pkgsrc      | y+pkgsrc     |              |          |
 
 ### hppa ELF
 
-| Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:   |
 | Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
 
 ### pmax ELF
 
-| Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
 | NetBSD       |          8.1 | y             |              |              |          |
 
 ### sparc ELF
 
-| Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:   |
 | Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
