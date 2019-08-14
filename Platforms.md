@@ -4,7 +4,7 @@ Help us fill this in!
 
 ### amd64 ELF
 
-| Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:   |
 | Alpine Linux |       3.10.0 |               |              |              |           |
 | Arch Linux   |   2019.07.01 |               |              |              |           |
