@@ -5,28 +5,28 @@ Help us fill this in!
 ### amd64 ELF
 
 | Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
-| ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
-| Alpine Linux |       3.10.0 |               |              |              |          |
-| Arch Linux   |   2019.07.01 |               |              |              |          |
-| CentOS       |            6 | y+pkgsrc      | y+pkgsrc     |              |          |
-| CentOS       |            7 | y+pkgsrc      | y+pkgsrc     |              |       y  |
-| Debian       |      Jesse 8 |               |              |              |          |
-| Debian       |    Stretch 9 | y+pkgsrc      | y+pkgsrc     |              |          |
-| Devuan       |            2 | y+pkgsrc      | y+pkgsrc     |              |          |
-| Fedora       |           29 |               |              |              |          |
-| Fedora       |           30 | y             |              |              |          |
-| FreeBSD      |         11.2 |               |              |              |          |
-| FreeBSD      |         12.0 | y+pkgsrc      | y+pkgsrc     |              |          |
-| Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y+Gentoo |
-| NetBSD       |          8.1 | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     | y+pkgsrc |
-| NixOS        |        19.03 |               |              |              |          |
-| OpenBSD      |          6.5 | y+pkgsrc      | y+pkgsrc     |              |          |
-| Tribblix     |       0m20.5 | y+pkgsrc      | y+pkgsrc     |              |          |
-| Ubuntu       | Trusty 14.04 |               |              |              |          |
-| Ubuntu       | Xenial 16.04 | y+pkgsrc      | y+pkgsrc     |              |          |
-| Ubuntu       | Bionic 18.04 |               |              |              |          |
-| Ubuntu       |  Disco 19.04 |               |              |              |          |
-| Void Linux   |    4.19.66_1 | y+pkgsrc      | y+pkgsrc     |              |          |
+| ------------ | -----------: | ------------: | -----------: | -----------: | ------:   |
+| Alpine Linux |       3.10.0 |               |              |              |           |
+| Arch Linux   |   2019.07.01 |               |              |              |           |
+| CentOS       |            6 | y+pkgsrc      | y+pkgsrc     |              |           |
+| CentOS       |            7 | y+pkgsrc      | y+pkgsrc     |              | @alanpost |
+| Debian       |      Jesse 8 |               |              |              |           |
+| Debian       |    Stretch 9 | y+pkgsrc      | y+pkgsrc     |              |           |
+| Devuan       |            2 | y+pkgsrc      | y+pkgsrc     |              |           |
+| Fedora       |           29 |               |              |              |           |
+| Fedora       |           30 | y             |              |              |           |
+| FreeBSD      |         11.2 |               |              |              |           |
+| FreeBSD      |         12.0 | y+pkgsrc      | y+pkgsrc     |              |           |
+| Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
+| NetBSD       |          8.1 | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     | @schmonz  |
+| NixOS        |        19.03 |               |              |              |           |
+| OpenBSD      |          6.5 | y+pkgsrc      | y+pkgsrc     |              |           |
+| Tribblix     |       0m20.5 | y+pkgsrc      | y+pkgsrc     |              |           |
+| Ubuntu       | Trusty 14.04 |               |              |              |           |
+| Ubuntu       | Xenial 16.04 | y+pkgsrc      | y+pkgsrc     |              |           |
+| Ubuntu       | Bionic 18.04 |               |              |              |           |
+| Ubuntu       |  Disco 19.04 |               |              |              |           |
+| Void Linux   |    4.19.66_1 | y+pkgsrc      | y+pkgsrc     |              |           |
 
 ### amd64 Mach-O
 
@@ -44,8 +44,8 @@ Help us fill this in!
 ### hppa ELF
 
 | Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
-| ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
-| Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y+Gentoo |
+| ------------ | -----------: | ------------: | -----------: | -----------: | ------:   |
+| Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
 
 ### pmax ELF
 
@@ -56,5 +56,5 @@ Help us fill this in!
 ### sparc ELF
 
 | Platform     | Version      | Build+Package | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
-| ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
-| Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | y+Gentoo |
+| ------------ | -----------: | ------------: | -----------: | -----------: | ------:   |
+| Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
