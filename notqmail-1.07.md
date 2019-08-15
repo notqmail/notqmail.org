@@ -10,23 +10,28 @@ _NOTE: This release is under development and not yet published._
 
 ## What's New
 
-notqmail-1.07 supports staged installation, where build and packaging is done on one host for installation to another.  notqmail can be built and packaged without requiring qmail system accounts, or on a build host where the uid/gid values for those accounts differ from the install host.
+This initial 1.07 release of notqmail is guided by two themes:
 
-notqmail-1.07 now builds on FreeBSD and Mac OS X.
+### Fix broken builds
 
-* Staged installation
-    * the setup target supports the `DESTDIR` environment variable for staged installation outside of `/var/qmail`.
-    * a new target, `package`, will make a staged qmail install as a regular (non-root) user.
-    * The program `instchown` is run on the install host to set file ownership and other root-required installation steps.
-    * uid/gid lookup of qmail system accounts is now done at runtime.  
-* Build platforms
-    * FreeBSD: build on utmpx-only systems.
-    * Mac OS X: build on case-insensitive filesystems, enable compatibility mode for name resolution, work around linker error.
-* Correctness and cleanup
-    * Add missing function arguments, Makefile dependencies, and missing header files.
-    * Remove precompiled "var-qmail package" support.
+- Support utmpx in `qbiff(1)` for systems that no longer provide utmp.
+- Append `.md` extensions to `INSTALL` and `SENDMAIL` to disambiguate from `install` and `sendmail` on case-insensitive filesystems, such as HFS+.
+- Enable BIND 8 API compatibility for systems with BIND 9 resolvers.
+- Work around macOS linker error by explicitly initializing a struct.
+- Add missing function arguments, Makefile dependencies, and missing header files.
 
-All notqmail-1.07 [closed issues](https://github.com/notqmail/notqmail/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.07) and [closed PRs](https://github.com/notqmail/notqmail/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.07).
+### Make packaging easier
+
+- Fix builds on at least FreeBSD and macOS.
+- Remove precompiled "var-qmail package" support.
+- Look up qmail's UIDs and GIDs at run time, not build time.
+- Optionally build as non-root.
+- Optionally install as non-root, to a staging area, with DESTDIR.
+
+### Other changes
+
+- All [closed 1.07 issues](https://github.com/notqmail/notqmail/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.07)
+- All [closed 1.07 PRs](https://github.com/notqmail/notqmail/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.07)
 
 ## How to install
 
