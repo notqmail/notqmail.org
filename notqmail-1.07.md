@@ -14,21 +14,28 @@ This initial 1.07 release of notqmail is guided by two themes:
 
 ### Fix broken builds
 
-- Support [utmpx](https://en.wikipedia.org/wiki/Utmp) in [qbiff(1)](https://github.com/notqmail/notqmail/blob/master/qbiff.1) for systems that no longer provide utmp.
-- Append `.md` extensions to [INSTALL](https://github.com/notqmail/notqmail/blob/master/INSTALL.md) and [SENDMAIL](https://github.com/notqmail/notqmail/blob/master/SENDMAIL.md) to disambiguate from `install` and `sendmail` on case-insensitive filesystems, such as HFS+.
-- Enable BIND 8 API compatibility for systems with BIND 9 resolvers.
-- Work around macOS linker error by explicitly initializing a struct.
-- Add missing function arguments, includes, and Makefile dependencies.
+- [#24](https://github.com/notqmail/notqmail/pull/24), [#29](https://github.com/notqmail/notqmail/pull/29), [#57](https://github.com/notqmail/notqmail/pull/57): Support [utmpx](https://en.wikipedia.org/wiki/Utmp) in [qbiff(1)](https://github.com/notqmail/notqmail/blob/master/qbiff.1) for systems that no longer provide utmp.
+- [#16](https://github.com/notqmail/notqmail/pull/16): Append `.md` extensions to [INSTALL](https://github.com/notqmail/notqmail/blob/master/INSTALL.md) and [SENDMAIL](https://github.com/notqmail/notqmail/blob/master/SENDMAIL.md) to disambiguate from `install` and `sendmail` on case-insensitive filesystems, such as HFS+.
+- [#16](https://github.com/notqmail/notqmail/pull/16): Enable BIND 8 API compatibility for systems with BIND 9 resolvers.
+- [#16](https://github.com/notqmail/notqmail/pull/16): Work around macOS linker error by explicitly initializing a struct.
+- [#1](https://github.com/notqmail/notqmail/pull/1), [#20](https://github.com/notqmail/notqmail/pull/20), [#31](https://github.com/notqmail/notqmail/pull/31), [#53](https://github.com/notqmail/notqmail/pull/53), [#55](https://github.com/notqmail/notqmail/pull/55): Add missing function arguments, includes, and Makefile dependencies.
 
 ### Make packaging easier
 
 - Fix builds on at least FreeBSD and macOS.
-- Remove [precompiled var-qmail package](https://cr.yp.to/qmail/var-qmail.html) support.
-- Look up qmail's UIDs and GIDs at run time, not build time.
-- Optionally build as non-root.
-- Optionally install as non-root, to a staging area, with DESTDIR.
+- [#15](https://github.com/notqmail/notqmail/pull/15): Look up qmail's UIDs and GIDs at run time, not build time.
+- [#15](https://github.com/notqmail/notqmail/pull/15): Optionally build as non-root.
+- [#4](https://github.com/notqmail/notqmail/pull/4): Optionally install as non-root, to a staging area, with DESTDIR.
 
 ### Other changes
+
+- [#19](https://github.com/notqmail/notqmail/pull/19): Add TravisCI config.
+- [#25](https://github.com/notqmail/notqmail/pull/25) Add `.gitignore`.
+- [#15](https://github.com/notqmail/notqmail/pull/15): Remove [precompiled var-qmail package](https://cr.yp.to/qmail/var-qmail.html) support.
+- [#27](https://github.com/notqmail/notqmail/pull/27): Remove `shar` target and `FILES`.
+- [#33](https://github.com/notqmail/notqmail/pull/33): Remove `SYSDEPS`.
+- [#38](https://github.com/notqmail/notqmail/pull/38): Remove `vfork()`, fixing macOS runtime.
+- [#39](https://github.com/notqmail/notqmail/pull/39), [#42](https://github.com/notqmail/notqmail/pull/42): Update documents and URLs for notqmail.
 
 - All [closed 1.07 issues](https://github.com/notqmail/notqmail/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.07)
 - All [closed 1.07 PRs](https://github.com/notqmail/notqmail/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.07)
