@@ -75,3 +75,21 @@ Copy over `notqmail-1.07.tar.gz`, `instchown`, and `instcheck` from the build ho
 Then verify the installation, just as with a traditional qmail install:
 
     # ./instcheck
+
+### From vendor packages
+
+#### RPM
+
+    # XXX
+
+#### .deb
+
+    # XXX
+
+#### pkgsrc
+
+    $ cd mail/qmail && make install
+
+or on platforms with recent binary packages available,
+
+    # pkg_add qmail
