@@ -14,16 +14,16 @@ This initial 1.07 release of notqmail is guided by two themes:
 
 ### Fix broken builds
 
-- Support utmpx in `qbiff(1)` for systems that no longer provide utmp.
-- Append `.md` extensions to `INSTALL` and `SENDMAIL` to disambiguate from `install` and `sendmail` on case-insensitive filesystems, such as HFS+.
+- Support [utmpx](https://en.wikipedia.org/wiki/Utmp) in [qbiff(1)](https://github.com/notqmail/notqmail/blob/master/qbiff.1) for systems that no longer provide utmp.
+- Append `.md` extensions to [INSTALL](https://github.com/notqmail/notqmail/blob/master/INSTALL.md) and [SENDMAIL](https://github.com/notqmail/notqmail/blob/master/SENDMAIL.md) to disambiguate from `install` and `sendmail` on case-insensitive filesystems, such as HFS+.
 - Enable BIND 8 API compatibility for systems with BIND 9 resolvers.
 - Work around macOS linker error by explicitly initializing a struct.
-- Add missing function arguments, Makefile dependencies, and missing header files.
+- Add missing function arguments, includes, and Makefile dependencies.
 
 ### Make packaging easier
 
 - Fix builds on at least FreeBSD and macOS.
-- Remove precompiled "var-qmail package" support.
+- Remove [precompiled var-qmail package](https://cr.yp.to/qmail/var-qmail.html) support.
 - Look up qmail's UIDs and GIDs at run time, not build time.
 - Optionally build as non-root.
 - Optionally install as non-root, to a staging area, with DESTDIR.
