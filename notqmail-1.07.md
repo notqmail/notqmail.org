@@ -37,6 +37,8 @@ This initial 1.07 release of notqmail is guided by two themes:
 - [#38](https://github.com/notqmail/notqmail/pull/38): Remove `vfork()`, fixing macOS runtime.
 - [#39](https://github.com/notqmail/notqmail/pull/39), [#42](https://github.com/notqmail/notqmail/pull/42): Update documents and URLs for notqmail.
 
+### GitHub references
+
 - All [closed 1.07 issues](https://github.com/notqmail/notqmail/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.07)
 - All [closed 1.07 PRs](https://github.com/notqmail/notqmail/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.07)
 
