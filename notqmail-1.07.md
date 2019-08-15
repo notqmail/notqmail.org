@@ -10,7 +10,7 @@ _NOTE: This release is under development and not yet published._
 
 ## What's New
 
-This initial 1.07 release of notqmail is guided by two themes:
+This initial 1.07 release of notqmail is guided by two themes: **fix broken builds** and **make packaging easier**.
 
 ### Fix broken builds
 
