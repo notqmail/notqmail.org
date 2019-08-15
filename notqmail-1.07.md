@@ -48,7 +48,7 @@ This initial 1.07 release of notqmail is guided by two themes: **fix broken buil
 
 ## From source, on a single host
 
-[Life with qmail](http://www.lifewithqmail.org/lwq.html#installation) continues to apply. Note that some modern systems — we've seen at least OpenBSD, FreeBSD, and Void Linux — don't provide `nroff`. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick.
+[Life with qmail](http://www.lifewithqmail.org/lwq.html#installation) continues to apply. Note that some modern systems — we've seen at least OpenBSD, FreeBSD, and Void Linux — don't provide `nroff`. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick. Also, please read our notes about [[patches]].
 
 ## From source, to many hosts
 
