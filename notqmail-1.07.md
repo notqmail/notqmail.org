@@ -44,13 +44,15 @@ This initial 1.07 release of notqmail is guided by two themes: **fix broken buil
 
 ## How to install
 
-The instructions for building and installing notqmail on a single host are unchanged from qmail's.
+### On a single host
 
-At least one assumption has changed in the intervening years: while `nroff` remains a non-optional build dependency, some systems have stopped providing it. We've seen this on at least OpenBSD, FreeBSD, and Void Linux. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick.
+[Life with qmail](http://www.lifewithqmail.org/lwq.html#installation) continues to apply. Note that some modern systems (we've seen at least OpenBSD, FreeBSD, and Void Linux) don't provide `nroff`. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick.
 
-New in notqmail-1.07, it's easy to build a package on one machine and run it on others.
+### On many hosts
 
-### On the build host:
+notqmail makes it easy to build once, install many.
+
+#### On the build host
 
 Customize `conf-users` and `conf-groups`, if needed, and note the names. Then build, stage, and create a tarball:
 
@@ -60,13 +62,16 @@ Customize `conf-users` and `conf-groups`, if needed, and note the names. Then bu
     $ tar -C ${DESTDIR} -czf notqmail-1.07.tar.gz .
 
 
-### On the install host:
+#### On an install host
 
 Copy over `notqmail-1.07.tar.gz`, `instchown`, and `instcheck` from the build host. Extract the tarball -- e.g., with GNU Tar:
 
     # tar -C / --no-overwrite-dir -xzf notqmail-1.07.tar.gz
 
-[Create users and groups](https://github.com/notqmail/notqmail/blob/master/INSTALL.ids) with names to match the build. Set permissions on installed files, then verify the installation just as with a traditional qmail install:
+[Create users and groups](https://github.com/notqmail/notqmail/blob/master/INSTALL.ids) with names to match the build. Set permissions on installed files:
 
     # ./instchown
+
+Then verify the installation, just as with a traditional qmail install:
+
     # ./instcheck
