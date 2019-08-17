@@ -10,9 +10,9 @@ In both cases, Git can be a helpful tool.
 For your convenience, we've rebased several popular patches onto notqmail, each on its own git branch.
 How to use:
 
-1. Make sure the first commit on the branch is identical to the patch you're trying to apply.
+1. Make sure the first commit on the branch is identical to the patch you were trying to apply.
 2. Read the subsequent commits on the branch to see what we've changed and why.
-3. Diff the branch against `master`, and apply _that_ as your patch to notqmail.
+3. Diff the branch against `master`, and apply _that_ patch to notqmail.
 
 ## notqmail patch branches
 
