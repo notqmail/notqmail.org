@@ -7,7 +7,7 @@ Sometimes this is easy and mechanical.
 Other times it will require deeper understanding of C, Unix, and qmail's design and implementation.
 In both cases, Git can be a helpful tool.
 
-For your convenience, we've rebased several popular patches onto notqmail, one branch per patch.
+For your convenience, we've rebased several popular patches onto notqmail, each on its own git branch.
 How to use:
 
 1. Make sure the first commit on the branch is identical to the patch you're trying to apply.
