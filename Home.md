@@ -115,7 +115,7 @@ Expect your patchset to:
 - Gradually shrink as new notqmail releases include more of the features and bugfixes you need
 - Eventually shrink to zero, if your needs are widely shared by others
 
-In other words, you can stop maintaining your qmail fork as soon as notqmail has everything you need (which may take longer than you expect). Until then, keep it. And if you're interested to participate in notqmail development, sharing your needs and/or patches is a great place to start.
+For more, see [[Patches]].
 
 
 # How do I install notqmail?
