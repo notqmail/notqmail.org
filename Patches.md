@@ -18,4 +18,6 @@ How to use:
 
 | Original Patch | Branch | Raw Diff |
 | -------------- | ------ | -------- |
-| [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html) | [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging) | [notqmail-smtpd-logging.diff](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging.diff)
+| [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html) | [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging) | [notqmail-smtpd-logging.diff](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging.diff) |
+| [qmail-badmailfrom-wildcard](https://tomclegg.ca/qmail/#qmail-badmailfrom-wildcard) | [netqmail-badmailfrom-wildcard](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-wildcard) | [netqmail-badmailfrom-wildcard.diff](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-wildcard.diff) |
+| [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch) | [netqmail-badmailfrom-x-relayclient](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-x-relayclient) | [netqmail-badmailfrom-x-relayclient.diff](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-x-relayclient.diff) |
