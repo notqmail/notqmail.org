@@ -16,4 +16,6 @@ How to use:
 
 ## notqmail patch branches
 
-- XXX
+| Original Patch | Branch | Raw Diff |
+| -------------- | ------ | -------- |
+| [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html) | [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging) | [notqmail-smtpd-logging.diff](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging.diff)
