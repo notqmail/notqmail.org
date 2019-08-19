@@ -78,13 +78,7 @@ Then verify the installation, just as with a traditional qmail install:
 
 ## From vendor packages
 
-### RPM
-
-    # XXX
-
-### .deb
-
-    # XXX
+Binary packages for many RPM and DEB based distributions are provided through [OpenBuildService](https://software.opensuse.org//download.html?project=home%3Anotqmail&package=notqmail).
 
 ### pkgsrc
 
