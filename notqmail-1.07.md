@@ -25,8 +25,7 @@ This initial 1.07 release of notqmail is guided by two themes: **fix broken buil
 
 - Fix builds on at least FreeBSD and macOS.
 - [#15](https://github.com/notqmail/notqmail/pull/15): Look up qmail's UIDs and GIDs at run time, not build time.
-- [#15](https://github.com/notqmail/notqmail/pull/15): Optionally build as non-root.
-- [#4](https://github.com/notqmail/notqmail/pull/4): Optionally install as non-root, to a staging area, with DESTDIR.
+- [#4](https://github.com/notqmail/notqmail/pull/4), [#15](https://github.com/notqmail/notqmail/pull/15): Optionally install as non-root, to a staging area, with DESTDIR.
 
 ## Other changes
 
