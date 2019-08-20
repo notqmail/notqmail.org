@@ -58,13 +58,13 @@ Customize `conf-users` and `conf-groups`, if needed, and note the names. Then bu
     $ make it man
     $ export DESTDIR=/path/to/staging/directory
     $ make package
-    $ tar -C ${DESTDIR} -czf notqmail-1.07.tar.gz .
+    $ tar -C ${DESTDIR} -czf notqmail-bin-1.07.tar.gz .
 
 ### On an install host
 
-Copy over `notqmail-1.07.tar.gz`, `instchown`, and `instcheck` from the build host. Extract the tarball -- e.g., with GNU Tar:
+Copy over `notqmail-bin-1.07.tar.gz`, `instchown`, and `instcheck` from the build host. Extract the tarball -- e.g., with GNU Tar:
 
-    # tar -C / --no-overwrite-dir -xzf notqmail-1.07.tar.gz
+    # tar -C / --no-overwrite-dir -xzf notqmail-bin-1.07.tar.gz
 
 [Create users and groups](https://github.com/notqmail/notqmail/blob/master/INSTALL.ids) with names to match the build. Set permissions on installed files:
 
