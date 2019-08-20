@@ -1,5 +1,3 @@
-_NOTE: This release is under development and not yet published._
-
 # What is notqmail?
 
 _It's not qmail. It's also not netqmail._
