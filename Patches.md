@@ -16,10 +16,16 @@ How to use:
 
 ## notqmail patch branches
 
-| Original Patch | Branch | Raw Diff |
-| -------------- | ------ | -------- |
-| [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html) | [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging) | [notqmail-smtpd-logging.diff](https://github.com/notqmail/notqmail/compare/notqmail-smtpd-logging.diff) |
-| [qmail-badmailfrom-wildcard](https://tomclegg.ca/qmail/#qmail-badmailfrom-wildcard) | [netqmail-badmailfrom-wildcard](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-wildcard) | [netqmail-badmailfrom-wildcard.diff](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-wildcard.diff) |
-| [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch) | [netqmail-badmailfrom-x-relayclient](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-x-relayclient) | [netqmail-badmailfrom-x-relayclient.diff](https://github.com/notqmail/notqmail/compare/netqmail-badmailfrom-x-relayclient.diff) |
-| [big-concurrency](http://qmailorg.schmonz.com/big-concurrency.patch) | [netqmail-big-concurrency](https://github.com/notqmail/notqmail/compare/netqmail-big-concurrency) | [netqmail-big-concurrency.diff](https://github.com/notqmail/notqmail/compare/netqmail-big-concurrency.diff) |
-| [big-todo](http://qmailorg.schmonz.com/big-todo.103.patch) | [netqmail-big-todo](https://github.com/notqmail/notqmail/compare/netqmail-big-todo) | [netqmail-big-todo.diff](https://github.com/notqmail/notqmail/compare/netqmail-big-todo.diff) |
+| Branch | Original Patch |
+| ------ | -------------- |
+| [notqmail-badmailfrom-wildcard](https://github.com/notqmail/notqmail/commits/notqmail-badmailfrom-wildcard) | Tom Clegg's [badmailfrom wildcard](https://tomclegg.ca/qmail/#qmail-badmailfrom-wildcard) |
+| [notqmail-badmailfrom-x-relayclient](https://github.com/notqmail/notqmail/commits/notqmail-badmailfrom-x-relayclient) | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
+| [notqmail-big-concurrency](https://github.com/notqmail/notqmail/commits/notqmail-big-concurrency) | Johannes Erdfelt's [big-concurrency](http://qmailorg.schmonz.com/big-concurrency.patch) |
+| [notqmail-big-todo](https://github.com/notqmail/notqmail/commits/notqmail-big-todo) | Russell Nelson's [big-todo](http://qmailorg.schmonz.com/big-todo.103.patch)
+| [notqmail-dns-any-to-cname](https://github.com/notqmail/notqmail/commits/notqmail-dns-any-to-cname) |  Jonathan de Boyne Pollard's any-to-cname |
+| [notqmail-dns-oversize](https://github.com/notqmail/notqmail/commits/notqmail-dns-oversize) | Christopher K. Davis's oversize DNS packet |
+| [notqmail-ext-todo](https://github.com/notqmail/notqmail/commits/notqmail-ext-todo) | André Opperman's ext_todo or "silly qmail syndrome" |
+| [notqmail-smtp-auth](https://github.com/notqmail/notqmail/commits/notqmail-smtp-auth) | Erwin Hoffmann's [smptauth](https://www.fehcom.de/qmail/smtpauth.html#PATCHES)
+| [notqmail-smtp-tls](https://github.com/notqmail/notqmail/commits/notqmail-smtp-tls) | Frederik Vermeulen's [qmail-smtp-tls](http://inoa.net/qmail-tls/)
+| [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-logging) | Andrew Richards' [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html) |
+| [notqmail-smtpd-spf](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-spf) | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/) |
