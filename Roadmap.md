@@ -8,7 +8,7 @@ notqmail is a fork of netqmail-1.06. The notqmail release roadmap:
 - Stage installation into `${DESTDIR}`
 - Look up UIDs and GIDs at runtime (and build without requiring qmail system accounts as a regular, non-`root` user)
 
-# 1.08
+# [[1.08|notqmail-1.08]]
 ## Debian (deb) and RedHat (rpm) packaging
 - FHS-aware (default on): `/var/qmail` contains symlinks to FHS-compatible paths
 - FHS-strict (default off): `/var/qmail` does not exist
