@@ -45,6 +45,8 @@ This initial 1.07 release of notqmail is guided by two themes: **fix broken buil
 
 ## From source, on a single host
 
+Fetch the [1.07 release in your preferred archive format](https://github.com/notqmail/notqmail/releases/tag/notqmail-1.07).
+
 [Life with qmail](http://www.lifewithqmail.org/lwq.html#installation) continues to apply. Note that some modern systems — we've seen at least OpenBSD, FreeBSD, and Void Linux — don't provide `nroff`. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick. Also, please read our notes about [[patches]].
 
 ## From source, to many hosts
