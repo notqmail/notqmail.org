@@ -32,7 +32,7 @@ This initial 1.07 release of notqmail is guided by two themes: **fix broken buil
 - Remove [precompiled var-qmail package](https://cr.yp.to/qmail/var-qmail.html) support. ([#15](https://github.com/notqmail/notqmail/pull/15))
 - Remove `shar` target and `FILES`. ([#27](https://github.com/notqmail/notqmail/pull/27))
 - Remove `SYSDEPS`. ([#33](https://github.com/notqmail/notqmail/pull/33))
-- Remove `vfork()`, fixing macOS runtime. ([#38](https://github.com/notqmail/notqmail/pull/38))
+- Replace `vfork()` with `fork()`, fixing macOS runtime. ([#38](https://github.com/notqmail/notqmail/pull/38))
 - Update documents and URLs for notqmail. ([#39](https://github.com/notqmail/notqmail/pull/39), [#42](https://github.com/notqmail/notqmail/pull/42))
 
 ## GitHub references
