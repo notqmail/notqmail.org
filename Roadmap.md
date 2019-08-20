@@ -1,6 +1,6 @@
 notqmail is a fork of netqmail-1.06. The notqmail release roadmap:
 
-# [[1.07|notqmail-1.07]]
+# [[1.07|notqmail-1.07]], released 19 August 2019
 ## Fix broken builds
 - FreeBSD
 - Mac OS X
