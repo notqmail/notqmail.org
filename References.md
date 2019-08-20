@@ -45,6 +45,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+- GeekLAN, Mon 29 Jul 2019: [Something blogged (on pkgsrcCon 2019)](https://www.geeklan.co.uk/?p=2392)
 - O'Reilly, Mon 29 Jul 2019: [Four short links, Nat Torkington](https://www.oreilly.com/ideas/four-short-links-29-july-2019)
 - Lobste.rs, Sun 28 Jul 2019: [Notqmail: Collaborative open-source successor to qmail](https://lobste.rs/s/2r3stk/notqmail_collaborative_open_source)
 - Hacker News, Sun 28 Jul 2019: [Notqmail: Collaborative open-source successor to qmail](https://news.ycombinator.com/item?id=20549983)
