@@ -83,6 +83,7 @@ Some known big ones:
 - SMTP recipient validation
 - AUTH
 - TLS
+- IPv6
 - SPF
 - SRS
 - DKIM
