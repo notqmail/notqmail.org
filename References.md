@@ -45,7 +45,8 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
-- Lobste.rs, Tue 20 Aug 2019: [notqmail-1.07: portability and correctness, binary packaging release ](https://lobste.rs/s/kvsqqr/notqmail_1_07_portability_correctness)
+- Hacker News, Tue 20 Aug 2019: [Announcing notqmail](https://news.ycombinator.com/item?id=20752671)
+- Lobste.rs, Tue 20 Aug 2019: [notqmail-1.07: portability and correctness, binary packaging release](https://lobste.rs/s/kvsqqr/notqmail_1_07_portability_correctness)
 - A Fresh Cup, Wed 07 Aug 2019: [Double Shot #2402](https://afreshcup.com/home/2019/08/07/double-shot-2402)
 - GeekLAN, Mon 29 Jul 2019: [Something blogged (on pkgsrcCon 2019)](https://www.geeklan.co.uk/?p=2392)
 - O'Reilly, Mon 29 Jul 2019: [Four short links, Nat Torkington](https://www.oreilly.com/ideas/four-short-links-29-july-2019)
