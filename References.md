@@ -45,6 +45,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+- pro-linux.de, Wed Aug 21 2019: [notqmail will Qmail-Forks konsolidieren](https://www.pro-linux.de/news/1/27365/notqmail-will-qmail-forks-konsolidieren.html) (German, "notqmail wants to consolidate qmail forks")
 - Hacker News, Tue 20 Aug 2019: [Announcing notqmail](https://news.ycombinator.com/item?id=20752671)
 - Lobste.rs, Tue 20 Aug 2019: [notqmail-1.07: portability and correctness, binary packaging release](https://lobste.rs/s/kvsqqr/notqmail_1_07_portability_correctness)
 - A Fresh Cup, Wed 07 Aug 2019: [Double Shot #2402](https://afreshcup.com/home/2019/08/07/double-shot-2402)
