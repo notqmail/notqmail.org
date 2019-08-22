@@ -11,6 +11,11 @@
 - Uses new and improved conventions, where we're trying to do that
 - Has at least two reviewers' approval, and no significant objections
 
+## We'd like to further require...
+
+- Passes static analysis
+- Passes fuzzing
+- Architecture changes (if any) do not break the security model
 
 # To iterate on a PR, we...
 
