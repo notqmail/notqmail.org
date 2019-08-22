@@ -47,6 +47,7 @@ _We'll trade away other things to get these._
 
 We prioritize:
 
+- Preserving qmail's hard-earned security properties
 - Implementing new features (or alternatives to core components) as "extensions"
 - Adding interfaces and seams, where needed, to make extensions possible
 - Encouraging multiple initial implementations of X, for any X
