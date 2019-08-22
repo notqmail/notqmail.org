@@ -20,7 +20,7 @@ Help us fill this in!
 | Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
 | NetBSD       |          8.1 | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     | @schmonz  |
 | NixOS        |        19.03 |               |              |              |           |
-| OpenBSD      |          6.5 | y+pkgsrc      | y+pkgsrc     |              |           |
+| OpenBSD      |          6.5 | y+pkgsrc      | y+pkgsrc     |              |@xenotrope |
 | Tribblix     |       0m20.5 | y+pkgsrc      | y+pkgsrc     |              |           |
 | Ubuntu       | Trusty 14.04 |               |              |              |           |
 | Ubuntu       | Xenial 16.04 | y+pkgsrc      | y+pkgsrc     |              |           |
