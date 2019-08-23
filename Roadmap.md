@@ -1,4 +1,4 @@
-notqmail is a fork of netqmail-1.06. The notqmail release roadmap:
+The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a fork of netqmail-1.06. The notqmail release roadmap:
 
 # [[1.08|notqmail-1.08]]
 - qmail-remote (extension interface preview)
