@@ -24,11 +24,13 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - Frederik Vermeulen's [Qmail-TLS patch](http://inoa.net/qmail-tls/)
 - Eben Pratt's [list of recipient checkers](http://www.netdevice.com/qmail/rcptck)
 
+
 ## Add-ons
 
 - [schmonz](https://github.com/schmonz)'s [acceptutils](https://schmonz.com/qmail/acceptutils)
 - [schmonz](https://github.com/schmonz)'s [rejectutils](https://schmonz.com/qmail/rejectutils)
 - [DerDakon](https://github.com/DerDakon)'s [Qsmtp](https://github.com/DerDakon/Qsmtp)
+- [Jan Mojžíš](https://github.com/janmojzis)'s [qremote](https://mojzis.com/software/qremote/)
 
 
 ## Community Wisdom
