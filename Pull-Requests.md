@@ -15,6 +15,7 @@
 
 - Passes static analysis
 - Passes fuzzing
+- Passes tests
 - Architecture changes (if any) do not break the security model
 
 # To iterate on a PR, we...
