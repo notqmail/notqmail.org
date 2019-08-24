@@ -73,7 +73,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - merge big-todo (changes queue layout)
 - increase default conf-split to 31 (changes queue layout)
 - merge ext-todo
-  - add a manpage (issue [#23](https://github.com/notqmail/notqmail/issues/23)
+  - add a qmail-todo manpage, issue [#23](https://github.com/notqmail/notqmail/issues/23)
 - merge netqmail-big-concurrency
 - [qmail-ldap](http://www.nrg4u.com), or enough interfaces to let extensions provide LDAP integration
 - make sure everything works with vmailmgr, vpopmail, other approaches to "virtual users"
