@@ -28,8 +28,9 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
       - [#65](https://github.com/notqmail/notqmail/pull/65) fix usage of most POSIX functions
-      - [#43](https://github.com/notqmail/notqmail/pull/43) cleanup: remove readwrite.h, use unistd.h instead.
-      - [#44](https://github.com/notqmail/notqmail/pull/44) cleanup: remove exit.h, use unistd.h instead.
+      - [#80](https://github.com/notqmail/notqmail/pull/80) include unistd.h in readwrite.h.
+      - [#79](https://github.com/notqmail/notqmail/pull/79) include unistd.h in exit.h.
+      - [#81](https://github.com/notqmail/notqmail/pull/81) include stdlib.h in alloc.c.
     - types
       - [#45](https://github.com/notqmail/notqmail/pull/45) use uid_t and gid_t in prot.c
       - [#70](https://github.com/notqmail/notqmail/pull/70) remove register storage class declaration from codebase.
@@ -63,6 +64,11 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
 - publish qmail-qmtpd and qmail-qmtpc as extensions.
+- code standardization
+  - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
+    - headers
+      - [#43](https://github.com/notqmail/notqmail/pull/43) cleanup: remove readwrite.h, use unistd.h instead.
+      - [#44](https://github.com/notqmail/notqmail/pull/44) cleanup: remove exit.h, use unistd.h instead.
 
 # 2.0
 ## queue-breaker release
