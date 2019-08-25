@@ -68,8 +68,8 @@ _We'll trade very little of these to get other things._
 We wish to avoid:
 
 - Breaking compatibility
-- Breaking your patches
 - Breaking existing features of the architecture
+- Breaking your patches more than necessary
 - Modifying or replacing core components
 
 Given the reasons qmail is valuable to us, the cost of a change that exhibits any of the preceding non-goals is high. Proposing one such change will require unusually strong justification, documentation, testing, and design. For the community to accept such a change, the risk must be demonstrably _very_ low and the benefit _very_ high.
