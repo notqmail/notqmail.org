@@ -3,7 +3,6 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 # [[1.08|notqmail-1.08]]
 - qmail-remote (extension interface preview)
   - [#46](https://github.com/notqmail/notqmail/pull/46) Run alternate qmail-remote by setting QMAILREMOTE. (just like QMAILQUEUE.)
-  - [#50](https://github.com/notqmail/notqmail/pull/50) This adds spawn-filter binary for filtering message passed to qmail-remote/qmail-local
 - [#35](https://github.com/notqmail/notqmail/pull/35) FHS (issue [#2](https://github.com/notqmail/notqmail/issues/2))
   - split conf-qmail in to conf-qmail-bin, conf-qmail-queue, conf-qmail-man, etc.
   - `/var/qmail/DIR` unless `/var/qmail` not in `conf-qmail`
@@ -62,6 +61,8 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 ## Introduce new programming interfaces for use by extensions
 - No functional changes intended
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
+- Extension interface
+  - [#50](https://github.com/notqmail/notqmail/pull/50) This adds spawn-filter binary for filtering message passed to qmail-remote/qmail-local
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
 - publish qmail-qmtpd and qmail-qmtpc as extensions.
 - code standardization
