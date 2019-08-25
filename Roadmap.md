@@ -66,6 +66,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
     - headers
       - [#43](https://github.com/notqmail/notqmail/pull/43) cleanup: remove readwrite.h, use unistd.h instead.
       - [#44](https://github.com/notqmail/notqmail/pull/44) cleanup: remove exit.h, use unistd.h instead.
+      - cleanup: remove fork.h, use unistd.h instead.
   - Update time-handling code to libtai
   - Update DNS code to djbdns
   - Refactor qmail-remote to call tcpclient
