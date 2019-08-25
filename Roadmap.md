@@ -20,7 +20,6 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - [#37](https://github.com/notqmail/notqmail/pull/37) fix overflow in alloc.c
   - issue [#47](https://github.com/notqmail/notqmail/pull/47) Don't let qmail-pop3d run as root
   - Link with [syncdir](http://untroubled.org/syncdir/)
-  - [TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
   - [Revised Maildir protocol](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
   - [Big DNS](https://www.ckdhr.com/ckd/qmail-103.patch)
 - code standardization
@@ -55,21 +54,21 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 
 # 1.9
 ## Introduce new programming interfaces for use by extensions
-- No functional changes intended
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 - Extension interface
   - [#50](https://github.com/notqmail/notqmail/pull/50) This adds spawn-filter binary for filtering message passed to qmail-remote/qmail-local
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
+- Refactor qmail-remote to call tcpclient
 - publish qmail-qmtpd and qmail-qmtpc as extensions.
+- bugfixes
+  - [TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
+  - Update DNS code to djbdns
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
       - [#43](https://github.com/notqmail/notqmail/pull/43) cleanup: remove readwrite.h, use unistd.h instead.
       - [#44](https://github.com/notqmail/notqmail/pull/44) cleanup: remove exit.h, use unistd.h instead.
       - cleanup: remove fork.h, use unistd.h instead.
-  - Update time-handling code to libtai
-  - Update DNS code to djbdns
-  - Refactor qmail-remote to call tcpclient
 
 # 2.0
 ## queue-breaker release
