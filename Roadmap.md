@@ -13,7 +13,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
     - deb and rpm builds.  (was issue [#59](https://github.com/notqmail/notqmail/issues/59))
   - FHS-aware (default on): `/var/qmail` contains symlinks to FHS-compatible paths
   - FHS-strict (default off): `/var/qmail` does not exist
-  - make packaging documentation optional.  pr#56 Don't install catted manpages
+  - make packaging documentation optional.  ([#56](https://github.com/notqmail/notqmail/pull/56) Don't install catted manpages)
   - [#61](https://github.com/notqmail/notqmail/pull/61) Extract an "instqueue" program from instpackage.
 - bugfixes
   - [#8](https://github.com/notqmail/notqmail/pull/8) qmail-inject: do not parse header recipients if "-a" is given
