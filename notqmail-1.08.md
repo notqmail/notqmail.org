@@ -4,6 +4,16 @@ _NOTE: This release is under development and not yet published._
 
 _It's not qmail. It's also not netqmail._
 
+# What's new?
+
+## Other changes
+
+- remove dnscname and dnsmxip ([#69](https://github.com/notqmail/notqmail/pull/69))
+- remove unused variable r in maildir.c. ([#78](https://github.com/notqmail/notqmail/pull/78))
+- include unistd.h in readwrite.h. ([#80](https://github.com/notqmail/notqmail/pull/80))
+- include stdlib.h in alloc.c. ([#81](https://github.com/notqmail/notqmail/pull/81))
+- include sys/types.h, unistd.h in fork.h. ([#82](https://github.com/notqmail/notqmail/pull/82))
+
 ## GitHub references
 
 - All [closed 1.08 issues](https://github.com/notqmail/notqmail/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.08)
