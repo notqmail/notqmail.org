@@ -50,6 +50,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - code cleanup
   - [#30](https://github.com/notqmail/notqmail/pull/30) use <stdint.h> to get a really portable 32 bit unsigned type
   - [#70](https://github.com/notqmail/notqmail/pull/70) remove register storage class declaration from codebase.
+  - [#87](https://github.com/notqmail/notqmail/pull/87) Remove qsmhook, long since replaced by preline.
 
 # 1.9
 ## Introduce new programming interfaces for use by extensions
@@ -62,6 +63,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - DJBization:
   - Replace time-handling code with libtai
   - Replace DNS resolver code with djbdns's
+  - [#88](https://github.com/notqmail/notqmail/issues/88) Use mess822.
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
