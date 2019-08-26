@@ -73,7 +73,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 ## queue-breaker release
 - new build time defaults for on-disk queue
 - add queue repair tool.
-  - [#67](https://github.com/notqmail/notqmail/pull/67) remove qmail-upg
+  - [#67](https://github.com/notqmail/notqmail/pull/67) remove qmail-upq
 -- including the ability to upgrade a 1.x queue to 2.x in-place.
 - merge big-todo (changes queue layout)
 - increase default conf-split to 31 (changes queue layout)
