@@ -20,7 +20,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - [#37](https://github.com/notqmail/notqmail/pull/37) fix overflow in alloc.c
   - issue [#47](https://github.com/notqmail/notqmail/pull/47) Don't let qmail-pop3d run as root
   - Link with [syncdir](http://untroubled.org/syncdir/)
-  - [Fix TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch) with @xenotrope's minimal patch
+  - [#89](https://github.com/notqmail/notqmail/pull/89) [Fix TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
   - [Revised Maildir protocol](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
   - [Big DNS](https://www.ckdhr.com/ckd/qmail-103.patch)
 - code standardization
