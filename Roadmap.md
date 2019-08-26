@@ -61,6 +61,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - Refactor qmail-remote to call tcpclient
 - publish qmail-qmtpd and qmail-qmtpc as extensions.
 - DJBization:
+  - Replace substdio with buffer
   - Replace time-handling code with libtai
   - Replace DNS resolver code with djbdns's
   - [#88](https://github.com/notqmail/notqmail/issues/88) Use mess822.
