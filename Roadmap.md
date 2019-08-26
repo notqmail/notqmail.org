@@ -49,7 +49,6 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - [#68](https://github.com/notqmail/notqmail/pull/68) remove TODO.
 - code cleanup
   - [#30](https://github.com/notqmail/notqmail/pull/30) use <stdint.h> to get a really portable 32 bit unsigned type
-  - [#58](https://github.com/notqmail/notqmail/pull/58) TravisCI: minor improvements
   - [#70](https://github.com/notqmail/notqmail/pull/70) remove register storage class declaration from codebase.
 
 # 1.9
