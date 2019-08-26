@@ -10,6 +10,8 @@ _It's not qmail. It's also not netqmail._
 
 - remove systype and attendant platform detection ([#34](https://github.com/notqmail/notqmail/pull/34))
 - TravisCI: move setting MAKEFLAGS out of the script and in to the matrix. ([#58](https://github.com/notqmail/notqmail/pull/58))
+- add missing function declarations in cdbmss.h, scan.h ([#64](https://github.com/notqmail/notqmail/pull/64))
+- create hier.h to include in instcheck.c, instchown.c, instpackage.c ([#64](https://github.com/notqmail/notqmail/pull/64))
 - remove dnscname and dnsmxip ([#69](https://github.com/notqmail/notqmail/pull/69))
 - remove unused variable r in maildir.c. ([#78](https://github.com/notqmail/notqmail/pull/78))
 - include unistd.h in readwrite.h. ([#80](https://github.com/notqmail/notqmail/pull/80))
