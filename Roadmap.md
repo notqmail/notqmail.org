@@ -20,6 +20,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - [#37](https://github.com/notqmail/notqmail/pull/37) fix overflow in alloc.c
   - issue [#47](https://github.com/notqmail/notqmail/pull/47) Don't let qmail-pop3d run as root
   - Link with [syncdir](http://untroubled.org/syncdir/)
+  - [Fix TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch) with @xenotrope's minimal patch
   - [Revised Maildir protocol](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
   - [Big DNS](https://www.ckdhr.com/ckd/qmail-103.patch)
 - code standardization
@@ -59,8 +60,8 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - Refactor qmail-remote to call tcpclient
 - publish qmail-qmtpd and qmail-qmtpc as extensions.
 - bugfixes
-  - [TAI system clock](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
-  - Update DNS code to djbdns
+  - Replace time-handling code with libtai
+  - Replace DNS resolver code with djbdns's
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
