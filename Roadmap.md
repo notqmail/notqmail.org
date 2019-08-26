@@ -65,6 +65,9 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - Replace time-handling code with libtai
   - Replace DNS resolver code with djbdns's
   - [#88](https://github.com/notqmail/notqmail/issues/88) Use mess822.
+  - Replace poll/select with iopause
+    - Possibly add kqueue and/or epoll support to iopause
+  - Support slashpackage installation
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
