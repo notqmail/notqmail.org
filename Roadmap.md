@@ -59,7 +59,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
 - Refactor qmail-remote to call tcpclient
 - publish qmail-qmtpd and qmail-qmtpc as extensions.
-- bugfixes
+- DJBization:
   - Replace time-handling code with libtai
   - Replace DNS resolver code with djbdns's
 - code standardization
