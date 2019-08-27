@@ -7,13 +7,14 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - split conf-qmail in to conf-qmail-bin, conf-qmail-queue, conf-qmail-man, etc.
   - `/var/qmail/DIR` unless `/var/qmail` not in `conf-qmail`
   - Configuration sugar: `./configure && make && make install` (issue [#9](https://github.com/notqmail/notqmail/issues/9))
-- Debian (deb) and RedHat (rpm) packaging
+- Debian (deb), RedHat (rpm), and /package packaging
   - [#76](https://github.com/notqmail/notqmail/pull/76) binary builds on openSUSE build service and locally
     - deb and rpm builds.  (was issue [#59](https://github.com/notqmail/notqmail/issues/59))
   - FHS-aware (default on): `/var/qmail` contains symlinks to FHS-compatible paths
   - FHS-strict (default off): `/var/qmail` does not exist
   - make packaging documentation optional.  ([#56](https://github.com/notqmail/notqmail/pull/56) Don't install catted manpages)
   - [#61](https://github.com/notqmail/notqmail/pull/61) Extract an "instqueue" program from instpackage.
+  - issue [#91](https://github.com/notqmail/notqmail/issues/91) Include support for slashpackage-format packages
 - bugfixes
   - [#8](https://github.com/notqmail/notqmail/pull/8) qmail-inject: do not parse header recipients if "-a" is given
   - [#18](https://github.com/notqmail/notqmail/pull/18) qmail-remote: avoid recoding CRLF to CRCRLF
@@ -67,7 +68,6 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - [#88](https://github.com/notqmail/notqmail/issues/88) Use mess822.
   - Replace poll/select with iopause
     - Possibly add kqueue and/or epoll support to iopause
-  - Support slashpackage installation
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
