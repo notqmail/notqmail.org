@@ -59,14 +59,15 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
 - Extension interface
   - [#50](https://github.com/notqmail/notqmail/pull/50) This adds spawn-filter binary for filtering message passed to qmail-remote/qmail-local
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
-- Refactor qmail-remote to call tcpclient
-- publish qmail-qmtpd and qmail-qmtpc as extensions.
+- Refactor `qmail-remote` to call an admin-configurable `tcpclient`.
+- Publish `qmail-popup`, `qmail-pop3d`, `qmail-qmtpd`, and `qmail-qmtpc` as extensions.
 - DJBization:
-  - Replace substdio with buffer
-  - Replace time-handling code with libtai
-  - Replace DNS resolver code with djbdns's
-  - [#88](https://github.com/notqmail/notqmail/issues/88) Use mess822.
-  - Replace poll/select with iopause
+  - Replace [stralloc](https://cr.yp.to/lib/stralloc.html) with [array](https://cr.yp.to/lib/array.html)
+  - Replace substdio with [buf](https://cr.yp.to/lib/buffer_get.html)[fer](https://cr.yp.to/lib/buffer_put.html)
+  - Replace time-handling code with [libtai](https://cr.yp.to/libtai/tai.html)
+  - Replace DNS resolver code with [djbdns's](https://cr.yp.to/djbdns/dns.html)
+  - [#88](https://github.com/notqmail/notqmail/issues/88) Use [mess822](https://cr.yp.to/mess822.html).
+  - Replace poll/select with [iopause](https://cr.yp.to/lib/iopause.html)
     - Possibly add kqueue and/or epoll support to iopause
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
