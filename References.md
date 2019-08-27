@@ -47,8 +47,10 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+- mag.osdn.jp, Fri Aug 23 2019: [コミュニティ主導のqmailフォークプロジェクト「notqmail」が立ち上げられる](https://mag.osdn.jp/19/08/23/160000.amp) (Japanese, "Community-led qmail fork project 'notqmail' launched")
 - linux-magazin.de, Thu Aug 22 2019: [Notqmail forkt Qmail](https://www.linux-magazin.de/news/notqmail-forkt-qmail/) (German, "notqmail forks qmail")
 - linux-os.net, Thu Aug 22 2019: [Notqmail una bifurcación de qmail](https://linux-os.net/notqmail-una-bifurcacion-de-qmail/) (Spanish, "notqmail, a fork of qmail")
+- opennet.ru, Wed Aug 21 2019: [Представлен notqmail, форк почтового сервера qmail](https://www.opennet.ru/opennews/art.shtml?num=51326) (Russian, "notqmail introduced, fork of qmail mail server")
 - pro-linux.de, Wed Aug 21 2019: [notqmail will Qmail-Forks konsolidieren](https://www.pro-linux.de/news/1/27365/notqmail-will-qmail-forks-konsolidieren.html) (German, "notqmail wants to consolidate qmail forks")
 - Reddit /r/GCU_Squad, Tue 20 Aug 2019: [Announcing the initial 1.07 release of notqmail, a community-driven fork of qmail](https://www.reddit.com/r/GCU_Squad/comments/ct0o89/announcing_the_initial_107_release_of_notqmail_a/)
 - Hacker News, Tue 20 Aug 2019: [Announcing notqmail](https://news.ycombinator.com/item?id=20752671)
