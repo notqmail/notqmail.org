@@ -47,9 +47,10 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
-- linux-magazin.de, Tue Aug 22 2019: [Notqmail forkt Qmail](https://www.linux-magazin.de/news/notqmail-forkt-qmail/) (German, "notqmail forks qmail")
-- linux-os.net, Tue Aug 22 2019: [Notqmail una bifurcación de qmail](https://linux-os.net/notqmail-una-bifurcacion-de-qmail/) (Spanish, "notqmail, a fork of qmail")
+- linux-magazin.de, Thu Aug 22 2019: [Notqmail forkt Qmail](https://www.linux-magazin.de/news/notqmail-forkt-qmail/) (German, "notqmail forks qmail")
+- linux-os.net, Thu Aug 22 2019: [Notqmail una bifurcación de qmail](https://linux-os.net/notqmail-una-bifurcacion-de-qmail/) (Spanish, "notqmail, a fork of qmail")
 - pro-linux.de, Wed Aug 21 2019: [notqmail will Qmail-Forks konsolidieren](https://www.pro-linux.de/news/1/27365/notqmail-will-qmail-forks-konsolidieren.html) (German, "notqmail wants to consolidate qmail forks")
+- Reddit /r/GCU_Squad, Tue 20 Aug 2019: [Announcing the initial 1.07 release of notqmail, a community-driven fork of qmail](https://www.reddit.com/r/GCU_Squad/comments/ct0o89/announcing_the_initial_107_release_of_notqmail_a/)
 - Hacker News, Tue 20 Aug 2019: [Announcing notqmail](https://news.ycombinator.com/item?id=20752671)
 - Linux Weekly News, Tue Aug 20 2019: [Announcing notqmail](https://lwn.net/Articles/796794/)
 - Lobste.rs, Tue 20 Aug 2019: [notqmail-1.07: portability and correctness, binary packaging release](https://lobste.rs/s/kvsqqr/notqmail_1_07_portability_correctness)
