@@ -19,7 +19,7 @@ The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a f
   - [#8](https://github.com/notqmail/notqmail/pull/8) qmail-inject: do not parse header recipients if "-a" is given
   - [#18](https://github.com/notqmail/notqmail/pull/18) qmail-remote: avoid recoding CRLF to CRCRLF
   - [#37](https://github.com/notqmail/notqmail/pull/37) fix overflow in alloc.c
-  - issue [#47](https://github.com/notqmail/notqmail/pull/47) Don't let qmail-pop3d run as root
+  - [#92](https://github.com/notqmail/notqmail/pull/92), issue [#47](https://github.com/notqmail/notqmail/pull/47) qmail-pop3d: exit 1, pronto, if running as root.
   - Link with [syncdir](http://untroubled.org/syncdir/)
   - [#89](https://github.com/notqmail/notqmail/pull/89) Fix leap second handling on systems running TAI ([original patch](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch))
   - [#90](https://github.com/notqmail/notqmail/pull/90) Improve Maildir file uniqueness in qmail-local.c ([original patch](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch))
