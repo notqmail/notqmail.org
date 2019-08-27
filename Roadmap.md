@@ -1,8 +1,6 @@
-The current release is [[notqmail-1.07]], released 19 Aug 2019.  notqmail is a fork of netqmail-1.06. The notqmail release roadmap:
+The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a fork of netqmail 1.06. The notqmail release roadmap:
 
-# [[1.08|notqmail-1.08]]
-- qmail-remote (extension interface preview)
-  - [#46](https://github.com/notqmail/notqmail/pull/46) Run alternate qmail-remote by setting QMAILREMOTE. (just like QMAILQUEUE.)
+# [[1.08|notqmail 1.08]]
 - [#35](https://github.com/notqmail/notqmail/pull/35) FHS (issue [#2](https://github.com/notqmail/notqmail/issues/2))
   - split conf-qmail in to conf-qmail-bin, conf-qmail-queue, conf-qmail-man, etc.
   - `/var/qmail/DIR` unless `/var/qmail` not in `conf-qmail`
