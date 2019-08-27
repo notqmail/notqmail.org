@@ -47,6 +47,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+- linux-os.net, Tue Aug 22 2019: [Notqmail una bifurcación de qmail](https://linux-os.net/notqmail-una-bifurcacion-de-qmail/) (Spanish, "notqmail, a fork of qmail")
 - pro-linux.de, Wed Aug 21 2019: [notqmail will Qmail-Forks konsolidieren](https://www.pro-linux.de/news/1/27365/notqmail-will-qmail-forks-konsolidieren.html) (German, "notqmail wants to consolidate qmail forks")
 - Hacker News, Tue 20 Aug 2019: [Announcing notqmail](https://news.ycombinator.com/item?id=20752671)
 - Linux Weekly News, Tue Aug 20 2019: [Announcing notqmail](https://lwn.net/Articles/796794/)
