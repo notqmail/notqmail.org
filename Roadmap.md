@@ -69,6 +69,7 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
     - Possibly add kqueue and/or epoll support to iopause
   - Replace exec (and related env_puts) with [pathexec](https://cr.yp.to/lib/pathexec.html)
   - Update to latest [cdb](https://cr.yp.to/cdb/reading.html)
+  - Use [socket](https://cr.yp.to/lib/socket.html) for any remaining networking code that's still necessary
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
