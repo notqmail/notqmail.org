@@ -21,7 +21,7 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
   - issue [#94](https://github.com/notqmail/notqmail/issues/94) syncdir, or something like it
   - [#89](https://github.com/notqmail/notqmail/pull/89) Fix leap second handling on systems running TAI ([original patch](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch))
   - [#90](https://github.com/notqmail/notqmail/pull/90) Improve Maildir file uniqueness in qmail-local.c ([original patch](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch))
-  - Jonathan de Boyne Pollard's [any-to-cname patch](https://github.com/notqmail/notqmail/compare/notqmail-dns-any-to-cname)
+  - [#97](https://github.com/notqmail/notqmail/pull/97) Apply Jonathan de Boyne Pollard's any-to-cname patch.
   - Christopher K. Davis's [oversize DNS packet patch](https://github.com/notqmail/notqmail/compare/notqmail-dns-oversize)
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
