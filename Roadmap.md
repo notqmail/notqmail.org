@@ -48,9 +48,9 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
 - code cleanup
   - [#30](https://github.com/notqmail/notqmail/pull/30) use <stdint.h> to get a really portable 32 bit unsigned type
   - [#70](https://github.com/notqmail/notqmail/pull/70) remove register storage class declaration from codebase.
-  - [#87](https://github.com/notqmail/notqmail/pull/87) Remove qsmhook, long since replaced by preline.
 
 # 1.9
+## Remove "intent to remove" programs from 1.08 release notes
 ## Introduce new programming interfaces for use by extensions
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 - Extension interface
