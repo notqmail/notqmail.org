@@ -51,6 +51,7 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
 
 # 1.9
 ## Remove 1.08's "intent to remove" programs
+- Unless any of them make sense as extensions
 ## Introduce new programming interfaces for use by extensions
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 - Extension interface
