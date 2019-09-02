@@ -6,6 +6,10 @@ _It's not qmail. It's also not netqmail._
 
 # What's new?
 
+## Intent to remove
+
+- qsmhook, maildirwatch, qail, elq, pinq
+
 ## Extension interface preview
 
 - Run alternate qmail-remote by setting QMAILREMOTE. ([#46](https://github.com/notqmail/notqmail/pull/46))
@@ -21,6 +25,7 @@ _It's not qmail. It's also not netqmail._
 - include unistd.h in readwrite.h. ([#80](https://github.com/notqmail/notqmail/pull/80))
 - include stdlib.h in alloc.c. ([#81](https://github.com/notqmail/notqmail/pull/81))
 - include sys/types.h, unistd.h in fork.h. ([#82](https://github.com/notqmail/notqmail/pull/82))
+- remove TODO. ([#68](https://github.com/notqmail/notqmail/pull/68))
 
 ## GitHub references
 
