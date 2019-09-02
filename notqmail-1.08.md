@@ -6,15 +6,10 @@ _It's not qmail. It's also not netqmail._
 
 # What's new?
 
-## Intent to remove
-
-- Remove qsmhook, long since replaced by preline. ([#87](https://github.com/notqmail/notqmail/pull/87))
-- Remove inefficient maildirwatch. ([#93](https://github.com/notqmail/notqmail/pull/93))
-- Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
-
 ## Extension interface preview
 
 - Run alternate qmail-remote by setting QMAILREMOTE. ([#46](https://github.com/notqmail/notqmail/pull/46))
+
 
 ## Other changes
 
@@ -28,6 +23,15 @@ _It's not qmail. It's also not netqmail._
 - include stdlib.h in alloc.c. ([#81](https://github.com/notqmail/notqmail/pull/81))
 - include sys/types.h, unistd.h in fork.h. ([#82](https://github.com/notqmail/notqmail/pull/82))
 - remove TODO. ([#68](https://github.com/notqmail/notqmail/pull/68))
+
+
+## Intent to remove
+
+In the course of developing this release, we found programs that we intend to remove in the next release. We believe none of these remains necessary or useful enough to be worth the cost of maintaining. If you disagree, please let us know!
+
+- Remove qsmhook, long since replaced by preline. ([#87](https://github.com/notqmail/notqmail/pull/87))
+- Remove inefficient maildirwatch. ([#93](https://github.com/notqmail/notqmail/pull/93))
+- Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
 
 ## GitHub references
 
