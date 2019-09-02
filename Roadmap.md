@@ -52,6 +52,17 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
 # 1.9
 ## Remove 1.08's "intent to remove" programs
 - Unless any of them make sense as extensions
+## Use the latest DJB libraries
+- Replace [stralloc](https://cr.yp.to/lib/stralloc.html) with [array](https://cr.yp.to/lib/array.html)
+- Replace substdio with [buf](https://cr.yp.to/lib/buffer_get.html)[fer](https://cr.yp.to/lib/buffer_put.html)
+- Replace time-handling code with [libtai](https://cr.yp.to/libtai/tai.html)
+- Replace DNS resolver code with [djbdns's](https://cr.yp.to/djbdns/dns.html)
+- [#88](https://github.com/notqmail/notqmail/issues/88) Use [mess822](https://cr.yp.to/mess822.html).
+- Replace poll/select with [iopause](https://cr.yp.to/lib/iopause.html)
+  - Possibly add kqueue and/or epoll support to iopause
+- Replace exec (and related env_puts) with [pathexec](https://cr.yp.to/lib/pathexec.html)
+- Update to latest [cdb](https://cr.yp.to/cdb/reading.html)
+- Use [socket](https://cr.yp.to/lib/socket.html) for any remaining networking code that's still necessary
 ## Introduce new programming interfaces for use by extensions
 - [Custom error strings for qmail-queue](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 - Extension interface
@@ -59,17 +70,6 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
 - Refactor `qmail-remote` to call an admin-configurable `tcpclient`.
 - Publish `qmail-popup`, `qmail-pop3d`, `qmail-qmtpd`, and `qmail-qmtpc` as extensions.
-- DJBization:
-  - Replace [stralloc](https://cr.yp.to/lib/stralloc.html) with [array](https://cr.yp.to/lib/array.html)
-  - Replace substdio with [buf](https://cr.yp.to/lib/buffer_get.html)[fer](https://cr.yp.to/lib/buffer_put.html)
-  - Replace time-handling code with [libtai](https://cr.yp.to/libtai/tai.html)
-  - Replace DNS resolver code with [djbdns's](https://cr.yp.to/djbdns/dns.html)
-  - [#88](https://github.com/notqmail/notqmail/issues/88) Use [mess822](https://cr.yp.to/mess822.html).
-  - Replace poll/select with [iopause](https://cr.yp.to/lib/iopause.html)
-    - Possibly add kqueue and/or epoll support to iopause
-  - Replace exec (and related env_puts) with [pathexec](https://cr.yp.to/lib/pathexec.html)
-  - Update to latest [cdb](https://cr.yp.to/cdb/reading.html)
-  - Use [socket](https://cr.yp.to/lib/socket.html) for any remaining networking code that's still necessary
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
