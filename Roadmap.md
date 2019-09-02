@@ -45,7 +45,6 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
   - [#36](https://github.com/notqmail/notqmail/pull/36) Append .md suffix to text docs. Adjust references.
   - [#56](https://github.com/notqmail/notqmail/pull/56) Don't install catted manpages
     - groff, mandoc, mdoc.
-  - [#68](https://github.com/notqmail/notqmail/pull/68) remove TODO.
 - code cleanup
   - [#30](https://github.com/notqmail/notqmail/pull/30) use <stdint.h> to get a really portable 32 bit unsigned type
   - [#70](https://github.com/notqmail/notqmail/pull/70) remove register storage class declaration from codebase.
