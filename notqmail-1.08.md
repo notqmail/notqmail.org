@@ -8,7 +8,9 @@ _It's not qmail. It's also not netqmail._
 
 ## Intent to remove
 
-- qsmhook, maildirwatch, qail, elq, pinq
+- Remove qsmhook, long since replaced by preline. ([#87](https://github.com/notqmail/notqmail/pull/87))
+- Remove inefficient maildirwatch. ([#93](https://github.com/notqmail/notqmail/pull/93))
+- Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
 
 ## Extension interface preview
 
