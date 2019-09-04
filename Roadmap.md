@@ -14,7 +14,6 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
   - [#61](https://github.com/notqmail/notqmail/pull/61) Extract an "instqueue" program from instpackage.
   - issue [#91](https://github.com/notqmail/notqmail/issues/91) Include support for slashpackage-format packages
 - bugfixes
-  - [#8](https://github.com/notqmail/notqmail/pull/8) qmail-inject: do not parse header recipients if "-a" is given
   - [#18](https://github.com/notqmail/notqmail/pull/18) qmail-remote: avoid recoding CRLF to CRCRLF
   - [#37](https://github.com/notqmail/notqmail/pull/37) fix overflow in alloc.c
   - [#92](https://github.com/notqmail/notqmail/pull/92), issue [#47](https://github.com/notqmail/notqmail/pull/47) qmail-pop3d: exit 1, pronto, if running as root.
@@ -37,7 +36,6 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
       - [#77](https://github.com/notqmail/notqmail/pull/77) use ANSI/C89 function signatures.
       - issue [#7](https://github.com/notqmail/notqmail/issues/7) Stop redeclaring system functions
     - C89 v C99
-      - [#30](https://github.com/notqmail/notqmail/pull/30) use <stdint.h> to get a really portable 32 bit unsigned type
       - issue [#7](https://github.com/notqmail/notqmail/issues/7) Stop redeclaring system functions
   - issue [#48](https://github.com/notqmail/notqmail/issues/48) Make regular use of code analysis tools development
 - documentation modernization
