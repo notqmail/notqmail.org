@@ -23,6 +23,8 @@ _It's not qmail. It's also not netqmail._
 - include stdlib.h in alloc.c. ([#81](https://github.com/notqmail/notqmail/pull/81))
 - include sys/types.h, unistd.h in fork.h. ([#82](https://github.com/notqmail/notqmail/pull/82))
 - remove TODO. ([#68](https://github.com/notqmail/notqmail/pull/68))
+- qmail-inject: do not parse header recipients if "-a" is given. ([#8](https://github.com/notqmail/notqmail/pull/8))
+- use <stdint.h> to get a really portable 32 bit unsigned type. ([#30](https://github.com/notqmail/notqmail/pull/30))
 
 
 ## Intent to remove
