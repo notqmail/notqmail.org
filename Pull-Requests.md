@@ -6,9 +6,9 @@
     - (Rare but not impossible: adjusting our goals instead of the proposed patch)
 - Includes a very brief description in `CHANGES`
 - Adds any new object (or otherwise generated) files to `TARGETS`
-- Builds in TravisCI
+- Builds in TravisCI and CirrusCI
 - Matches the conventions of surrounding code, where we're still trying to do that
-- Uses new and improved conventions, where we're trying to do that
+- Uses new and improved conventions, where we're trying to do that (see below about what that means)
 - Has at least two reviewers' approval, and no significant objections
 
 ## We'd like to further require...
@@ -25,8 +25,13 @@
 - Squash commits into the sequence we'd want merged to `master`
 - Force-push to the feature branch
 
-
 # To merge a PR, we...
 
 - Click the popup menu for "Merge pull request"
 - Choose "Rebase and merge"
+
+# A note on "surrounding code" and conventions
+
+- if a single-line function declaration (i.e. name and all types on the same line) is changed then convert it to C89
+- if a function declaration in a header is changed, and the declaration in the .c file either is C89 already or is converted in the same patch by the above rule, then switch the one in the header too (do _NOT_ do that if it would drag in additional headers to the .h file to get the types to avoid more disruptive changes)
+- use uid_t and gid_t where appropriate
