@@ -66,6 +66,7 @@ The current release is [[notqmail 1.07]], released 19 Aug 2019.  notqmail is a f
 - Extension interface
   - [#50](https://github.com/notqmail/notqmail/pull/50) This adds spawn-filter binary for filtering message passed to qmail-remote/qmail-local
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
+- Tiny changes to qmail-smtpd for optionally running under a `qmail-popup`-alike SMTP AUTH parent program
 - Refactor `qmail-remote` to call an admin-configurable `tcpclient`.
 - Publish `qmail-popup`, `qmail-pop3d`, `qmail-qmtpd`, and `qmail-qmtpc` as extensions.
 - code standardization
