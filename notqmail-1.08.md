@@ -1,8 +1,8 @@
 _NOTE: This release is under development and not yet published._
 
-# What is notqmail?
+# What's notqmail?
 
-_It's not qmail. It's also not netqmail._
+It's software for running an email server. See [[our wiki|Home]] for more information.
 
 # What's new?
 
