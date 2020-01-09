@@ -27,8 +27,13 @@
 
 # To merge a PR, we...
 
-- Click the popup menu for "Merge pull request"
-- Choose "Rebase and merge"
+- merge the branch on the commandline if the branch does *not* need rebase (i.e. is a fast-forward), this preserves e.g. signed commits
+  - git checkout master
+  - git merge --ff-only that-branch
+  - git push
+- rebase and merge otherwise
+  - Click the popup menu for "Merge pull request"
+  - choose "Rebase and merge"
 
 # A note on "surrounding code" and conventions
 
