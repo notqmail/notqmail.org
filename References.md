@@ -44,9 +44,10 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - Daniel J. Bernstein, 2007: [Some thoughts on security after ten years of qmail 1.0](https://cr.yp.to/qmail/qmailsec-20071101.pdf)
 
 
-## Talks
+## Talks and Podcasts
 
-- Amitai Schleier, 2020: [What is notqmail?](https://schmonz.com/talk/2020-nyc-january/)
+- [schmonz](https://github.com/schmonz), Wed Jan 8 2020: [What is notqmail?](https://schmonz.com/talk/2020-nyc-january/)
+- [schmonz](https://github.com/schmonz), Fri Jan 10 2020: [Programming Leadership: Collaboration and Notqmail with Amitai Schleier](https://schmonz.com/talk/20200110-programming
 
 
 ## News & Social Media
