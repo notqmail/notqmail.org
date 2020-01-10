@@ -47,7 +47,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 ## Talks and Podcasts
 
 - [schmonz](https://github.com/schmonz), Wed Jan 8 2020: [What is notqmail?](https://schmonz.com/talk/2020-nyc-january/)
-- [schmonz](https://github.com/schmonz), Fri Jan 10 2020: [Programming Leadership: Collaboration and Notqmail with Amitai Schleier](https://schmonz.com/talk/20200110-programming
+- [schmonz](https://github.com/schmonz), Fri Jan 10 2020: [Programming Leadership: Collaboration and Notqmail with Amitai Schleier](https://schmonz.com/talk/20200110-programming-leadership/)
 
 
 ## News & Social Media
