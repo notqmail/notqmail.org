@@ -36,7 +36,7 @@ It's software for running an email server. See [[our wiki|Home]] for more inform
 - move some variables to a more local scope. ([#111](https://github.com/notqmail/notqmail/pull/111))
 - replace many pobox.com URLs. ([#54](https://github.com/notqmail/notqmail/pull/54))
 - optionally create a systemd service file. ([#114](https://github.com/notqmail/notqmail/pull/114))
-- add acknowledgement for the bug fix contribution from @eriksjolund to qmail-local.c that was included in netqmail alread. ([#118](https://github.com/notqmail/notqmail/pull/118))
+- add acknowledgement for the bug fix contribution from [Erik Sjölund](https://github.com/eriksjolund) to qmail-local.c that was included in netqmail alread. ([#118](https://github.com/notqmail/notqmail/pull/118))
 - remove the need for exit.h in named pipe bug check. ([#108](https://github.com/notqmail/notqmail/pull/108))
 - rename local variables shadowing global variables of the same name. ([#113](https://github.com/notqmail/notqmail/pull/113))
 - remove HASSHORTSETGROUPS test, use system headers and types instead. ([#72](https://github.com/notqmail/notqmail/pull/72))
