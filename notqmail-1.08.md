@@ -49,6 +49,7 @@ In the course of developing this release, we found programs that we intend to re
 - Remove qsmhook, long since replaced by preline. ([#87](https://github.com/notqmail/notqmail/pull/87))
 - Remove inefficient maildirwatch. ([#93](https://github.com/notqmail/notqmail/pull/93))
 - Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
+- Remove qmail-pop3d. It does not offer encryption as one would expect for submitting credentials today and is a rather minimal implementaion. There are enough maintained alternative packages available that are compatible with Maildirs, e.g. [Courier IMAP](https://www.courier-mta.org/imap/) or [Dovecot](https://www.dovecot.org/).
 
 ## GitHub references
 
