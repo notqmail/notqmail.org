@@ -19,6 +19,7 @@ It's software for running an email server. See [[our wiki|Home]] for more inform
 
 ## Other changes
 
+- allow to pass NROFF=true to Makefile to prevent installation of catted manpages. ([#116](https://github.com/notqmail/notqmail/pull/116))
 - remove systype and attendant platform detection ([#34](https://github.com/notqmail/notqmail/pull/34))
 - TravisCI: move setting MAKEFLAGS out of the script and in to the matrix. ([#58](https://github.com/notqmail/notqmail/pull/58))
 - add missing function declarations in cdbmss.h, scan.h ([#64](https://github.com/notqmail/notqmail/pull/64))
