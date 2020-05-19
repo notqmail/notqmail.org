@@ -4,6 +4,7 @@ _NOTE: This release is under development and not yet published._
 
 It's software for running an email server. See [[our wiki|Home]] for more information.
 
+
 # What's new?
 
 This release of notqmail is guided by two themes: **fix bugs** and **reduce bug likelihood**.
@@ -59,3 +60,13 @@ In the course of developing this release, we found programs that we intend to re
 
 - All [closed 1.08 issues](https://github.com/notqmail/notqmail/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.08)
 - All [closed 1.08 PRs](https://github.com/notqmail/notqmail/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.08)
+
+
+# How to install
+
+See [[Install]].
+
+
+# Getting help
+
+See [[Help]].
