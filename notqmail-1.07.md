@@ -45,50 +45,7 @@ This initial 1.07 release of notqmail is guided by two themes: **fix broken buil
 
 # How to install
 
-## From source, on a single host
-
-Fetch the [1.07 release in your preferred archive format](https://github.com/notqmail/notqmail/releases/tag/notqmail-1.07).
-
-[Life with qmail](http://www.lifewithqmail.org/lwq.html#installation) continues to apply. Note that some modern systems — we've seen at least OpenBSD, FreeBSD, and Void Linux — don't provide `nroff`. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick. Also, please read our notes about [[patches]].
-
-## From source, to many hosts
-
-notqmail makes it easy to build once, install many.
-
-### On the build host
-
-Customize `conf-users` and `conf-groups`, if needed, and note the names. Then build, stage, and create a tarball:
-
-    $ make it man
-    $ export DESTDIR=/path/to/staging/directory
-    $ make package
-    $ tar -C ${DESTDIR} -czf notqmail-bin-1.07.tar.gz .
-
-### On an install host
-
-Copy over `notqmail-bin-1.07.tar.gz`, `instchown`, and `instcheck` from the build host. Extract the tarball -- e.g., with GNU Tar:
-
-    # tar -C / --no-overwrite-dir -xzf notqmail-bin-1.07.tar.gz
-
-[Create users and groups](https://github.com/notqmail/notqmail/blob/master/INSTALL.ids) with names to match the build. Set permissions on installed files:
-
-    # ./instchown
-
-Then verify the installation, just as with a traditional qmail install:
-
-    # ./instcheck
-
-## From vendor packages
-
-Binary packages for many RPM and DEB based distributions are provided through [OpenBuildService](https://software.opensuse.org//download.html?project=home%3Anotqmail&package=notqmail).
-
-### pkgsrc
-
-    $ cd mail/qmail && make install
-
-or on platforms with recent binary packages available,
-
-    # pkg_add qmail
+See [[Install]].
 
 
 # Getting help
