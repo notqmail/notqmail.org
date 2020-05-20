@@ -11,7 +11,7 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 
 ## Fix bugs
 
-- [Vulnerabilities in qmail 1.03 reported by Qualys](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt). We thank Qualys for their findings, collaborative approach, and impetus to cut a new release. ([#133](https://github.com/notqmail/notqmail/pull/133))
+- [Vulnerabilities we've inherited from qmail 1.03, reported by Qualys](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt). We thank Qualys for their findings, collaborative approach, and impetus to cut a new release. ([#133](https://github.com/notqmail/notqmail/pull/133))
 - `qmail-inject`: do not parse header recipients if `-a` is given. ([#8](https://github.com/notqmail/notqmail/pull/8))
 - Correctly detect multiple IP addresses on the same interface. ([#96](https://github.com/notqmail/notqmail/pull/96))
 - Remove workaround for ancient DNS servers that do not properly support CNAME. Patch by Jonathan de Boyne Pollard that was floating around the net for years. ([#97](https://github.com/notqmail/notqmail/pull/97))
