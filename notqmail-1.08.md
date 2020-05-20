@@ -12,9 +12,9 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 ## Fix bugs
 
 - [Vulnerabilities we've inherited from qmail 1.03, reported by Qualys](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt). ([#133](https://github.com/notqmail/notqmail/pull/133))
-    - CVE-2005-1515: fix signedness wraparound in `substdio_{put,bput}()`.
-    - CVE-2005-1514: fix possible signed integer overflow in `commands()`.
-    - CVE-2005-1513: fix integer overflow in `stralloc_readyplus()`.
+    - [CVE-2005-1515](http://cve.circl.lu/cve/CVE-2005-1515): fix signedness wraparound in `substdio_{put,bput}()`.
+    - [CVE-2005-1514](http://cve.circl.lu/cve/CVE-2005-1514): fix possible signed integer overflow in `commands()`.
+    - [CVE-2005-1513](http://cve.circl.lu/cve/CVE-2005-1513): fix integer overflow in `stralloc_readyplus()`.
     - Fix several other places where variables could overflow.
 - `qmail-pop3d`: instead of running as root if root authenticates (and being a vector for a dictionary attack on the root password), exit 1, same as a failed `checkpassword` login. ([#92](https://github.com/notqmail/notqmail/pull/92))
 - `qmail-inject`: do not parse header recipients if `-a` is given. ([#8](https://github.com/notqmail/notqmail/pull/8))
