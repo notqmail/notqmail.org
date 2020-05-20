@@ -11,7 +11,7 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 
 ## Fix bugs
 
-- [Vulnerabilities we've inherited from qmail 1.03, reported by Qualys](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt). ([#133](https://github.com/notqmail/notqmail/pull/133))
+- [Vulnerabilities we've inherited from qmail 1.03, reported by Qualys](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt). ([#128](https://github.com/notqmail/notqmail/pull/128), [#133](https://github.com/notqmail/notqmail/pull/133))
     - [CVE-2005-1515](http://cve.circl.lu/cve/CVE-2005-1515): fix signedness wraparound in `substdio_{put,bput}()`.
     - [CVE-2005-1514](http://cve.circl.lu/cve/CVE-2005-1514): fix possible signed integer overflow in `commands()`.
     - [CVE-2005-1513](http://cve.circl.lu/cve/CVE-2005-1513): fix integer overflow in `stralloc_readyplus()`.
@@ -36,14 +36,18 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 - Add `hier.h` for inclusion in `instcheck.c`, `instchown.c`, `instpackage.c`. ([#64](https://github.com/notqmail/notqmail/pull/64))
 - Use system headers and types instead of the `HASSHORTSETGROUPS` check. ([#72](https://github.com/notqmail/notqmail/pull/72))
 - Use system headers instead of redeclaring `exit()`, `read()`, `write()`, `malloc()`, `free()`, `fork()`, `uint32_t`. ([#79](https://github.com/notqmail/notqmail/pull/79), [#80](https://github.com/notqmail/notqmail/pull/80), [#81](https://github.com/notqmail/notqmail/pull/81), [#82](https://github.com/notqmail/notqmail/pull/82), [#101](https://github.com/notqmail/notqmail/pull/101), [#30](https://github.com/notqmail/notqmail/pull/30))
+- Use C89 function signatures for code we've touched so far. ([#100](https://github.com/notqmail/notqmail/pull/100))
+- Automated builds:
+    - TravisCI: move setting `MAKEFLAGS` out of the script and into the matrix. ([#58](https://github.com/notqmail/notqmail/pull/58))
+    - Add FreeBSD builds with CirrusCi. ([#98](https://github.com/notqmail/notqmail/pull/98))
+    - Add a [GitHub Actions](https://help.github.com/en/actions) build. ([#131](https://github.com/notqmail/notqmail/pull/131))
 
 ## Other changes
 
 - Remove DJB's TODO. ([#68](https://github.com/notqmail/notqmail/pull/68))
 - Replace many `pobox.com` URLs. ([#54](https://github.com/notqmail/notqmail/pull/54))
 - Acknowledge [Erik Sjölund](https://github.com/eriksjolund)'s `qmail-local.c` bugfix that we've inherited from netqmail. ([#118](https://github.com/notqmail/notqmail/pull/118))
-- TravisCI: move setting `MAKEFLAGS` out of the script and into the matrix. ([#58](https://github.com/notqmail/notqmail/pull/58))
-- Avoid generating catted manpages by building with `NROFF=true`. ([#116](https://github.com/notqmail/notqmail/pull/116))
+- Avoid generating catted manpages by building with `NROFF=true`. ([#116](https://github.com/notqmail/notqmail/pull/116), [#132](https://github.com/notqmail/notqmail/pull/132), [#134](https://github.com/notqmail/notqmail/pull/134))
 - Optionally create a `systemd` service file. ([#114](https://github.com/notqmail/notqmail/pull/114))
 - Run an alternate `qmail-remote` by setting `QMAILREMOTE` in `qmail-send`'s environment. ([#46](https://github.com/notqmail/notqmail/pull/46))
 
@@ -53,13 +57,13 @@ In the course of developing this release, we found programs that we intend to re
 
 - Remove `qsmhook`, long since replaced by `preline`. ([#87](https://github.com/notqmail/notqmail/pull/87))
 - Remove inefficient `maildirwatch`. ([#93](https://github.com/notqmail/notqmail/pull/93))
-- Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
+- Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99), [#110](https://github.com/notqmail/notqmail/pull/110))
 - Remove `qmail-pop3d`, since Maildir is well supported by actively maintained POP3 servers (e.g., [Courier IMAP](https://www.courier-mta.org/imap/) or [Dovecot](https://www.dovecot.org/)).
 
 
 ## Thanks
 
-We thank Qualys for their findings, collaborative approach, and impetus to cut a new release. 
+We thank Qualys for their findings, collaborative approach, and impetus to cut a new release.
 
 
 ## GitHub references
