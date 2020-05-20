@@ -19,33 +19,28 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 
 ## Reduce bug likelihood
 
-- Remove `systype` and attendant platform detection. ([#34](https://github.com/notqmail/notqmail/pull/34))
-- TravisCI: move setting `MAKEFLAGS` out of the script and into the matrix. ([#58](https://github.com/notqmail/notqmail/pull/58))
+- Remove `dnscname` and `dnsmxip` programs that were being built but not installed. ([#69](https://github.com/notqmail/notqmail/pull/69))
+- Remove `systype` and related platform detection. ([#34](https://github.com/notqmail/notqmail/pull/34))
+- Remove unused variable in `maildir.c`. ([#78](https://github.com/notqmail/notqmail/pull/78))
+- Reduce variable scope in `tcpto.c`. ([#111](https://github.com/notqmail/notqmail/pull/111))
+- Avoid local variables shadowing same-named globals. ([#113](https://github.com/notqmail/notqmail/pull/113))
+- Avoid needing `exit.h` in named-pipe bug check. ([#108](https://github.com/notqmail/notqmail/pull/108))
+- Add a `test` target and some unit tests, using [Check](https://libcheck.github.io/check/doc/check_html/index.html#Top). ([#102](https://github.com/notqmail/notqmail/pull/102))
 - Add missing function declarations in `cdbmss.h`, `scan.h`. ([#64](https://github.com/notqmail/notqmail/pull/64))
-- Create `hier.h` to include in `instcheck.c`, `instchown.c`, `instpackage.c`. ([#64](https://github.com/notqmail/notqmail/pull/64))
-- Remove `dnscname` and `dnsmxip` binaries that were only present in the build tree, but not installed. ([#69](https://github.com/notqmail/notqmail/pull/69))
-- Remove unused variable `r` in `maildir.c`. ([#78](https://github.com/notqmail/notqmail/pull/78))
-- Include `<unistd.h>` in `exit.h` instead of redeclaring `exit()`. ([#79](https://github.com/notqmail/notqmail/pull/79))
-- Include `<unistd.h>` in `readwrite.h` instead of redeclaring `read()` and `write()`. ([#80](https://github.com/notqmail/notqmail/pull/80))
-- Include `<stdlib.h>` in `alloc.c` instead of redeclaring `malloc()` and `free()`. ([#81](https://github.com/notqmail/notqmail/pull/81))
-- Include `<sys/types.h>`, `<unistd.h>` in `fork.h`. ([#82](https://github.com/notqmail/notqmail/pull/82))
-- Use `<stdint.h>` to get a really portable 32 bit unsigned type. ([#30](https://github.com/notqmail/notqmail/pull/30))
-- Use system headers for files introduced since netqmail-1.06. ([#101](https://github.com/notqmail/notqmail/pull/101))
 - Add missing return types to `main()`. ([#85](https://github.com/notqmail/notqmail/pull/85))
-- Move some variables to a more local scope. ([#111](https://github.com/notqmail/notqmail/pull/111))
-- Remove the need for `exit.h` in named pipe bug check. ([#108](https://github.com/notqmail/notqmail/pull/108))
-- Rename local variables shadowing global variables of the same name. ([#113](https://github.com/notqmail/notqmail/pull/113))
-- Remove `HASSHORTSETGROUPS` test, use system headers and types instead. ([#72](https://github.com/notqmail/notqmail/pull/72))
-- Add a `test` target and one unit test, using [Check](https://libcheck.github.io/check/doc/check_html/index.html#Top). ([#102](https://github.com/notqmail/notqmail/pull/102))
+- Add `hier.h` for inclusion in `instcheck.c`, `instchown.c`, `instpackage.c`. ([#64](https://github.com/notqmail/notqmail/pull/64))
+- Use system headers and types instead of the `HASSHORTSETGROUPS` check. ([#72](https://github.com/notqmail/notqmail/pull/72))
+- Use system headers instead of redeclaring `exit()`, `read()`, `write()`, `malloc()`, `free()`, `fork()`, `uint32_t`. ([#79](https://github.com/notqmail/notqmail/pull/79), [#80](https://github.com/notqmail/notqmail/pull/80), [#81](https://github.com/notqmail/notqmail/pull/81), [#82](https://github.com/notqmail/notqmail/pull/82), [#101](https://github.com/notqmail/notqmail/pull/101), [#30](https://github.com/notqmail/notqmail/pull/30))
 
 ## Other changes
 
-- Add acknowledgement for the bugfix contribution from [Erik Sjölund](https://github.com/eriksjolund) to `qmail-local.c` that was included in netqmail. ([#118](https://github.com/notqmail/notqmail/pull/118))
-- Allow to pass `NROFF=true` to `Makefile` to prevent installation of catted manpages. ([#116](https://github.com/notqmail/notqmail/pull/116))
 - Remove DJB's TODO. ([#68](https://github.com/notqmail/notqmail/pull/68))
 - Replace many `pobox.com` URLs. ([#54](https://github.com/notqmail/notqmail/pull/54))
+- Acknowledge [Erik Sjölund](https://github.com/eriksjolund)'s `qmail-local.c` bugfix that we've inherited from netqmail. ([#118](https://github.com/notqmail/notqmail/pull/118))
+- TravisCI: move setting `MAKEFLAGS` out of the script and into the matrix. ([#58](https://github.com/notqmail/notqmail/pull/58))
+- Avoid generating catted manpages by building with `NROFF=true`. ([#116](https://github.com/notqmail/notqmail/pull/116))
 - Optionally create a `systemd` service file. ([#114](https://github.com/notqmail/notqmail/pull/114))
-- Run alternate `qmail-remote` by setting `QMAILREMOTE`. ([#46](https://github.com/notqmail/notqmail/pull/46))
+- Run an alternate `qmail-remote` by setting `QMAILREMOTE` in `qmail-send`'s environment. ([#46](https://github.com/notqmail/notqmail/pull/46))
 
 ## Intent to remove
 
@@ -54,7 +49,7 @@ In the course of developing this release, we found programs that we intend to re
 - Remove `qsmhook`, long since replaced by `preline`. ([#87](https://github.com/notqmail/notqmail/pull/87))
 - Remove inefficient `maildirwatch`. ([#93](https://github.com/notqmail/notqmail/pull/93))
 - Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
-- Remove `qmail-pop3d`, since Maildir is well supported by actively maintained POP3 servers (e.g. [Courier IMAP](https://www.courier-mta.org/imap/) or [Dovecot](https://www.dovecot.org/)).
+- Remove `qmail-pop3d`, since Maildir is well supported by actively maintained POP3 servers (e.g., [Courier IMAP](https://www.courier-mta.org/imap/) or [Dovecot](https://www.dovecot.org/)).
 
 ## GitHub references
 
