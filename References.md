@@ -52,6 +52,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+- Hacker News, Tue May 19 2020: [15 years later: Remote Code Execution in qmail (CVE-2005-1513)](https://news.ycombinator.com/item?id=23237716)
 - Lobste.rs, Tue May 19 2020: [Remote Code Execution in qmail (CVE-2005-1513)](https://lobste.rs/s/ercmor/remote_code_execution_qmail_cve_2005_1513)
 - qualys.com, Tue May 19 2020: [15 years later: Remote Code Execution in qmail](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt)
 - mag.osdn.jp, Fri Aug 23 2019: [コミュニティ主導のqmailフォークプロジェクト「notqmail」が立ち上げられる](https://mag.osdn.jp/19/08/23/160000.amp) (Japanese, "Community-led qmail fork project 'notqmail' launched")
