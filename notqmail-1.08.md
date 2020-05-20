@@ -1,5 +1,3 @@
-_NOTE: This release is under development and not yet published._
-
 # What's notqmail?
 
 It's software for running an email server. See [[our wiki|Home]] for more information.
