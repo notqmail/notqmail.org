@@ -11,7 +11,12 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 
 ## Fix bugs
 
-- [Vulnerabilities we've inherited from qmail 1.03, reported by Qualys](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt). We thank Qualys for their findings, collaborative approach, and impetus to cut a new release. ([#133](https://github.com/notqmail/notqmail/pull/133))
+- [Vulnerabilities we've inherited from qmail 1.03, reported by Qualys](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt). ([#133](https://github.com/notqmail/notqmail/pull/133))
+    - CVE-2005-1515: fix signedness wraparound in `substdio_{put,bput}()`.
+    - CVE-2005-1514: fix possible signed integer overflow in `commands()`.
+    - CVE-2005-1513: fix integer overflow in `stralloc_readyplus()`.
+    - Fix several other places where variables could overflow.
+- `qmail-pop3d`: instead of running as root if root authenticates (and being a vector for a dictionary attack on the root password), exit 1, same as a failed `checkpassword` login. ([#92](https://github.com/notqmail/notqmail/pull/92))
 - `qmail-inject`: do not parse header recipients if `-a` is given. ([#8](https://github.com/notqmail/notqmail/pull/8))
 - Correctly detect multiple IP addresses on the same interface. ([#96](https://github.com/notqmail/notqmail/pull/96))
 - Remove workaround for ancient DNS servers that do not properly support CNAME. Patch by Jonathan de Boyne Pollard that was floating around the net for years. ([#97](https://github.com/notqmail/notqmail/pull/97))
@@ -50,6 +55,12 @@ In the course of developing this release, we found programs that we intend to re
 - Remove inefficient `maildirwatch`. ([#93](https://github.com/notqmail/notqmail/pull/93))
 - Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
 - Remove `qmail-pop3d`, since Maildir is well supported by actively maintained POP3 servers (e.g., [Courier IMAP](https://www.courier-mta.org/imap/) or [Dovecot](https://www.dovecot.org/)).
+
+
+## Thanks
+
+We thank Qualys for their findings, collaborative approach, and impetus to cut a new release. 
+
 
 ## GitHub references
 
