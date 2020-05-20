@@ -52,6 +52,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+- golem.de, Wed 20 May 2020: [Sicherheitslücke in Qmail](https://www.golem.de/news/remote-code-execution-sicherheitsluecke-in-qmail-2005-148613.html) (German, "Vulnerability in Qmail")
 - Lobste.rs, Wed 20 May 2020: [notqmail 1.08 released](https://lobste.rs/s/bdq0di/notqmail_1_08_released)
 - Hacker News, Wed 20 May 2020: [Notqmail 1.08 released](https://news.ycombinator.com/item?id=23252421)
 - Help Net Security, Wed 20 May 2020: [Vulnerability in Qmail mail transport agent allows RCE](https://www.helpnetsecurity.com/2020/05/20/qmail-rce/)
