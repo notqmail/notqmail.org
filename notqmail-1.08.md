@@ -19,7 +19,7 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 - `qmail-pop3d`: instead of running as root if root authenticates (and being a vector for a dictionary attack on the root password), exit 1 to look just like a failed `checkpassword` login. ([#92](https://github.com/notqmail/notqmail/pull/92))
 - `qmail-inject`: do not parse header recipients if `-a` is given. ([#8](https://github.com/notqmail/notqmail/pull/8))
 - Correctly detect multiple IP addresses on the same interface. ([#96](https://github.com/notqmail/notqmail/pull/96))
-- Remove workaround for ancient DNS servers that do not properly support CNAME. Patch by Jonathan de Boyne Pollard that was floating around the net for years. ([#97](https://github.com/notqmail/notqmail/pull/97))
+- Remove workaround for ancient DNS servers that do not properly support CNAME. [Patch by Jonathan de Boyne Pollard](https://jdebp.eu/Softwares/djbwares/qmail-patches.html#any-to-cname) that was floating around the net for years. ([#97](https://github.com/notqmail/notqmail/pull/97))
 - Fix possible integer overflow in `alloc()`. ([#109](https://github.com/notqmail/notqmail/pull/109))
 
 ## Reduce bug likelihood
