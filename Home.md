@@ -126,8 +126,9 @@ For more, see [[Patches]].
 
 _It's not incapable of installing to `/var/qmail`._
 
-Your build scripts will continue to work with [[notqmail 1.07]].
+Your build scripts will continue to work.
 We've tested many [[platforms]].
+See [[Install]].
 
 
 # How can I get more involved?
