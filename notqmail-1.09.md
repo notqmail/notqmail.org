@@ -1,4 +1,4 @@
-_NOTE: This release is under draft and waiting for 1.08 to be published._
+_NOTE: This release is under development and not yet published._
 
 # What's notqmail?
 
@@ -8,11 +8,12 @@ It's software for running an email server. See [[our wiki|Home]] for more inform
 
 ## Intent to remove
 
-In the course of developing the previous releases, we found programs that we intend to remove in the next release. We believe none of these remains necessary or useful enough to be worth the cost of maintaining. If you disagree, please let us know!
+In the course of developing this release, we found programs that we intend to remove in the next release. We believe none of these remains necessary or useful enough to be worth the cost of maintaining. If you disagree, please let us know!
 
-- Remove qsmhook, long since replaced by preline. ([#87](https://github.com/notqmail/notqmail/pull/87))
-- Remove inefficient maildirwatch. ([#93](https://github.com/notqmail/notqmail/pull/93))
-- Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99))
+- Remove `qsmhook`, long since replaced by `preline`. ([#87](https://github.com/notqmail/notqmail/pull/87))
+- Remove inefficient `maildirwatch`. ([#93](https://github.com/notqmail/notqmail/pull/93))
+- Remove obsolete mail client wrappers. ([#99](https://github.com/notqmail/notqmail/pull/99), [#110](https://github.com/notqmail/notqmail/pull/110))
+- Remove `qmail-pop3d`, since Maildir is well supported by actively maintained POP3 servers (e.g., [Courier IMAP](https://www.courier-mta.org/imap/) or [Dovecot](https://www.dovecot.org/)).
 
 ## GitHub references
 
