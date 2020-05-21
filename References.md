@@ -52,6 +52,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+- Linux Weekly News, Wed 20 May 2020: [A remote code execution vulnerability in qmail](https://lwn.net/Articles/820969/)
 - golem.de, Wed 20 May 2020: [Sicherheitslücke in Qmail](https://www.golem.de/news/remote-code-execution-sicherheitsluecke-in-qmail-2005-148613.html) (German, "Vulnerability in Qmail")
 - Lobste.rs, Wed 20 May 2020: [notqmail 1.08 released](https://lobste.rs/s/bdq0di/notqmail_1_08_released)
 - Hacker News, Wed 20 May 2020: [Notqmail 1.08 released](https://news.ycombinator.com/item?id=23252421)
