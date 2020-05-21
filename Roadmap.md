@@ -1,8 +1,3 @@
-The current release is [[notqmail 1.08]], released 20 May 2020.
-notqmail is a fork of netqmail 1.06.
-The notqmail release roadmap:
-
-
 # [[1.09|Roadmap 1.09]]
 
 - Remove 1.08's "intent to remove" programs (unless any of them make sense as extensions)
