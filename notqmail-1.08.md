@@ -37,7 +37,7 @@ This release of notqmail is guided by two themes: **fix bugs** and **reduce bug 
 - Use C89 function signatures for code we've touched so far. ([#100](https://github.com/notqmail/notqmail/pull/100))
 - Automated builds:
     - TravisCI: move setting `MAKEFLAGS` out of the script and into the matrix. ([#58](https://github.com/notqmail/notqmail/pull/58))
-    - Add FreeBSD builds with CirrusCi. ([#98](https://github.com/notqmail/notqmail/pull/98))
+    - Add FreeBSD builds with CirrusCI. ([#98](https://github.com/notqmail/notqmail/pull/98))
     - Add a [GitHub Actions](https://help.github.com/en/actions) build. ([#131](https://github.com/notqmail/notqmail/pull/131))
 
 ## Other changes
