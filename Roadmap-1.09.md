@@ -23,12 +23,15 @@ This release of notqmail is guided by two themes: **fix more bugs** and **furthe
 
 ## Intent to remove
 
-In the course of developing the previous release, we found programs that we intend to remove in this release. We believe none of these remains necessary or useful enough to be worth the cost of maintaining. If you disagree, please let us know!
+In 1.08, we announced our intent to remove the following programs:
 
 - Remove `qsmhook`, long since replaced by `preline`. ([#87](https://github.com/notqmail/notqmail/pull/87))
 - Remove inefficient `maildirwatch`. ([#93](https://github.com/notqmail/notqmail/pull/93))
 - Remove `qmail-pop3d`, since Maildir is well supported by actively maintained POP3 servers (e.g., [Courier IMAP](https://www.courier-mta.org/imap/) or [Dovecot](https://www.dovecot.org/)).
 
+In the course of developing this release, we found programs that we intend to remove in the next release. We believe none of these remains necessary or useful enough to be worth the cost of maintaining. If you disagree, please let us know!
+
+- Remove code for QMTP and QMQP. ([#142](https://github.com/notqmail/notqmail/issues/142))
 
 ## GitHub references
 
