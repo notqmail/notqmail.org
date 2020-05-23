@@ -31,7 +31,7 @@ In 1.08, we announced our intent to remove the following programs:
 
 In the course of developing this release, we found programs that we intend to remove in the next release. We believe none of these remains necessary or useful enough to be worth the cost of maintaining. If you disagree, please let us know!
 
-- Remove code for QMTP and QMQP. ([#142](https://github.com/notqmail/notqmail/issues/142))
+- Remove code for QMTP. ([#142](https://github.com/notqmail/notqmail/issues/142))
 
 ## GitHub references
 
