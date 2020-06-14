@@ -29,3 +29,7 @@ How to use:
 | [notqmail-smtp-tls](https://github.com/notqmail/notqmail/commits/notqmail-smtp-tls) | Frederik Vermeulen's [qmail-smtp-tls](http://inoa.net/qmail-tls/)
 | [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-logging) | Andrew Richards' [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html) |
 | [notqmail-smtpd-spf](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-spf) | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/) |
+
+## josuah's patch status page
+
+See <https://notqmail.z0.is/patch/>
