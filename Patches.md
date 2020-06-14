@@ -1,5 +1,6 @@
 You've been running qmail, so you've got a set of patches you rely on.
 Your patches will mostly continue to apply to notqmail.
+(See [#17](https://github.com/notqmail/notqmail/issues/17) for more about our intent.)
 As notqmail gains features, you'll need fewer patches.
 
 When one of your patches doesn't quite apply anymore, because notqmail's code has evolved out from under it, the patch needs to be "rebased".
@@ -29,7 +30,3 @@ How to use:
 | [notqmail-smtp-tls](https://github.com/notqmail/notqmail/commits/notqmail-smtp-tls) | Frederik Vermeulen's [qmail-smtp-tls](http://inoa.net/qmail-tls/)
 | [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-logging) | Andrew Richards' [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html) |
 | [notqmail-smtpd-spf](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-spf) | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/) |
-
-## josuah's patch status page
-
-See <https://notqmail.z0.is/patch/>
