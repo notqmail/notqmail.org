@@ -4,7 +4,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 ## Other forks of qmail
 
 - [netqmail](http://netqmail.org)
-- [mbhangui](https://github.com/mbhangui)'s [IndiMail](http://www.indimail.org)
+- [mbhangui](https://github.com/mbhangui)'s [IndiMail](https://github.com/mbhangui/indimail-mta)
 - [Erwin Hoffmann](https://github.com/ErwinHo)'s [s/qmail](https://www.fehcom.de/sqmail/sqmail.html)
 - [DerDakon](https://github.com/DerDakon)'s [qmail](https://github.com/DerDakon/qmail)
 - [schmonz](https://github.com/schmonz)'s [qmail](https://github.com/schmonz/qmail)
