@@ -164,3 +164,5 @@ Sorry, no. We're not DJB, and notqmail is not qmail.
 _We know you're wondering._
 
 [Postfix](http://www.postfix.org) is very good. We also really like qmail.
+
+For now, we're targeting sysadmins who already run a qmail-based mail system. If it's not clear to you why you'd run notqmail instead of Postfix, you're probably right. Someday, when notqmail is more featureful, we'll want to compare and contrast with other MTAs. In the meantime, many of [qmail 1.03's advantages](https://cr.yp.to/qmail.html) are still relevant.
