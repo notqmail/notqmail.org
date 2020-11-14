@@ -59,8 +59,8 @@
   - [#50](https://github.com/notqmail/notqmail/pull/50) This adds spawn-filter binary for filtering message passed to qmail-remote/qmail-local
 - [Extension API for qmail-smtpd](http://qmail-spp.sourceforge.net)
 - Tiny changes to qmail-smtpd for optionally running under a `qmail-popup`-alike SMTP AUTH parent program
-- Refactor `qmail-remote` to call an admin-configurable `tcpclient`.
-- Publish `qmail-popup`, `qmail-pop3d`, `qmail-qmtpd`, and `qmail-qmtpc` as extensions.
+- [Refactor `qmail-remote` to call an admin-configurable `tcpclient`](../Designs)
+- Publish `qmail-popup`, `qmail-pop3d`, `qmail-qmtpd`, and `qmail-qmtpc` as extensions
 - code standardization
   - Refactor the C code, by replacing valid K&R (The C Programming Language first edition) constructs with valid C89 (ANSI, The C Programming Language second edition) constructs, when there is a C89 feature that supersedes a construct in K&R.  (e.g., function signatures, adding int type specifiers.)  Even when a K&R construct is legal in C89.
     - headers
