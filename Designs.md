@@ -12,7 +12,7 @@ Here are some sketches for how we can get features by making qmail more like its
 We can follow and extend the design of qmail's POP3 service.
 Amitai has been running (a slightly more complicated version of) this in production for a couple years.
 
-1. Import some of acceptutils:
+1. Import some of [acceptutils](https://schmonz.com/qmail/acceptutils/):
     - For SMTP AUTH and TLS, import `qmail-authup`
         - Also supersedes `qmail-popup`; make that a one-line compatibility wrapper
 		- (We drop APOP support, that's all)
@@ -23,7 +23,7 @@ Amitai has been running (a slightly more complicated version of) this in product
     - Share code with `qmail-smtpd`, where sensible
 4. In `qmail-ofmipd`, add logic for when `AUTHUP_USER` is set
 
-Then run under `sslserver -n`, configured like so:
+Then run under [ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html)'s `sslserver -n`, configured like so:
 
 ```sh
 exec 2>&1
@@ -88,7 +88,7 @@ SSL processing runs as the `ucspissl` user.
 
 `qmail-smtpd` is easily adapted (and tested) to new needs because it has no networking code.
 By giving `qmail-remote` a matching design, we can give it the same properties.
-qremote proves (a slightly more complicated version of) the concept.
+[qremote](https://mojzis.com/software/qremote/) proves (a slightly more complicated version of) the concept.
 
 
 ### 1. Remove network code
@@ -104,8 +104,9 @@ If we want to merge here, we'll temporarily call it `qmail-newremote`.
 ### 2. Add STARTTLS
 
 Our next move is to take advantage of `sslclient -y`, a delayed-encryption mode analogous to `sslserver -n`.
-(Even though it doesn't exist at the time of writing, it's reasonable to posit its existence. Scott Gifford's original UCSPI-TLS patch included it, and the current ucspi-ssl maintainer has recently agreed to merge it.)
-We port the inoa.net TLS patch's `qmail-remote` logic to `qmail-rsmtp`.
+(Even though it doesn't exist at the time of writing, it's reasonable to posit its existence.
+[Scott Gifford's original UCSPI-TLS patch](https://github.com/SuperScript/ucspi-ssl/compare/master...scottgifford:master) included it, and the current ucspi-ssl maintainer has recently agreed to merge it.)
+We port the [inoa.net TLS patch](http://inoa.net/qmail-tls/)'s `qmail-remote` logic to `qmail-rsmtp`.
 Iff we negotiate `STARTTLS`, then we notify `sslclient` to start encryption via the UCSPI-TLS interface.
 Since TCP and SSL are handled by an external program, we should be able to express the patch's logic with much less (and much more obvious) code.
 
