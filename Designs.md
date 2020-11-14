@@ -128,7 +128,7 @@ We can merge again here.
 We apply @DerDakon's patch to `qmail-rsmtpd`, and can merge again here.
 
 
-### 4. Add SMTPUTF8
+### 5. Add SMTPUTF8
 
 This is the only other popular and small `qmail-remote` patch we currently know of.
 Apply it to `qmail-rsmtpd` (and also to `qmail-smtpd` and `qmail-ofmipd`).
@@ -136,7 +136,7 @@ Apply it to `qmail-rsmtpd` (and also to `qmail-smtpd` and `qmail-ofmipd`).
 We can merge again here, and can consider moving `qmail-newremote` to `qmail-remote`.
 
 
-### 4. Add IPv6
+### 6. Add IPv6
 
 `sslclient` supports v6 transport.
 Do `qmail-remote`'s DNS-lookup routines support v6 transport and/or responses?
