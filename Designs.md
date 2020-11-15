@@ -93,7 +93,7 @@ By giving `qmail-remote` a matching design, we can give it the same properties.
 
 ### 1. Remove network code
 
-- Extract SMTP client to `qmail-rsmtp`
+- Extract SMTP client to `qmail-smtpc`
 - Have `qmail-remote` run it with `tcpclient`
 
 Within the notqmail codebase, this is a sweet refactoring -- not even introducing a new dependency, since we already require `tcpserver` or the equivalent.
@@ -106,7 +106,7 @@ If we want to merge here, we'll temporarily call it `qmail-newremote`.
 Our next move is to take advantage of `sslclient -y`, a delayed-encryption mode analogous to `sslserver -n`.
 (Even though it doesn't exist at the time of writing, it's reasonable to posit its existence.
 [Scott Gifford's original UCSPI-TLS patch](https://github.com/SuperScript/ucspi-ssl/compare/master...scottgifford:master) included it, and the current ucspi-ssl maintainer has recently agreed to merge it.)
-We port the [inoa.net TLS patch](http://inoa.net/qmail-tls/)'s `qmail-remote` logic to `qmail-rsmtp`.
+We port the [inoa.net TLS patch](http://inoa.net/qmail-tls/)'s `qmail-remote` logic to `qmail-smtpc`.
 Iff we negotiate `STARTTLS`, then we notify `sslclient` to start encryption via the UCSPI-TLS interface.
 Since TCP and SSL are handled by an external program, we should be able to express the patch's logic with much less (and much more obvious) code.
 
@@ -119,20 +119,20 @@ We can merge again here.
 
 ### 3. Add AUTH
 
-Next, we pick a sufficiently configurable outbound AUTH patch and apply it to `qmail-rsmtp`.
+Next, we pick a sufficiently configurable outbound AUTH patch and apply it to `qmail-smtpc`.
 
 We can merge again here.
 
 
 ### 4. Add SIZE
 
-We apply @DerDakon's patch to `qmail-rsmtpd`, and can merge again here.
+We apply @DerDakon's patch to `qmail-smtpc`, and can merge again here.
 
 
 ### 5. Add SMTPUTF8
 
 This is the only other popular and small `qmail-remote` patch we currently know of.
-Apply it to `qmail-rsmtpd` (and also to `qmail-smtpd` and `qmail-ofmipd`).
+Apply it to `qmail-smtpc` (and also to `qmail-smtpd` and `qmail-ofmipd`).
 
 We can merge again here, and can consider moving `qmail-newremote` to `qmail-remote`.
 
@@ -143,4 +143,4 @@ We can merge again here, and can consider moving `qmail-newremote` to `qmail-rem
 Do `qmail-remote`'s DNS-lookup routines support v6 transport and/or responses?
 If not, now's the time to switch to a djbdns-derived or -inspired DNS API that supports both.
 
-We can merge again here, and if we haven't already done so, then it's definitively time to move `qmail-newremote` to `qmail-remote`.
+We can merge again here, and if we haven’t already done so, can again consider moving `qmail-newremote` to `qmail-remote`.
