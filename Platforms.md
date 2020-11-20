@@ -18,7 +18,7 @@ Help us fill this in!
 | FreeBSD      |         11.2 |               |              |              |           |
 | FreeBSD      |         12.0 | y+pkgsrc      | y+pkgsrc     |              |           |
 | Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
-| NetBSD       |          8.1 | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     | @schmonz  |
+| NetBSD       |          9.1 | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     | @schmonz  |
 | NixOS        |        19.03 |               |              |              |           |
 | OpenBSD      |          6.5 | y+pkgsrc      | y+pkgsrc     |              |@xenotrope |
 | Tribblix     |       0m20.5 | y+pkgsrc      | y+pkgsrc     |              |           |
