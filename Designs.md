@@ -46,7 +46,7 @@ SSL processing runs as the `ucspissl` user.
 
 `sslserver` supports IPv6.
 
-At the time of writing, UCSPI-TLS support is being actively developed for [https://www.skarnet.org/software/s6-networking/].
+At the time of writing, UCSPI-TLS support is being actively developed for [s6-networking](https://www.skarnet.org/software/s6-networking/).
 When it ships, `s6-tlsserver` (which already supports IPv6) can be used in place of `sslserver`.
 
 
