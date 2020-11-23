@@ -128,15 +128,15 @@ Next, we pick a sufficiently configurable outbound AUTH patch and apply it to `q
 We can merge again here.
 
 
-### 4. Add SIZE
+### 4. Add SIZE and PIPELINING
 
-We apply @DerDakon's patch to `qmail-smtpc`, and can merge again here.
+We apply [DerDakon's patch](https://opensource.sf-tec.de/qmail/qmail-remote-ESMTP-0.05.diff) to `qmail-smtpc`, and can merge again here.
 
 
 ### 5. Add SMTPUTF8
 
 This is the only other popular and small `qmail-remote` patch we currently know of.
-Apply it to `qmail-smtpc` (and also to `qmail-smtpd` and `qmail-ofmipd`).
+Apply it, or an independent implementation, to `qmail-smtpc` (and also to `qmail-smtpd` and `qmail-ofmipd`).
 
 We can merge again here, and can consider moving `qmail-newremote` to `qmail-remote`.
 
