@@ -69,12 +69,12 @@ SSL processing runs as the `ucspissl` user.
 `sslserver` supports IPv6.
 
 At the time of writing, UCSPI-TLS support is being actively developed for [s6-networking](https://www.skarnet.org/software/s6-networking/), which also supports TLS and IPv6.
-When it ships, `s6-ucspitlsd` can be used in place of `sslserver -n`.
+When it ships, `s6-tcpserver` and `s6-ucspitlsd` can be used in place of `sslserver -n`.
 
 
 ## Post-1.09: Port 110 (IPv6 and) mandatory STARTTLS and AUTH
 
-1. Replace `tcpserver` with `sslserver -n` (or `s6-ucspitlsd`), as above.
+1. Replace `tcpserver` with `sslserver -n` (or `s6-tcpserver` and `s6-ucspitlsd`), as above.
 2. Set `UCSPITLS=!`, as above.
 
 SSL processing runs as the `ucspissl` user.
@@ -89,7 +89,7 @@ Amitai has been running (a slightly more complicated version of) this in product
 	- Share or borrow from `qmail-authup`
 2. Add a tiny bit of logic for TLS state
 
-Then run `sslserver -n` (or `s6-ucspitlsd`), configured like so:
+Then run `sslserver -n` (or `s6-tcpserver` and `s6-ucspitlsd`), configured like so:
 
 ```sh
 exec 2>&1
@@ -133,7 +133,7 @@ Our next move is to take advantage of `sslclient -y`, a delayed-encryption mode 
 [Scott Gifford's original UCSPI-TLS patch](https://github.com/SuperScript/ucspi-ssl/compare/master...scottgifford:master) included it, and Erwin Hoffmann has agreed to merge it into ucspi-ssl.
 Laurent Bercot is also actively working on UCSPI-TLS client support as `s6-ucspitlsc`.)
 We port the [inoa.net TLS patch](http://inoa.net/qmail-tls/)'s `qmail-remote` logic to `qmail-smtpc`.
-Iff we negotiate `STARTTLS`, then we notify `sslclient` (or `s6-ucspitlsc`) to start encryption via the UCSPI-TLS interface.
+Iff we negotiate `STARTTLS`, then we notify `sslclient` (or `s6-tcpclient` and `s6-ucspitlsc`) to start encryption via the UCSPI-TLS interface.
 Since TCP and SSL are handled by an external program, we should be able to express the patch's logic with much less (and much more obvious) code.
 
 Once we import its `update_tmprsadh` script, we have equivalent and compatible functionality to the TLS patch in `qmail-smtpd` and `qmail-remote` (and `qmail-ofmipd`, too).
@@ -165,7 +165,7 @@ We can merge again here, and can consider moving `qmail-newremote` to `qmail-rem
 
 ### 6. Add IPv6
 
-`sslclient` and `s6-ucspitlsc` support v6 transport.
+`sslclient` and `s6-tcpclient` support v6 transport.
 Do `qmail-remote`'s DNS-lookup routines support v6 transport and/or responses?
 If not, now's the time to switch to a djbdns-derived or -inspired DNS API that supports both.
 
