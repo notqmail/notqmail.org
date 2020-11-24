@@ -176,7 +176,7 @@ We can merge again here, and if we haven’t already done so, can again consider
 
 ## Post-1.09: SRS and DKIM
 
-### 1. Import `qmail-qfilter`
+### 1. Import [qmail-qfilter](https://untroubled.org/qmail-qfilter/)
 
 - For a `QMAILQUEUE` wrapper that runs `qmail-qfilter` with the sequence of Unix filters listed in `control/smtpfilters`, rejecting if any of them reject, import `qmail-qfilter-queue` from rejectutils
 - For a Unix filter that prepends a `Received:` header with TLS connection details, import `qmail-qfilter-addtlsheader` from acceptutils
