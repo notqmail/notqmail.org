@@ -7,7 +7,22 @@ One way to try to summarize where we're headed:
 Here are some sketches for how we can get features by making qmail more like itself.
 
 
-## Port 587 (IPv6 and) mandatory STARTTLS and AUTH
+## 1.09: SMTP recipient validation
+
+The [RCPTCHECK patch](http://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html) to `qmail-smtpd` is just enough interface for external programs to validate recipients.
+Later, we may want the much more general [qmail-spp patch](http://qmail-spp.sourceforge.net/doc/).
+Amitai (via pkgsrc) used to run the former and migrated easily to the latter.
+
+1. Import some of [rejectutils](https://schmonz.com/qmail/rejectutils/):
+    - For `control/rcptchecks` to be an admin-configurable sequence of RCPTCHECK-compatible programs, rejecting if any of them reject, import `qmail-rcptcheck`
+        - This insulates users from our choice of RCPTCHECK or qmail-spp, as it runs equally well under either
+    - For a recommended default checker, import `qmail-rcptcheck-realrcptto`, which is a RCPTCHECK-compatible program derived from [Paul Jarc's realrcptto patch](http://code.dogmap.org./qmail/#realrcptto) 
+        - This duplicates delivery logic from several qmail programs
+        - Later, with sufficient test coverage, we'll want to refactor to reduce duplication
+    - For optional additional checkers, maybe import `qmail-rcptcheck-badrcptto` and `qmail-rcptcheck-qregex`
+
+
+## Post-1.09: Port 587 (IPv6 and) mandatory STARTTLS and AUTH
 
 We can follow and extend the design of qmail's POP3 service.
 Amitai has been running (a slightly more complicated version of) this in production for a couple years.
@@ -50,7 +65,7 @@ At the time of writing, UCSPI-TLS support is being actively developed for [s6-ne
 When it ships, `s6-ucspitlsd` can be used in place of `sslserver -n`.
 
 
-## Port 110 (IPv6 and) mandatory STARTTLS and AUTH
+## Post-1.09: Port 110 (IPv6 and) mandatory STARTTLS and AUTH
 
 1. Replace `tcpserver` with `sslserver -n` (or `s6-ucspitlsd`), as above.
 2. Set `UCSPITLS=!`, as above.
@@ -59,7 +74,7 @@ SSL processing runs as the `ucspissl` user.
 `qmail-pop3d` contines to run as the authenticated user.
 
 
-## Port 25 (IPv6 and) opportunistic STARTTLS
+## Post-1.09: Port 25 (IPv6 and) opportunistic STARTTLS
 
 Amitai has been running (a slightly more complicated version of) this in production for a couple years.
 
@@ -87,7 +102,7 @@ SSL processing runs as the `ucspissl` user.
 `qmail-smtpd` continues to run as `qmaild`.
 
 
-## Outbound STARTTLS, AUTH, IPv6, etc.
+## Post-1.09: Outbound STARTTLS, AUTH, IPv6, etc.
 
 `qmail-smtpd` is easily adapted (and tested) to new needs because it has no networking code.
 By giving `qmail-remote` a matching design, we can give it the same properties.
