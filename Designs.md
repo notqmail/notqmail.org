@@ -25,6 +25,8 @@ Amitai (via pkgsrc) used to run the former and migrated easily to the latter.
 
 ## Post-1.09: SPF
 
+Amitai's been doing SPF checks this way for a while:
+
 1. Switch from RCPTCHECK to qmail-spp (or maybe keep both)
 2. Import [qmail-spp-spf](https://www.caputo.com/foss/qmail-spp-spf/)
 
@@ -173,7 +175,6 @@ We can merge again here, and if we haven’t already done so, can again consider
 
 
 ## Post-1.09: SRS and DKIM
-
 
 ### 1. Import `qmail-qfilter`
 
