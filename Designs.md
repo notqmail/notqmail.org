@@ -180,6 +180,7 @@ We can merge again here, and if we haven’t already done so, can again consider
 - For a `QMAILQUEUE` wrapper that runs `qmail-qfilter` with the sequence of Unix filters listed in `control/smtpfilters`, rejecting if any of them reject, import `qmail-qfilter-queue` from rejectutils
 - For a Unix filter that prepends a `Received:` header with TLS connection details, import `qmail-qfilter-addtlsheader` from acceptutils
     - (So maybe we should import `qmail-qfilter` and `qmail-qfilter-queue` sooner as part of TLS, above)
+- To let filters provide meaningful error strings, maybe merge the [qmail-queue-custom-error patch](https://notes.sagredo.eu/files/qmail/patches/qmail-queue-custom-error-v2.netqmail-1.05.patch)
 
 ### 2. Run inbound messages through new Unix filters
 
