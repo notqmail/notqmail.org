@@ -17,9 +17,16 @@ Amitai (via pkgsrc) used to run the former and migrated easily to the latter.
     - For `control/rcptchecks` to be an admin-configurable sequence of RCPTCHECK-compatible programs, rejecting if any of them reject, import `qmail-rcptcheck`
         - This insulates users from our choice of RCPTCHECK or qmail-spp, as it runs equally well under either
     - For a recommended default checker, import `qmail-rcptcheck-realrcptto`, which is a RCPTCHECK-compatible program derived from [Paul Jarc's realrcptto patch](http://code.dogmap.org./qmail/#realrcptto) 
-        - This duplicates delivery logic from several qmail programs
+        - Far from meeting everyone's needs, but no false positives and will start to help
+        - Duplicates delivery logic from several qmail programs
         - Later, with sufficient test coverage, we'll want to refactor to reduce duplication
     - For optional additional checkers, maybe import `qmail-rcptcheck-badrcptto` and `qmail-rcptcheck-qregex`
+
+
+## Post-1.09: SPF
+
+1. Switch from RCPTCHECK to qmail-spp (or maybe keep both)
+2. Import [qmail-spp-spf](https://www.caputo.com/foss/qmail-spp-spf/)
 
 
 ## Post-1.09: Port 587 (IPv6 and) mandatory STARTTLS and AUTH
@@ -163,3 +170,32 @@ Do `qmail-remote`'s DNS-lookup routines support v6 transport and/or responses?
 If not, now's the time to switch to a djbdns-derived or -inspired DNS API that supports both.
 
 We can merge again here, and if we haven’t already done so, can again consider moving `qmail-newremote` to `qmail-remote`.
+
+
+## Post-1.09: SRS and DKIM
+
+
+### 1. Import `qmail-qfilter`
+
+- For a `QMAILQUEUE` wrapper that runs `qmail-qfilter` with the sequence of Unix filters listed in `control/smtpfilters`, rejecting if any of them reject, import `qmail-qfilter-queue` from rejectutils
+- For a Unix filter that prepends a `Received:` header with TLS connection details, import `qmail-qfilter-addtlsheader` from acceptutils
+    - (So maybe we should import `qmail-qfilter` and `qmail-qfilter-queue` sooner as part of TLS, above)
+
+### 2. Run inbound messages through new Unix filters
+
+- Write `qmail-qfilter-srsreverse` to SRS-unwrap envelope senders
+    - List it in `control/smtpfilters`
+- Write `qmail-qfilter-dkimverify` to verify DKIM signatures
+    - List it in `control/smtpfilters` -- probably needs to be first
+
+### 3. Write `qmail-rfilter` and friends
+
+- Write `qmail-rfilter`, which is to `qmail-remote` as `qmail-qfilter` is to `qmail-queue`: an easy way to run Unix filters on outbound messages
+- Write `qmail-rfilter-remote`, a `QMAILREMOTE` wrapper that runs `qmail-rfilter` with the sequence of Unix filters in `control/remotefilters` (akin to `qmail-qfilter-queue` for `QMAILQUEUE`)
+
+### 4. Run outbound messages through new Unix filters
+
+- Write `qmail-rfilter-srsforward`, a Unix filter that SRS-rewrites envelope senders
+    - List it in `control/remotefilters`
+- Write `qmail-rfilter-dkimsign`, a Unix filter that signs messages with DKIM
+    - List it `control/remotefilters` -- probably needs to be last
