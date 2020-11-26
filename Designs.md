@@ -188,16 +188,23 @@ We can merge again here, and if we haven’t already done so, can again consider
 - Write `qmail-qfilter-srsreverse` to SRS-unwrap envelope senders
     - List it in `control/smtpfilters`
 - Write `qmail-qfilter-dkimverify` to verify DKIM signatures
-    - List it in `control/smtpfilters` -- probably needs to be first
+    - List it in `control/smtpfilters` -- order doesn't matter as long as filters do not modify anything before DKIM-Signature header
 
 ### 3. Write `qmail-rfilter` and friends
 
 - Write `qmail-rfilter`, which is to `qmail-remote` as `qmail-qfilter` is to `qmail-queue`: an easy way to run Unix filters on outbound messages
-- Write `qmail-rfilter-remote`, a `QMAILREMOTE` wrapper that runs `qmail-rfilter` with the sequence of Unix filters in `control/remotefilters` (akin to `qmail-qfilter-queue` for `QMAILQUEUE`)
+- Write `qmail-rfilter-remote`, a `QMAILREMOTE` wrapper that runs `qmail-rfilter` with the sequence of Unix filters in `control/remotefilters` (akin to `qmail-qfilter-queue` for `QMAILQUEUE`). qmail-rfilter-remote should ultimately call qmail-remote. But qmail-remote will use fd 0 to read the message. This will the original message in the queue/mess directory. So to make the filters effective, we need to use either of the two method
+    - pipe the output of the filters to qmail-remote. This will mean using pipe() and fork() where qmail-remote runs as a child process
+    - create a new file. Dup the fd to 1 and then call the filters. Once the filters have finished, reopen the file and dup the fd to 0 and then do exec of qmail-remote with the same arguments that qmail-rspawn called qmail-rfilter-local.
+
+- Write `qmail-lfilter-local`, a `QMAILLOCAL` wrapper that runs `qmail-lfilter` with the sequence of Unix filters in
+`control/localfilters` (akin to `qmail-qfilter-queue` for `QMAILQUEUE`). qmail-lfilter-remote should ultimately call qmail-local. But qmail-local will use fd 0 to read the message. This will be the original message in the queue/mess directory. So to make the filters effective, we need to use either of the two method
+    - pipe the output of the filters to qmail-local. This will mean using pipe() and fork() where qmail-local runs as a child process
+    - create a new file. Dup the fd to 1 and then call the filters. Once the filters have finished, reopen the file and dup the fd to 0 and then do exec of qmail-local with the same arguments that qmail-lspawn called qmail-lfilter-local.
 
 ### 4. Run outbound messages through new Unix filters
 
 - Write `qmail-rfilter-srsforward`, a Unix filter that SRS-rewrites envelope senders
     - List it in `control/remotefilters`
 - Write `qmail-rfilter-dkimsign`, a Unix filter that signs messages with DKIM
-    - List it `control/remotefilters` -- probably needs to be last
+    - List it `control/remotefilters` -- This needs to be last if any of the filters are going to modify the modify or the headers (h=) that will be used for DKIM signing.
