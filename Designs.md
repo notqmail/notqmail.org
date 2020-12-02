@@ -7,7 +7,7 @@ One way to try to summarize where we're headed:
 Here are some sketches for how we can get features by making qmail more like itself.
 
 
-## 1.09: SMTP recipient validation
+## Post-1.09: SMTP recipient validation
 
 The [RCPTCHECK patch](http://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html) to `qmail-smtpd` is just enough interface for external programs to validate recipients.
 Later, we may want the much more general [qmail-spp patch](http://qmail-spp.sourceforge.net/doc/).
