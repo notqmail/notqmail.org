@@ -41,7 +41,6 @@ Amitai has been running (a slightly more complicated version of) this in product
         - Also supersedes `qmail-popup`; make that a one-line compatibility wrapper
 		- (We drop APOP support, that's all)
 		- (SMTP AUTH supports PLAIN and LOGIN only, no CRAM-MD5)
-    - For retrying failed logins, maybe import `qmail-reup`
     - For ensuring root can't pass `checkpassword`, import `checknotroot`
 3. Import mess822's `ofmipd` as `qmail-ofmipd`
     - Share code with `qmail-smtpd`, where sensible
@@ -58,7 +57,6 @@ exec env                                       \
     CERTFILE=/var/qmail/control/servercert.pem \
     sslserver -ne -vRl0                        \
     0 587                                      \
-    qmail-reup -t 5                            \
     qmail-authup smtp                          \
     checkpassword                              \
     checknotroot                               \
