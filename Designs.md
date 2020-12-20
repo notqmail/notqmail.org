@@ -143,19 +143,26 @@ They won't even have to move their certs or change their `cron` jobs.
 We can merge again here.
 
 
-### 3. Add AUTH
+### 3. Add EHLO parsing
+
+We're making good progress, and we're about to add a bunch more capabilities.
+It's time for a
+[standardized EHLO parser](https://github.com/notqmail/notqmail/pull/173).
+
+
+### 4. Add AUTH
 
 Next, we pick a sufficiently configurable outbound AUTH patch and apply it to `qmail-smtpc`.
 
 We can merge again here.
 
 
-### 4. Add SIZE and PIPELINING
+### 5. Add SIZE and PIPELINING
 
 We apply [DerDakon's patch](https://opensource.sf-tec.de/qmail/qmail-remote-ESMTP-0.05.diff) to `qmail-smtpc`, and can merge again here.
 
 
-### 5. Add SMTPUTF8
+### 6. Add SMTPUTF8
 
 This is the only other popular and small `qmail-remote` patch we currently know of.
 Apply it, or an independent implementation, to `qmail-smtpc` (and also to `qmail-smtpd` and `qmail-ofmipd`).
@@ -163,7 +170,7 @@ Apply it, or an independent implementation, to `qmail-smtpc` (and also to `qmail
 We can merge again here, and can consider moving `qmail-newremote` to `qmail-remote`.
 
 
-### 6. Add IPv6
+### 7. Add IPv6
 
 `sslclient` and `s6-tcpclient` support v6 transport.
 Do `qmail-remote`'s DNS-lookup routines support v6 transport and/or responses?
