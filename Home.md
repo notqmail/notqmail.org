@@ -9,6 +9,15 @@ We all use email, so we all use email servers. notqmail is software for running 
 The current release is [[notqmail 1.08]], issued 20 May 2020.
 
 
+# Why not Postfix?
+
+_We know you're wondering._
+
+[Postfix](http://www.postfix.org) is very good. We also really like qmail.
+
+For now, we're targeting sysadmins who already run a qmail-based mail system. If it's not clear to you why you'd run notqmail instead of Postfix, you're probably right. Someday, when notqmail is more featureful, we'll want to compare and contrast with other MTAs. In the meantime, many of [qmail 1.03's advantages](https://cr.yp.to/qmail.html) are still relevant.
+
+
 # Why should I trust notqmail?
 
 _Watch what we do and how we do it; then decide._
@@ -41,6 +50,20 @@ None of us can hold in mind all simultaneous details the way it seems DJB must h
 DJB's code was trustworthy. netqmail's small, conservative patchset was trustworthy. We intend for our development process to be trustworthy. If you find otherwise, we'd be extremely grateful to hear your doubts and concerns. But if you decide we're being consistently careful, thoughtful, reasonable, and practical, we hope you'll update to notqmail.
 
 Our starting point for this project is [netqmail 1.06](https://github.com/notqmail/notqmail/tree/netqmail-1.06), with previous netqmail and qmail releases also tagged in the repo.
+
+
+# Are DJB or any of the netqmail authors involved?
+
+_We'd love to have them, of course._
+
+Neither netqmail nor DJB were asked to approve of this distribution.
+
+
+# Does the [qmail security guarantee](https://cr.yp.to/qmail/guarantee.html) apply?
+
+_We do warrant that we've made a good-faith attempt to ensure that the software behaves correctly._
+
+Sorry, no. We're not DJB, and notqmail is not qmail.
 
 
 # What are the project's goals?
@@ -84,8 +107,8 @@ _All the important ones._
 Some known big ones:
 
 - SMTP recipient validation
-- AUTH
 - TLS
+- AUTH
 - IPv6
 - SPF
 - SRS
@@ -145,26 +168,3 @@ We invite users or enthusiasts of qmail to join us. We especially hope for:
 - Code from those of you with custom patchsets or forks
 
 Say hi on the list or IRC and one of us will help you get started on your first contribution.
-
-
-# Are DJB or any of the netqmail authors involved?
-
-_We'd love to have them, of course._
-
-Neither netqmail nor DJB were asked to approve of this distribution.
-
-
-# Does the [qmail security guarantee](https://cr.yp.to/qmail/guarantee.html) apply?
-
-_We warrant that we've made a good-faith attempt to ensure that the software behaves correctly._
-
-Sorry, no. We're not DJB, and notqmail is not qmail.
-
-
-# Why not Postfix?
-
-_We know you're wondering._
-
-[Postfix](http://www.postfix.org) is very good. We also really like qmail.
-
-For now, we're targeting sysadmins who already run a qmail-based mail system. If it's not clear to you why you'd run notqmail instead of Postfix, you're probably right. Someday, when notqmail is more featureful, we'll want to compare and contrast with other MTAs. In the meantime, many of [qmail 1.03's advantages](https://cr.yp.to/qmail.html) are still relevant.
