@@ -9,31 +9,31 @@ We all use email, so we all use email servers. notqmail is software for running 
 The current release is [[notqmail 1.08]], issued 20 May 2020.
 
 
-# Why not Postfix?
+## Why not Postfix?
 
 [Postfix](http://www.postfix.org) is very good. We also really like qmail.
 
 For now, we're targeting sysadmins who already run a qmail-based mail system. If it's not clear to you why you'd run notqmail instead of Postfix, you're probably right. Someday, when notqmail is more featureful, we'll want to compare and contrast with other MTAs. In the meantime, many of [qmail 1.03's advantages](https://cr.yp.to/qmail.html) are still relevant.
 
 
-# Why should I trust notqmail?
+## Why should I trust notqmail?
 
 This is a big question and it deserves a [[thorough answer|Trust]].
 
 
-# Are DJB or any of the netqmail authors involved?
+## Are DJB or any of the netqmail authors involved?
 
 Neither netqmail nor DJB were asked to approve of this distribution.
 
 
-# Does the [qmail security guarantee](https://cr.yp.to/qmail/guarantee.html) apply?
+## Does the [qmail security guarantee](https://cr.yp.to/qmail/guarantee.html) apply?
 
 Sorry, no. We're not DJB, and notqmail is not qmail.
 
 
-# What are the project's goals?
+## What are the project's goals?
 
-See
+See:
 
 - [[Goals and Non-Goals]]
 - [[Feature Wishlist]]
@@ -41,7 +41,7 @@ See
 - [[Roadmap]]
 
 
-# What happens to my custom patchset?
+## What happens to my custom patchset?
 
 Expect your patchset to:
 
@@ -52,14 +52,14 @@ Expect your patchset to:
 For more, see [[Patches]].
 
 
-# How do I install notqmail?
+## How do I install notqmail?
 
 Your build scripts will continue to work.
 We've tested many [[platforms]].
 See [[Install]].
 
 
-# How can I get more involved?
+## How can I get more involved?
 
 Our [git repository](https://github.com/notqmail/notqmail) and [issue tracker](https://github.com/notqmail/notqmail/issues) are hosted by GitHub.  Various contributors to notqmail are active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Freenode's](https://freenode.net/) `#qmail` IRC channel.
 
