@@ -33,11 +33,12 @@ Sorry, no. We're not DJB, and notqmail is not qmail.
 
 # What are the project's goals?
 
-See [[Goals and Non-Goals]],
-[[Feature Wishlist]],
-[[Designs]],
-and
-[[Roadmap]].
+See
+
+- [[Goals and Non-Goals]]
+- [[Feature Wishlist]]
+- [[Designs]]
+- [[Roadmap]]
 
 
 # What happens to my custom patchset?
