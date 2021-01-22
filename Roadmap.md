@@ -106,3 +106,8 @@
 ## Extensions for email clients
 
 - Help developers convert more of their existing code to plugins
+
+
+# 2.4
+
+## Modernize Binc IMAP
