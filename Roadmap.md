@@ -111,3 +111,15 @@
 # 2.4
 
 ## Modernize Binc IMAP
+
+- Get our hands on the original repo; else reconstitute as best we can
+- Push the repo to a new notqmail-org project ("notbinc"? "ninb"?)
+- Fix compile warnings
+- How well does it handle huge maildirs?
+- Fix how Maildir++ folders have to appear as subfolders of INBOX (by seeing how Dovecot manages)
+    - Then remove IMAPdir support, unless there's some other reason to keep it
+- Assuming it has unconstrained MIME recursion (@leahneukirchen's pet bug found in most mail software), constrain it
+- Add UCSPI-TLS to `bincimap-up`
+    - Then remove OpenSSL code
+- Optionally reindex on message delivery (some sort of `qmail-local` integration)
+- Maybe gradually refactor C++ to C
