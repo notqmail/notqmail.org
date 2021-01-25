@@ -2,6 +2,10 @@
 
 This is my cheatsheet about what I have been doing to get the notqmail-1.08 release out of the door.
 
+## Pre-release checks
+
+Make sure the expected popular patches (TLS, ...) still apply, or that we've prepared rebased versions that do.
+
 ## Wiki page
 
 We collected all merged PRs on the wiki paged named like the release.
