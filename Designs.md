@@ -66,10 +66,7 @@ exec env                                       \
 SSL processing runs as the `ucspissl` user.
 `qmail-ofmipd` runs as the authenticated user.
 
-`sslserver` supports IPv6.
-
-At the time of writing, UCSPI-TLS support is being actively developed for [s6-networking](https://www.skarnet.org/software/s6-networking/), which also supports TLS and IPv6.
-When it ships, `s6-tcpserver` and `s6-ucspitlsd` can be used in place of `sslserver -n`.
+Alternatively, [s6-networking](https://www.skarnet.org/software/s6-networking/)'s `s6-tcpserver` and `s6-ucspitlsd` can be configured similarly. Both `sslserver` and `s6-tcpserver` support IPv6.
 
 
 ## Post-1.09: Port 110 (IPv6 and) mandatory STARTTLS and AUTH
@@ -128,12 +125,9 @@ If we want to merge here, we'll temporarily call it `qmail-newremote`.
 
 ### 2. Add STARTTLS
 
-Our next move is to take advantage of `sslclient -y`, a delayed-encryption mode analogous to `sslserver -n`.
-(Even though it doesn't exist at the time of writing, it's reasonable to posit its existence.
-[Scott Gifford's original UCSPI-TLS patch](https://github.com/SuperScript/ucspi-ssl/compare/master...scottgifford:master) included it, and Erwin Hoffmann has agreed to merge it into ucspi-ssl.
-Laurent Bercot is also actively working on UCSPI-TLS client support as `s6-ucspitlsc`.)
+Our next move is to take advantage of s6-networking's `s6-ucspitlsc` (or `sslclient -y`, a delayed-encryption mode analogous to `sslserver -n`, which was present in [Scott Gifford's original UCSPI-TLS patch](https://github.com/SuperScript/ucspi-ssl/compare/master...scottgifford:master) and which Erwin Hoffmann has agreed to merge into a future ucspi-ssl.)
 We port the [inoa.net TLS patch](http://inoa.net/qmail-tls/)'s `qmail-remote` logic to `qmail-smtpc`.
-Iff we negotiate `STARTTLS`, then we notify `sslclient` (or `s6-tcpclient` and `s6-ucspitlsc`) to start encryption via the UCSPI-TLS interface.
+Iff we negotiate `STARTTLS`, then we notify `s6-ucspitlsc` (or `sslclient`) to start encryption via the UCSPI-TLS interface.
 Since TCP and SSL are handled by an external program, we should be able to express the patch's logic with much less (and much more obvious) code.
 
 Once we import its `update_tmprsadh` script, we have equivalent and compatible functionality to the TLS patch in `qmail-smtpd` and `qmail-remote` (and `qmail-ofmipd`, too).
