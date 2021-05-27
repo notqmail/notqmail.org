@@ -61,7 +61,7 @@ See [[Install]].
 
 ## How can I get more involved?
 
-Our [git repository](https://github.com/notqmail/notqmail) and [issue tracker](https://github.com/notqmail/notqmail/issues) are hosted by GitHub.  Various contributors to notqmail are active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Freenode's](https://freenode.net/) `#qmail` IRC channel.
+Our [git repository](https://github.com/notqmail/notqmail) and [issue tracker](https://github.com/notqmail/notqmail/issues) are hosted by GitHub.  Various contributors to notqmail are active on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Libera Chat's](https://libera.chat/) `#qmail` IRC channel.
 
 We invite users or enthusiasts of qmail to join us. We especially hope for:
 
