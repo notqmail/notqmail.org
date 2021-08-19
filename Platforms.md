@@ -18,7 +18,7 @@ Help us fill this in!
 | FreeBSD      |         11.2 |               |              |              |           |
 | FreeBSD      |         12.0 | y+pkgsrc      | y+pkgsrc     |              |           |
 | Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon |
-| NetBSD       |          9.1 | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     | @schmonz  |
+| NetBSD       |          9.2 | y+pkgsrc      | y+pkgsrc     | y+pkgsrc     | @schmonz  |
 | NixOS        |        19.03 |               |              |              |           |
 | OpenBSD      |          6.5 | y+pkgsrc      | y+pkgsrc     |              |@xenotrope |
 | Tribblix     |       0m20.5 | y+pkgsrc      | y+pkgsrc     |              |           |
@@ -35,11 +35,19 @@ Help us fill this in!
 | Mac OS X     | Sierra 10.12 |               |              |              |          |
 | Mac OS X     | Mojave 10.14 | y+pkgsrc      | y+pkgsrc     |              |          |
 
-### aarch64 ELF
+### amd64 Mach-O
 
 | Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
-| Ubuntu       | Bionic 18.04 | y+pkgsrc      | y+pkgsrc     |              |          |
+| macOS        | Sierra 10.12 |               |              |              |          |
+| macOS        | Mojave 10.14 | y+pkgsrc      | y+pkgsrc     |              |          |
+| macOS        | Big Sur 11.5 | y+pkgsrc      | y+pkgsrc     |              |          |
+
+### aarch64 Mach-O
+
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
+| macOS        | Big Sur 11.5 | y+pkgsrc      | y+pkgsrc     |              |          |
 
 ### hppa ELF
 
