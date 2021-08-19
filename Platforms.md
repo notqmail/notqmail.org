@@ -42,6 +42,13 @@ Help us fill this in!
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
 | macOS        | Big Sur 11.5 | y+pkgsrc      | y+pkgsrc     |              |          |
 
+### aarch64 ELF
+
+| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
+| ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
+| NetBSD       | 9.2          | y+pkgsrc      | y+pkgsrc     |              |          |
+| Ubuntu       | Bionic 18.04 | y+pkgsrc      | y+pkgsrc     |              |          |
+
 ### hppa ELF
 
 | Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
