@@ -32,13 +32,6 @@ Help us fill this in!
 
 | Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
 | ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
-| Mac OS X     | Sierra 10.12 |               |              |              |          |
-| Mac OS X     | Mojave 10.14 | y+pkgsrc      | y+pkgsrc     |              |          |
-
-### amd64 Mach-O
-
-| Platform     | Version      | [Build+Package](https://github.com/notqmail/notqmail/wiki/notqmail-1.07#how-to-install) | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod |
-| ------------ | -----------: | ------------: | -----------: | -----------: | ------:  |
 | macOS        | Sierra 10.12 |               |              |              |          |
 | macOS        | Mojave 10.14 | y+pkgsrc      | y+pkgsrc     |              |          |
 | macOS        | Big Sur 11.5 | y+pkgsrc      | y+pkgsrc     |              |          |
