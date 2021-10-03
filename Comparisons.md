@@ -2,7 +2,7 @@ notqmail is similar to some other projects. What makes it different enough to ex
 
 # notqmail and qmail
 
-[qmail](https://cr.yp.to/qmail.html has not been maintained for over two decades. No public revision control repository was ever available.
+[qmail](https://cr.yp.to/qmail.html) has not been maintained for over two decades. No public revision control repository was ever available.
 
 # notqmail and netqmail
 
