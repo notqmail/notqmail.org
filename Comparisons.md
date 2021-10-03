@@ -6,7 +6,7 @@ qmail has not been maintained for over two decades. No public revision control r
 
 # notqmail and netqmail
 
-n**e**tqmail was a community effort. It has not been maintained for over a decade, and no public revision control repository was ever available. Quite conservative, it was not an attempt to generate new development, only to collate a few small and universally applicable patches already in circulation. n**o**tqmail is a fork of the final release of n**e**tqmail.
+n**e**tqmail was a community effort. It has not been maintained for over a decade, and no public revision control repository was ever available. Quite conservative, it was not an attempt to generate new development, only to collate a few small and universally applicable patches already in circulation. n**o**tqmail is a fork of the final release of n**e**tqmail. We’re conservative in our own way, too — at least to begin with — but our [[Goals and Non-Goals]] are rather different.
 
 # notqmail and s/qmail
 
@@ -17,9 +17,9 @@ notqmail is only a couple years old. Like its ancestors, and unlike s/qmail, not
 1. In public
 2. As a team
 3. With consensus
-4. Following simple designs as qmail has taught us
+4. Following the simplest, most qmail-ish [[designs]] we can come up with
 
-…than it is for notqmail to deliver any particular feature on any particular timeline. Put another way, our _how_ is our _why_.
+…than it is for notqmail to deliver any particular feature on any particular timeline. Put another way, [our _how_ is our _why_](https://github.com/notqmail/notqmail/wiki/Trust).
 
 If s/qmail didn't exist, it would be harder to justify setting these priorities for notqmail. We're grateful for s/qmail (and its attendant tooling), and we believe both projects being active and distinct is mutually beneficial to everyone who's still financially and/or emotionally invested in the qmail ecosystem.
 
