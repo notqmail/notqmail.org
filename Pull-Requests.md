@@ -4,7 +4,7 @@
 - Describes the costs, risks, and benefits it addresses and/or introduces
 - Serves our goals, without broaching any of our non-goals
     - (Rare but not impossible: adjusting our goals instead of the proposed patch)
-- Includes a very brief description in `CHANGES`
+- Includes a very brief description in `CHANGES.md`
 - Adds any new object (or otherwise generated) files to `TARGETS`
 - Builds in all our autobuilders
 - Matches the conventions of surrounding code, where we're still trying to do that
