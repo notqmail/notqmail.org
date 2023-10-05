@@ -115,7 +115,7 @@ deterministic: 0
 
 # git plugin
 # git hook to generate
-git_wrapper: /home/notqmail/sites/notqmail.org/www/git/src.git/hooks/post-update
+git_wrapper: /home/notqmail/sites/notqmail.org/www/git/notqmail.org.git/hooks/post-update
 # shell command for git_wrapper to run, in the background
 git_wrapper_background_command: git push --all github
 # mode for git_wrapper (can safely be made suid)
