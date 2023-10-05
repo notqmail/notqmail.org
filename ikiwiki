@@ -42,9 +42,9 @@ add_plugins: []
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
-templatedir: /opt/.pkg-20230923-184828/share/ikiwiki/templates
+templatedir: /opt/pkg/share/ikiwiki/templates
 # base wiki source location
-underlaydir: /opt/.pkg-20230923-184828/share/ikiwiki/basewiki
+underlaydir: /opt/pkg/share/ikiwiki/basewiki
 # display verbose messages?
 #verbose: 1
 # log to syslog?
@@ -209,7 +209,7 @@ pingurl: []
 # location of highlight's filetypes.conf
 #filetypes_conf: /etc/highlight/filetypes.conf
 # location of highlight's langDefs directory
-#langdefdir: /opt/.pkg-20230923-184828/share/highlight/langDefs
+#langdefdir: /opt/pkg/share/highlight/langDefs
 
 # mdwn plugin
 # enable multimarkdown features?
