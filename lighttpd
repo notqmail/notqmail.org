@@ -1,0 +1,18 @@
+var.sitecanonical	= "notqmail.org"
+var.siteroot		= "/home/notqmail/sites/notqmail.org/www/"
+var.siteport		= 36387
+var.siteport_tls	= 36401
+
+include			"/etc/lighttpd/schmonz_ssl.conf"
+include			"/etc/lighttpd/schmonz_hosted.conf"
+
+server.modules		+= ("mod_redirect")
+url.redirect-code	= 307
+url.redirect		= (
+	"^/1.07"
+			=> "/release/1.07",
+	"^/1.08"
+			=> "/release/1.08",
+#	"^/(?!(.well-known/acme-challenge/.*))"
+#			=> "https://github.com/notqmail/notqmail/wiki"
+)
