@@ -1,4 +1,4 @@
-# [[1.09|Roadmap 1.09]]
+# 1.09
 
 - Remove 1.08's "intent to remove" programs (unless any of them make sense as extensions)
 - [#35](https://github.com/notqmail/notqmail/pull/35) FHS (issue [#2](https://github.com/notqmail/notqmail/issues/2))
