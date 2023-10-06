@@ -38,7 +38,9 @@ only_committed_changes: 0
 # rcs backend to use
 rcs: git
 # plugins to add to the default configuration
-add_plugins: []
+add_plugins:
+- map
+- sidebar
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -56,7 +58,7 @@ prefix_directives: 1
 # use page/index.mdwn source files
 indexpages: 0
 # enable Discussion pages?
-discussion: 1
+discussion: 0
 # name of Discussion pages
 discussionpage: Discussion
 # use elements new in HTML5 like <section>?
@@ -64,7 +66,7 @@ html5: 0
 # only send cookies over SSL connections?
 sslcookie: 0
 # extension to use for new pages
-default_pageext: mdwn
+default_pageext: md
 # extension to use for html files
 htmlext: html
 # strftime format string to display date
