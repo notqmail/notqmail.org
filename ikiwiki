@@ -39,6 +39,7 @@ only_committed_changes: 0
 rcs: git
 # plugins to add to the default configuration
 add_plugins:
+- img
 - map
 - sidebar
 # plugins to disable
