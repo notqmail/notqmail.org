@@ -1,4 +1,4 @@
-# Doing releases
+[[!meta title="Doing Releases"]]
 
 This is my cheatsheet about what I have been doing to get the notqmail-1.08 release out of the door.
 

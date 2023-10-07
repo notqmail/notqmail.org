@@ -1,3 +1,5 @@
+[[!meta title="Comparisons"]]
+
 notqmail is similar to some other projects. What makes it different enough to exist?
 
 # notqmail and qmail

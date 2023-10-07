@@ -1,4 +1,6 @@
-[[!meta title="Why should I trust notqmail?"]]
+[[!meta title="Trust"]]
+
+## Why should I trust notqmail?
 
 We have come to trust qmail, as you have, for at least these reasons:
 

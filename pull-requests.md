@@ -1,3 +1,5 @@
+[[!meta title="Pull Requests"]]
+
 # A pull request is ready when it...
 
 - Solves an agreed problem, in an agreed way, in an agreed sequence

@@ -1,3 +1,5 @@
+[[!meta title="Feature Wishlist"]]
+
 ## Which features will eventually be implemented?
 
 Some known big ones:

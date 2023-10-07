@@ -1,3 +1,5 @@
+[[!meta title="Goals and Non-Goals"]]
+
 ## What are notqmail's goals?
 
 _We'll trade away other things to get these._

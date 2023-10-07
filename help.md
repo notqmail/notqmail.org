@@ -1,4 +1,4 @@
-# Getting help
+[[!meta title="Help"]]
 
 notqmail is discussed on the [qmail mailing list](https://cr.yp.to/lists.html#qmail) and on [Libera Chat's](https://libera.chat/) `#qmail` IRC channel.
 For bug reports, please use our [issue tracker](https://github.com/notqmail/notqmail/issues) if possible.

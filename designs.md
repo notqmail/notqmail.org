@@ -1,4 +1,4 @@
-# Designs
+[[!meta title="Designs"]]
 
 One way to try to summarize where we're headed:
 

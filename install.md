@@ -1,4 +1,4 @@
-# How to install
+[[!meta title="Install"]]
 
 ## From source, on a single host
 

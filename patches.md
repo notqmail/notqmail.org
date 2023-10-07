@@ -1,3 +1,5 @@
+[[!meta title="Patches"]]
+
 You've been running qmail, so you've got a set of patches you rely on.
 Your patches will mostly continue to apply to notqmail.
 (See [#17](https://github.com/notqmail/notqmail/issues/17) for more about our intent.)
