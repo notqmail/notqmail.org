@@ -1,6 +1,6 @@
 [[!meta title="Platforms"]]
 
-## [[notqmail 1.07]]
+## [[notqmail 1.07|releases/1.07]]
 
 Help us fill this in!
 

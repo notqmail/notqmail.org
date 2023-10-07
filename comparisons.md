@@ -8,7 +8,7 @@ notqmail is similar to some other projects. What makes it different enough to ex
 
 # notqmail and netqmail
 
-[n**e**tqmail](http://netqmail.org/) was a community effort. It has not been maintained for over a decade, and no public revision control repository was ever available. Quite conservative, it was not an attempt to generate new development, only to collate a few small and universally applicable patches already in circulation. n**o**tqmail is a fork of the final release of n**e**tqmail. We’re conservative in our own way, too — at least to begin with — but our [[Goals and Non-Goals]] are rather different.
+[n**e**tqmail](http://netqmail.org/) was a community effort. It has not been maintained for over a decade, and no public revision control repository was ever available. Quite conservative, it was not an attempt to generate new development, only to collate a few small and universally applicable patches already in circulation. n**o**tqmail is a fork of the final release of n**e**tqmail. We’re conservative in our own way, too — at least to begin with — but our [[Goals and Non-Goals|goals-and-non-goals]] are rather different.
 
 # notqmail and s/qmail
 
