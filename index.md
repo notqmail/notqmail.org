@@ -1,5 +1,3 @@
-[[!meta title="Home"]]
-
 # What is notqmail?
 
 _It's not qmail. It's also not netqmail._
