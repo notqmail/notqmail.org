@@ -8,6 +8,6 @@ To link to a Pull Request, use this template, specifying a value for the `number
 
 ## Examples
 
-Link to [[!template id=pr number=24]]:
+Link to [[!template id=pr number=92]]:
 
-        \[[!template id=pr number=24]]
+        \[[!template id=pr number=92]]
