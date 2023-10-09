@@ -2,7 +2,7 @@
 
 You've been running qmail, so you've got a set of patches you rely on.
 Your patches will mostly continue to apply to notqmail.
-(See [#17](https://github.com/notqmail/notqmail/issues/17) for more about our intent.)
+(See [[!template id=issue number=17]] for more about our intent.)
 As notqmail gains features, you'll need fewer patches.
 
 When one of your patches doesn't quite apply anymore, because notqmail's code has evolved out from under it, the patch needs to be "rebased".
