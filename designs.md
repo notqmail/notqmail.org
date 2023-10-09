@@ -141,7 +141,7 @@ We can merge again here.
 
 We're making good progress, and we're about to add a bunch more capabilities.
 It's time for a
-[standardized EHLO parser](https://github.com/notqmail/notqmail/pull/173).
+standardized EHLO parser ([[!template id=pr number=173]]).
 
 
 ### 4. Add AUTH
