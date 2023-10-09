@@ -41,6 +41,7 @@ rcs: git
 add_plugins:
 - img
 - map
+- shortcut
 - sidebar
 - template
 # plugins to disable
