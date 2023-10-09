@@ -16,7 +16,7 @@ Amitai (via pkgsrc) used to run the former and migrated easily to the latter.
 1. Import some of [rejectutils](https://schmonz.com/qmail/rejectutils/):
     - For `control/rcptchecks` to be an admin-configurable sequence of RCPTCHECK-compatible programs, rejecting if any of them reject, import `qmail-rcptcheck`
         - This insulates users from our choice of RCPTCHECK or qmail-spp, as it runs equally well under either
-    - For a recommended default checker, import `qmail-rcptcheck-realrcptto`, which is a RCPTCHECK-compatible program derived from [Paul Jarc's realrcptto patch](http://code.dogmap.org./qmail/#realrcptto) 
+    - For a recommended default checker, import `qmail-rcptcheck-realrcptto`, which is a RCPTCHECK-compatible program derived from [Paul Jarc's realrcptto patch](http://code.dogmap.org./qmail/#realrcptto)
         - Far from meeting everyone's needs, but no false positives and will start to help
         - Duplicates delivery logic from several qmail programs
         - Later, with sufficient test coverage, we'll want to refactor to reduce duplication
