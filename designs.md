@@ -48,7 +48,7 @@ Amitai has been running (a slightly more complicated version of) this in product
 
 Then run under [ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html)'s `sslserver -n`, configured like so:
 
-```sh
+[[!format sh """
 exec 2>&1
 exec env                                       \
     UCSPITLS='!'                               \
@@ -61,7 +61,7 @@ exec env                                       \
     checkpassword                              \
     checknotroot                               \
     qmail-ofmipd
-```
+"""]]
 
 SSL processing runs as the `ucspissl` user.
 `qmail-ofmipd` runs as the authenticated user.
@@ -88,7 +88,7 @@ Amitai has been running (a slightly more complicated version of) this in product
 
 Then run `sslserver -n` (or `s6-tcpserver` and `s6-ucspitlsd`), configured like so:
 
-```sh
+[[!format sh """
 exec 2>&1
 exec env                                       \
     UCSPITLS=''                                \
@@ -100,7 +100,7 @@ exec env                                       \
     0 25                                       \
     rblsmtpd -r zen.spamhaus.org               \
     qmail-smtpd
-```
+"""]]
 
 SSL processing runs as the `ucspissl` user.
 `qmail-smtpd` continues to run as `qmaild`.

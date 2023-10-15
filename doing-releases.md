@@ -14,24 +14,24 @@ We collected all merged PRs on the wiki paged named like the release.
 
 The tag was done using
 
-```shell
+[[!format sh """
 git tag -s notqmail-1.08
-```
+"""]]
 
-The first line of the tag description is the release name without the dash, i.e. ```notqmail 1.08```.
+The first line of the tag description is the release name without the dash, i.e. `notqmail 1.08`.
 
 The rest of that description are the bullet points from the wiki page. It does not include the intermediate headlines and other comments.
 
 ## Tarballs
 
-```shell
+[[!format sh """
 RELEASE=1.08
 git archive --prefix=notqmail-${RELEASE}/ -o notqmail-${RELEASE}.tar notqmail-${RELEASE}
 gzip --best --keep notqmail-${RELEASE}.tar
 xz --best notqmail-${RELEASE}.tar
 gpg --detach-sign -a -o notqmail-${RELEASE}.tar.xz.sig notqmail-${RELEASE}.tar.xz
 gpg --detach-sign -a -o notqmail-${RELEASE}.tar.gz.sig notqmail-${RELEASE}.tar.gz
-```
+"""]]
 
 ## GitHub release page
 
