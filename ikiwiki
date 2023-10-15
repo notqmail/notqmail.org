@@ -39,6 +39,8 @@ only_committed_changes: 0
 rcs: git
 # plugins to add to the default configuration
 add_plugins:
+- format
+- highlight
 - img
 - map
 - shortcut
@@ -144,7 +146,7 @@ gitmaster_branch: main
 
 # inline plugin
 # enable rss feeds by default?
-#rss: 0
+rss: 1
 # enable atom feeds by default?
 #atom: 0
 # allow rss feeds to be used?
