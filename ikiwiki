@@ -45,6 +45,7 @@ add_plugins:
 - map
 - shortcut
 - sidebar
+- table
 - template
 # plugins to disable
 disable_plugins: []
