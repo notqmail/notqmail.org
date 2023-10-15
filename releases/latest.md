@@ -1,9 +1,8 @@
 [[!inline
 pages="page(./*) and !page(./latest)"
+sort=title
 reverse=yes
 show=1
-archive=yes
 template=releaselink
 feeds=no
-actions=no
 ]]

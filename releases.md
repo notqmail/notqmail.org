@@ -2,6 +2,7 @@
 
 [[!inline
 pages="./releases/* and !./releases/latest"
-archive=yes
+sort=title
 reverse=yes
+archive=yes
 ]]
