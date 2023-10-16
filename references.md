@@ -15,7 +15,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## Other sources of patches
 
-- [qmail.org](http://qmailorg.schmonz.com/top.html)
+- [qmail.org](https://qmail.notqmail.org/top.html)
 - Debian's [netqmail](https://sources.debian.org/src/netqmail/)
 - pkgsrc's [qmail](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) and [qmail-run](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail-run)
 - [schmonz](https://github.com/schmonz)'s [patch page](https://schmonz.com/qmail/)
