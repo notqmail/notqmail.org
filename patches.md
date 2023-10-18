@@ -37,10 +37,9 @@ Branch | Original Patch
 [notqmail-badmailfrom-x-relayclient](https://github.com/notqmail/notqmail/commits/notqmail-badmailfrom-x-relayclient) | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
 [notqmail-big-concurrency](https://github.com/notqmail/notqmail/commits/notqmail-big-concurrency) | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
 [notqmail-big-todo](https://github.com/notqmail/notqmail/commits/notqmail-big-todo) | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
-[master@b05ec6cbd](https://github.com/notqmail/notqmail/commit/b05ec6cbdacdf40d6c75326394461e22b7f8ab20) | Jonathan de Boyne Pollard's any-to-cname was integrated in [notqmail 1.08](https://github.com/notqmail/notqmail/releases/tag/notqmail-1.08)
 [notqmail-dns-oversize](https://github.com/notqmail/notqmail/commits/notqmail-dns-oversize) | Christopher K. Davis's oversize DNS packet
 [notqmail-ext-todo](https://github.com/notqmail/notqmail/commits/patches/notqmail/ext-todo) | André Opperman's ext_todo or "silly qmail syndrome"
-[notqmail-smtp-auth](https://github.com/notqmail/notqmail/commits/patches/notqmail/smtp-auth) | Erwin Hoffmann's [smptauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
+[notqmail-smtp-auth](https://github.com/notqmail/notqmail/commits/patches/notqmail/smtp-auth) | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
 [notqmail-smtp-tls](https://github.com/notqmail/notqmail/commits/patches/notqmail/smtp-tls) | Frederik Vermeulen's [qmail-smtp-tls](http://inoa.net/qmail-tls/)
 [notqmail-smtpd-logging](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-logging) | Andrew Richards' [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html)
 [notqmail-smtpd-spf](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-spf) | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/)
