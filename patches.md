@@ -1,14 +1,26 @@
 [[!meta title="Patches"]]
 
-You've been running qmail, so you've got a set of patches you rely on.
+## Everyone has patches
+
+You've been running qmail, so you've got a local set of patches you rely on.
 Your patches will mostly continue to apply to notqmail.
 (See [[!template id=issue number=17]] for more about our intent.)
 As notqmail gains features, you'll need fewer patches.
 
-When one of your patches doesn't quite apply anymore, because notqmail's code has evolved out from under it, the patch needs to be "rebased".
+## notqmail might break patches by mistake
+
+If your local patches apply, but compiling fails, it might be due to a deprecated function.
+Add `-DDEPRECATED_FUNCTIONS_AVAILABLE` to `conf-cc` and try again.
+If this makes your build succeed, we need to know!
+Please [file an issue](https://github.com/notqmail/notqmail/issues/new/choose) with the build error you had seen and the patch(es) involved.
+
+## Everyone maintains patches
+
+When qmail stopped being updated, your patches stopped needing updating.
+As notqmail's code evolves, your local patches may need to be "rebased".
 Sometimes this is easy and mechanical.
 Other times it will require deeper understanding of C, Unix, and qmail's design and implementation.
-In both cases, Git can be a helpful tool.
+In either case, Git can be a helpful tool.
 
 For your convenience, we've rebased several popular patches onto notqmail, each on its own git branch.
 How to use:
