@@ -7,12 +7,12 @@ include			"/etc/lighttpd/schmonz_ssl.conf"
 include			"/etc/lighttpd/schmonz_hosted.conf"
 
 server.modules		+= ("mod_redirect")
-url.redirect-code	= 307
+url.redirect-code	= 301
 url.redirect		= (
-	"^/1.07"
-			=> "/release/1.07",
-	"^/1.08"
-			=> "/release/1.08",
-#	"^/(?!(.well-known/acme-challenge/.*))"
-#			=> "https://github.com/notqmail/notqmail/wiki"
+	"^/1.07"	=> "/releases/1.07",
+	"^/1.08"	=> "/releases/1.08",
 )
+
+server.modules		+= ("mod_cgi")
+alias.url		+= ("/cgi" => siteroot + "cgi/")
+$HTTP["url"]		=~ "^/cgi/" { cgi.assign = ("" => "") }
