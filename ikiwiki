@@ -22,13 +22,13 @@ destdir: /home/notqmail/sites/notqmail.org/www/html
 # base url to the wiki
 url: https://notqmail.org/
 # url to the ikiwiki.cgi
-cgiurl: ''
+cgiurl: https://notqmail.org/cgi/ikiwiki
 # do not adjust cgiurl if CGI is accessed via different URL
 reverse_proxy: 0
 # filename of cgi wrapper to generate
-cgi_wrapper: ''
+cgi_wrapper: /home/notqmail/sites/notqmail.org/www/cgi/ikiwiki
 # mode for cgi_wrapper (can safely be made suid)
-cgi_wrappermode: 06755
+cgi_wrappermode: 00755
 # number of seconds to delay CGI requests when overloaded
 cgi_overload_delay: ''
 # message to display when overloaded (may contain html)
@@ -43,6 +43,7 @@ add_plugins:
 - highlight
 - img
 - map
+- search
 - shortcut
 - sidebar
 - table
@@ -317,7 +318,7 @@ mdwn_alpha_lists: 0
 
 # search plugin
 # path to the omega cgi program
-#omega_cgi: /usr/lib/cgi-bin/omega/omega
+omega_cgi: /opt/pkg/libexec/cgi-bin/xapian-omega
 # use google site search rather than internal xapian index?
 #google_search: 1
 
