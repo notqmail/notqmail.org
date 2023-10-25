@@ -49,7 +49,10 @@ add_plugins:
 - table
 - template
 # plugins to disable
-disable_plugins: []
+disable_plugins:
+- emailauth
+- openid
+- passwordauth
 # additional directory to search for template files
 templatedir: /opt/pkg/share/ikiwiki/templates
 # base wiki source location
