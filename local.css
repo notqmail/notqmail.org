@@ -1,0 +1,30 @@
+/* Solarized Light */
+pre.hl { color:#657b83; background-color:#fdf6e3; font-family:monospace;}
+.hl.num { color:#dc322f; }
+.hl.esc { color:#6c71c4; }
+.hl.str { color:#dc322f; }
+.hl.pps { color:#dc322f; }
+.hl.slc { color:#93a1a1; }
+.hl.com { color:#93a1a1; }
+.hl.ppc { color:#6c71c4; }
+.hl.opt { color:#586e75; }
+.hl.ipl { color:#6c71c4; }
+.hl.lin { color:#268bd2; }
+.hl.kwa { color:#cb4b16; }
+.hl.kwb { color:#859900; }
+.hl.kwc { color:#cb4b16; }
+.hl.kwd { color:#586e75; }
+
+:root {
+	--secondary-background-color-light: #eee;
+}
+
+tr:nth-of-type(odd) {
+	background-color: var(--main-background-color-light);
+	filter: brightness(85%);
+}
+
+tr:nth-of-type(even) {
+	background-color: var(--secondary-background-color-light);
+	filter: brightness(85%);
+}
