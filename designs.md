@@ -7,31 +7,7 @@ One way to try to summarize where we're headed:
 Here are some sketches for how we can get features by making qmail more like itself.
 
 
-## Post-1.09: SMTP recipient validation
-
-The [RCPTCHECK patch](http://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html) to `qmail-smtpd` is just enough interface for external programs to validate recipients.
-Later, we may want the much more general [qmail-spp patch](http://qmail-spp.sourceforge.net/doc/).
-Amitai (via pkgsrc) used to run the former and migrated easily to the latter.
-
-1. Import some of [rejectutils](https://schmonz.com/qmail/rejectutils/):
-    - For `control/rcptchecks` to be an admin-configurable sequence of RCPTCHECK-compatible programs, rejecting if any of them reject, import `qmail-rcptcheck`
-        - This insulates users from our choice of RCPTCHECK or qmail-spp, as it runs equally well under either
-    - For a recommended default checker, import `qmail-rcptcheck-realrcptto`, which is a RCPTCHECK-compatible program derived from [Paul Jarc's realrcptto patch](http://code.dogmap.org./qmail/#realrcptto)
-        - Far from meeting everyone's needs, but no false positives and will start to help
-        - Duplicates delivery logic from several qmail programs
-        - Later, with sufficient test coverage, we'll want to refactor to reduce duplication
-    - For optional additional checkers, maybe import `qmail-rcptcheck-badrcptto` and `qmail-rcptcheck-qregex`
-
-
-## Post-1.09: SPF
-
-Amitai's been doing SPF checks this way for a while:
-
-1. Switch from RCPTCHECK to qmail-spp (or maybe keep both)
-2. Import [qmail-spp-spf](https://www.caputo.com/foss/qmail-spp-spf/)
-
-
-## Post-1.09: Port 587 (IPv6 and) mandatory STARTTLS and AUTH
+## Port 587 (IPv6 and) mandatory STARTTLS and AUTH
 
 We can follow and extend the design of qmail's POP3 service.
 Amitai has been running (a slightly more complicated version of) this in production for a couple years.
@@ -69,7 +45,7 @@ SSL processing runs as the `ucspissl` user.
 Alternatively, [s6-networking](https://www.skarnet.org/software/s6-networking/)'s `s6-tcpserver` and `s6-ucspitlsd` can be configured similarly. Both `sslserver` and `s6-tcpserver` support IPv6.
 
 
-## Post-1.09: Port 110 (IPv6 and) mandatory STARTTLS and AUTH
+## Port 110 (IPv6 and) mandatory STARTTLS and AUTH
 
 1. Replace `tcpserver` with `sslserver -n` (or `s6-tcpserver` and `s6-ucspitlsd`), as above.
 2. Set `UCSPITLS=!`, as above.
@@ -78,7 +54,7 @@ SSL processing runs as the `ucspissl` user.
 `qmail-pop3d` contines to run as the authenticated user.
 
 
-## Post-1.09: Port 25 (IPv6 and) opportunistic STARTTLS
+## Port 25 (IPv6 and) opportunistic STARTTLS
 
 Amitai has been running (a slightly more complicated version of) this in production for a couple years.
 
@@ -106,7 +82,7 @@ SSL processing runs as the `ucspissl` user.
 `qmail-smtpd` continues to run as `qmaild`.
 
 
-## Post-1.09: Outbound STARTTLS, AUTH, IPv6, etc.
+## Outbound STARTTLS, AUTH, IPv6, etc.
 
 `qmail-smtpd` is easily adapted (and tested) to new needs because it has no networking code.
 By giving `qmail-remote` a matching design, we can give it the same properties.
@@ -173,7 +149,7 @@ If not, now's the time to switch to a djbdns-derived or -inspired DNS API that s
 We can merge again here, and if we haven’t already done so, can again consider moving `qmail-newremote` to `qmail-remote`.
 
 
-## Post-1.09: SRS and DKIM
+## SRS and DKIM
 
 ### 1. Import [qmail-qfilter](https://untroubled.org/qmail-qfilter/)
 

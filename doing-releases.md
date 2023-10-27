@@ -17,13 +17,6 @@
 
 - Start a `notqmail.org` page for `next-release`, excluding it from the releases RSS feed
 - Amitai should stop having `origin` be his fork
-- Discuss reducing reviewers to 2
-- Discuss which changes to document where, when
-	- Release notes will have every change
-	- `CHANGES.md` has all? or some?
-	- We often don't remember to include a `CHANGES.md` entry with a PR
-		- Either make GitHub enforce it
-		- Or maybe don't use `CHANGES.md` this way anymore?
 - Let's make a small change, then cut another release (1.09.1?),
   in order to practice and smooth out the release process
 
