@@ -68,3 +68,5 @@ We invite users or enthusiasts of qmail to join us. We especially hope for:
 - Code from those of you with custom patchsets or forks
 
 Say hi on the list or IRC and one of us will help you get started on your first contribution.
+
+<!-- need a page for new contributors. a good first contribution is automated tests -->
