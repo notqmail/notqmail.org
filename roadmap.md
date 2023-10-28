@@ -4,6 +4,7 @@
 
 ## Process improvements
 
+- Rename `master` to `main` (and fix references in CI, website, etc.)
 - Discuss: reduce reviewers to 2?
 - Discuss: enforce a `CHANGES.md` entry with every PR (because we so often forget), or not (because we're retiring `CHANGES.md` in favor of out-of-tree release notes)
 - Retire `.md` docs to `notqmail.org` for historical preservation
