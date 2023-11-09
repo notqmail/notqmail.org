@@ -1,3 +1,3 @@
 # notqmail
 
-notqmail is a community-driven fork of [qmail](https://cr.yp.to/qmail.html), beginning where [netqmail](http://netqmail.org) left off: providing stable, compatible, small releases to which existing qmail users can safely update. notqmail also aims higher: developing an extensible, easily packaged, and increasingly useful modern mail server.
+notqmail is the collaborative Open Source successor to [qmail](https://cr.yp.to/qmail.html) and [netqmail](http://netqmail.org). It begins with stable, compatible, small [[releases]] to which existing qmail users can safely [[update|install]], and [[aims to become|roadmap]] a [[more extensible|designs]], [[more easily packaged|goals-and-non-goals]], and [[more modern|feature-wishlist]] Mail Transport Agent suitable for most needs.
