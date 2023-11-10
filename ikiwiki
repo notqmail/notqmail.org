@@ -50,6 +50,7 @@ add_plugins:
 - template
 # plugins to disable
 disable_plugins:
+- editpage
 - emailauth
 - openid
 - passwordauth
