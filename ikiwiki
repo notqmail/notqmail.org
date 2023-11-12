@@ -50,10 +50,12 @@ add_plugins:
 - template
 # plugins to disable
 disable_plugins:
+- anonok
 - editpage
 - emailauth
 - openid
 - passwordauth
+- recentchanges
 # additional directory to search for template files
 templatedir: /opt/pkg/share/ikiwiki/templates
 # base wiki source location
