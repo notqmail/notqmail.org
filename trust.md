@@ -19,8 +19,8 @@ None of us can do what [DJB](https://cr.yp.to/djb.html) did. One mitigating fact
 
 "Shipping frequent small releases" means
 
-- Our previous release will always have been fairly recent, so we’ll remember how to do it carefully
-- Our next release is always fairly soon, so we’ll design and review a little extra carefully
+- Our previous release will always have been fairly recent, so we'll remember how to do it carefully
+- Our next release is always fairly soon, so we'll design and review a little extra carefully
 - Any given release contains relatively few changes, so our users can probably vet them a little extra carefully
 
 None of us can hold in mind all simultaneous details the way it seems DJB must have. As a community, though, we might manage to make very few terrible mistakes that survive for long.

@@ -146,7 +146,7 @@ We can merge again here, and can consider moving `qmail-newremote` to `qmail-rem
 Do `qmail-remote`'s DNS-lookup routines support v6 transport and/or responses?
 If not, now's the time to switch to a djbdns-derived or -inspired DNS API that supports both.
 
-We can merge again here, and if we haven’t already done so, can again consider moving `qmail-newremote` to `qmail-remote`.
+We can merge again here, and if we haven't already done so, can again consider moving `qmail-newremote` to `qmail-remote`.
 
 
 ## SRS and DKIM
