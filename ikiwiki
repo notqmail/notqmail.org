@@ -45,7 +45,6 @@ add_plugins:
 - map
 - search
 - shortcut
-- sidebar
 - table
 - template
 # plugins to disable
