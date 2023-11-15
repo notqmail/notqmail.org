@@ -9,8 +9,22 @@ include			"/etc/lighttpd/schmonz_hosted.conf"
 server.modules		+= ("mod_redirect")
 url.redirect-code	= 301
 url.redirect		= (
+	# deliberately published permalinks that pre-date self-hosting
+	# (notqmail's wiki was at GitHub, and these used to redirect there)
 	"^/1.07"	=> "/releases/1.07",
 	"^/1.08"	=> "/releases/1.08",
+
+	# published URLs that existed only briefly when self-hosting began
+	# (these redirects might not be needed, just an abundance of caution here)
+	"^/release/1.07"=> "/releases/1.07",
+	"^/release/1.08"=> "/releases/1.08",
+
+	# GitHub-wiki-looking slug that has been getting requested often
+	# (no idea why, but easy enough to redirect)
+	"^/wiki/Designs"=> "/designs",
+
+	# the latter is "standard", offer a top-level redirect to it
+	"^/security.txt"=> "/.well-known/security.txt",
 )
 
 server.modules		+= ("mod_cgi")
