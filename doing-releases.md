@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- 4 people (because 3 reviewers)
+- 3 people (because 2 reviewers)
 - Someone with access to the Open Build Service package
 	- currently `mbhangui` and `DerDakon`
 	- any of us can/should request access
@@ -37,7 +37,7 @@
 
 ## 3. Have the version-bump PR merged
 
-- Requires 3 reviewers (as any PR)
+- Requires 2 reviewers (as any PR)
 
 ## 4. Create the release tag
 

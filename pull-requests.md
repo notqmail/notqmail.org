@@ -11,7 +11,7 @@
 - Builds in all our autobuilders
 - Matches the conventions of surrounding code, where we're still trying to do that
 - Uses new and improved conventions, where we're trying to do that (see below about what that means)
-- Has at least three reviewers' approval, and no significant objections
+- Has at least two reviewers' approval, and no significant objections
 
 ## We'd like to further require...
 
