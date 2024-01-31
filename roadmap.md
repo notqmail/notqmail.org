@@ -1,5 +1,15 @@
 [[!meta title="Roadmap"]]
 
+# 1.09.1
+
+- Start a `notqmail.org` page for `next-release`, excluding it from the releases RSS feed
+- Switch the default branch (and a zillion references) from `master` to `main`
+- Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
+- Make a small change, then cut another release (1.09.1?), for the sole
+  purpose of smoothing out the release process
+- Discuss whether to keep maintaining an in-tree `CHANGES.md`
+    - If yes, make PRs fail checks when we forget
+
 # 1.10
 
 ## Process improvements

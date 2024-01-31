@@ -2,29 +2,37 @@
 
 ## Prerequisites
 
-- 3 people (because 2 reviewers)
-- Someone with access to the Open Build Service package
-	- currently `mbhangui` and `DerDakon`
-	- any of us can/should request access
-- A release engineer with a working PGP key and passphrase
-- A clean, up-to-date `git` working tree
-- Team willingness to stop merging changes for hours to days (maximum 1 week)
-    - so we can test the expected popular [[patches]] (TLS, ...) and rebase any that need it
-- A few days before, make a branch with a trivial fake change that won't break anything, to force all CI builds, to make sure they build!
-- At release time, some hours -- to wait for all the CI builds, which can take arbitrarily long
+### A week(ish) before
 
-## After 1.09
+- Ask folks to stop merging changes (so there's a non-moving target
+  against which to test the expected popular [[patches]], and time to
+  rebase them if needed)
+- Prepare draft release notes
 
-- Start a `notqmail.org` page for `next-release`, excluding it from the releases RSS feed
-- Amitai should stop having `origin` be his fork
-- Let's make a small change, then cut another release (1.09.1?),
-  in order to practice and smooth out the release process
+### A few days before
 
-## 1. Draft release notes in advance
+- Merge something trivial to make sure autobuilds are green (if it's
+  been too long since we merged anything)
 
-(on a local ikiwiki instance, or maybe on a branch of the prod site)
+### During
 
-## 2. Submit a PR for the version-bump changes
+- 3 people
+    - 1 with a working PGP key and passphrase and a clean `git` checkout
+    - 2 reviewers so release PRs can be merged immediately
+      (currently
+      [these people](https://github.com/orgs/notqmail/people))
+- 15 minutes for the autobuilds to run green
+
+### Shortly after
+
+- 1 person with access to
+  [Open Build Service](https://build.opensuse.org/project/show/home:notqmail)
+  (currently
+  [these people](https://build.opensuse.org/project/users/home:notqmail))
+
+-----
+
+## 1. Submit a PR for the version-bump changes
 
 - Sync release notes with `CHANGES.md`
 	- If we are still trying to manage change entries in two places
@@ -35,11 +43,11 @@
 - `COPYRIGHT` with an updated claim (or lack thereof)
 - Add any new specific `-Werror` classes of warning that we've eradicated to all the autobuilds, if we haven't done so already (better to do it at the time)
 
-## 3. Have the version-bump PR merged
+## 2. Have the version-bump PR merged
 
 - Requires 2 reviewers (as any PR)
 
-## 4. Create the release tag
+## 3. Create the release tag
 
 - Not from the release notes GUI, from the command line (in order to PGP-sign)
 
@@ -51,11 +59,11 @@ The first line of the tag description is the release name without the dash, i.e.
 
 The rest of that description are the bullet points from the wiki page. It does not include the intermediate headlines and other comments.
 
-## 5. Trivially re-rebase our patch branches
+## 4. Trivially re-rebase our patch branches
 
 - On top of the new tag
 
-## 6. Put release notes in GitHub
+## 5. Put release notes in GitHub
 
 [here](https://github.com/notqmail/notqmail/releases/new)
 
@@ -63,7 +71,7 @@ Use the tag, copy all the text, click edit release, paste the text. Add spaces a
 
 ("paste the text" needs to be Markdown that GitHub can parse -- so commit release notes to ikiwiki, then convert the generated HTML to Markdown, such as with `html2text`. Also make sure lines are not hard-wrapped, make sure they're long)
 
-## 7. Create, PGP-sign, and upload tarballs to GitHub
+## 6. Create, PGP-sign, and upload tarballs to GitHub
 
 [[!format sh """
 RELEASE=1.08
@@ -78,11 +86,11 @@ Web-upload them [here again](https://github.com/notqmail/notqmail/releases)
 
 Maybe self-host copies of the release tarballs?
 
-## 8. Push release notes to the website
+## 7. Push release notes to the website
 
 Merge the local (or prod) branch to `main`.
 
-## 9. Update Open Build Service
+## 8. Update Open Build Service
 
 - RPM builds: `notqmail.spec` (bump version number)
 - Debian builds: `notqmail.dsc` (bump version number)
@@ -101,3 +109,8 @@ Merge the local (or prod) branch to `main`.
 	- Need a "notqmail" Mastodon account
 - Hacker News
 - Slashdot
+
+## 13. Review and adjust the [[roadmap]]
+
+- Remember where we thought we wanted to go from here
+- Add/change/defer/remove as needed
