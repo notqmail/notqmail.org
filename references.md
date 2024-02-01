@@ -42,6 +42,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - Dave Sill, 2007: [Life with qmail](http://www.lifewithqmail.org/lwq.html)
 - Henning Brauer, 2004: [Life With qmail-ldap](http://www.lifewithqmail.org/ldap/)
 - [NO STARTTLS](https://nostarttls.secvuln.info)
+- [SMTP Smuggling](https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/)
 
 ## Papers
 
@@ -56,6 +57,8 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+### 1.08
+
 - Linux Weekly News, Wed 20 May 2020: [A remote code execution vulnerability in qmail](https://lwn.net/Articles/820969/)
 - golem.de, Wed 20 May 2020: [Sicherheitslücke in Qmail](https://www.golem.de/news/remote-code-execution-sicherheitsluecke-in-qmail-2005-148613.html) (German, "Vulnerability in Qmail")
 - Lobste.rs, Wed 20 May 2020: [notqmail 1.08 released](https://lobste.rs/s/bdq0di/notqmail_1_08_released)
@@ -64,6 +67,9 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - Hacker News, Tue 19 May 2020: [15 years later: Remote Code Execution in qmail (CVE-2005-1513)](https://news.ycombinator.com/item?id=23237716)
 - Lobste.rs, Tue 19 May 2020: [Remote Code Execution in qmail (CVE-2005-1513)](https://lobste.rs/s/ercmor/remote_code_execution_qmail_cve_2005_1513)
 - qualys.com, Tue 19 May 2020: [15 years later: Remote Code Execution in qmail](https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt)
+
+### 1.07
+
 - mag.osdn.jp, Fri 23 Aug 2019: [コミュニティ主導のqmailフォークプロジェクト「notqmail」が立ち上げられる](https://mag.osdn.jp/19/08/23/160000.amp) (Japanese, "Community-led qmail fork project 'notqmail' launched")
 - linux-magazin.de, Thu 22 Aug 2019: [Notqmail forkt Qmail](https://www.linux-magazin.de/news/notqmail-forkt-qmail/) (German, "notqmail forks qmail")
 - linux-os.net, Thu 22 Aug 2019: [Notqmail una bifurcación de qmail](https://linux-os.net/notqmail-una-bifurcacion-de-qmail/) (Spanish, "notqmail, a fork of qmail")
@@ -73,9 +79,12 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - Hacker News, Tue 20 Aug 2019: [Announcing notqmail](https://news.ycombinator.com/item?id=20752671)
 - Linux Weekly News, Tue 20 Aug 2019: [Announcing notqmail](https://lwn.net/Articles/796794/)
 - Lobste.rs, Tue 20 Aug 2019: [notqmail-1.07: portability and correctness, binary packaging release](https://lobste.rs/s/kvsqqr/notqmail_1_07_portability_correctness)
-- A Fresh Cup, Wed 07 Aug 2019: [Double Shot #2402](https://afreshcup.com/home/2019/08/07/double-shot-2402)
+- A Fresh Cup, Wed 07 Aug 2019: [Double Shot #2402](https://afreshcup.com/home/2019/08/07/double-shot-2402.html)
 - GeekLAN, Mon 29 Jul 2019: [Something blogged (on pkgsrcCon 2019)](https://www.geeklan.co.uk/?p=2392)
 - O'Reilly, Mon 29 Jul 2019: [Four short links, Nat Torkington](https://www.oreilly.com/ideas/four-short-links-29-july-2019)
 - Lobste.rs, Sun 28 Jul 2019: [Notqmail: Collaborative open-source successor to qmail](https://lobste.rs/s/2r3stk/notqmail_collaborative_open_source)
 - Hacker News, Sun 28 Jul 2019: [Notqmail: Collaborative open-source successor to qmail](https://news.ycombinator.com/item?id=20549983)
+
+### Pre-notqmail
+
 - Russ Nelson, 2007: [netqmail 1.06](https://marc.info/?l=qmail&m=119689105301544&w=2)
