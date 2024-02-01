@@ -2,25 +2,27 @@
 
 # 1.09.1
 
-- Start a `notqmail.org` page for `next-release`, excluding it from the releases RSS feed
-- Switch the default branch (and a zillion references) from `master` to `main`
-- Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
-- Make a small change, then cut another release (1.09.1?), for the sole
-  purpose of smoothing out the release process
-- Discuss whether to keep maintaining an in-tree `CHANGES.md`
-    - If yes, make PRs fail checks when we forget
-
-# 1.10
-
 ## Process improvements
 
-- Rename `master` to `main` (and fix references in CI, website, etc.)
-- Discuss: enforce a `CHANGES.md` entry with every PR (because we so often forget), or not (because we're retiring `CHANGES.md` in favor of out-of-tree release notes)
+- Start a `notqmail.org` page for `next-release`, excluding it from the releases RSS feed
+- Discuss whether to keep maintaining an in-tree `CHANGES.md`
+    - If yes, make PRs fail checks when we forget
+- Switch the default branch (and references in CI, website, etc.) from `master` to `main`
+- Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
 - Retire `.md` docs to `notqmail.org` for historical preservation
-- [[!template id=issue number=17]] Integrate the [patch checker](https://github.com/notqmail/notqmail-patch-checker) to fail CI if the usual patches fail to apply
-- [[!template id=pr number=189]] Turn up warnings in local builds, fix everything that doesn't break patches, ratchet CI `conf-cc` `-Wthis -Wthat` to match
-- Reconsider alternatives to [check](https://libcheck.github.io/check) now that warnings are no longer rampant
-- [[!template id=issue number=48]] Make regular use of code analysis tools
+- Focus for a while on automating sources of confidence:
+    - [[!template id=pr number=189]] Turn up warnings in local builds,
+      fix everything that doesn't break patches, ratchet CI `conf-cc`
+      `-Wthis -Wthat` to match
+    - [[!template id=issue number=48]] Make regular use of code analysis tools
+    - Reconsider alternatives to
+      [check](https://libcheck.github.io/check),
+      now that warnings are no longer rampant
+    - Write more tests
+- Make a small change, then cut another release, for the sole purpose of
+  smoothing out the release process
+
+# 1.10
 
 ## Cleanups
 
