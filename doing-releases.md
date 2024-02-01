@@ -90,25 +90,29 @@ Maybe self-host copies of the release tarballs?
 
 Merge the local (or prod) branch to `main`.
 
-## 8. Update Open Build Service
+## 8. Update packages we control
 
-- RPM builds: `notqmail.spec` (bump version number)
-- Debian builds: `notqmail.dsc` (bump version number)
-- for the `.tar.gz` link: `_service` (update tarball link)
-- Where to do it: <https://build.opensuse.org/package/show/home:notqmail/notqmail>
-
-## 10. Update Gentoo (`DerDakon`)
-
-## 11. Update pkgsrc (`schmonz`)
+1. [Open Build Service](https://build.opensuse.org/package/show/home:notqmail/notqmail)
+    - RPM builds: `notqmail.spec` (bump version number)
+    - Debian builds: `notqmail.dsc` (bump version number)
+    - for the `.tar.gz` link: `_service` (update tarball link)
+2. [Gentoo](https://gitweb.gentoo.org/repo/gentoo.git/tree/mail-mta/notqmail) (`DerDakon`)
+3. [pkgsrc](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) (`schmonz`)
 
 ## 12. Post everywhere about the new release
 
-- qmail mailing list
-- Lobste.rs
-- Social media (`schmonz` does this a lot anyway)
-	- Need a "notqmail" Mastodon account
-- Hacker News
-- Slashdot
+1. Mailing lists:
+    - the qmail list
+    - maybe a new `users@` list at notqmail.org?
+2. Discussion forums:
+    - [Lobste.rs](https://lobste.rs/stories/new)
+    - [Hacker News](https://news.ycombinator.com/submit)
+    - [Slashdot](https://slashdot.org/submission)
+    - [LWN](https://lwn.net/Articles/796794/)
+    - [UnitedBSD](https://www.unitedbsd.com/d/863-bsd-news-thread/138)
+3. Social media
+    - [Twitter @notqmail](https://twitter.com/notqmail)
+    - maybe a new Fediverse @notqmail@social.notqmail.org?
 
 ## 13. Review and adjust the [[roadmap]]
 
