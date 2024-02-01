@@ -12,8 +12,11 @@ Some known big ones:
 - SRS
 - DKIM
 - DMARC
+- ARC
 - EAI
 - SNI
+- DANE
+- MTA-STS
 
 Need something else? Tell us about it.
 
