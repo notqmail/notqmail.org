@@ -1,5 +1,18 @@
 [[!meta title="Platforms"]]
 
+Every proposed change is
+[automatically tested](https://github.com/notqmail/notqmail/actions?query=workflow%3ABuild)
+on the widest possible variety of operating systems and hardware architectures available on GitHub.
+If a PR doesn't pass tests everywhere, it doesn't get merged.
+
+Test coverage isn't as good as we'd like.
+For instance, `TEST.deliver` and `TEST.receive` aren't yet part of automated test runs.
+
+We supplement GitHub's assurances with occasional manual testing on platforms we can access directly.
+Some past results are listed below.
+
+(It'd be cool to have our platform statuses updated automatically at some point.)
+
 ## [[notqmail 1.07|releases/1.07]]
 
 Help us fill this in!
