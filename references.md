@@ -40,6 +40,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 - [josuah's notqmail site](https://notqmail.z0.is/)
 - Dave Sill, 2007: [Life with qmail](http://www.lifewithqmail.org/lwq.html)
+- Wayne Marshall, 2007: [the djb way](http://thedjbway.b0llix.net/index.html)
 - Henning Brauer, 2004: [Life With qmail-ldap](http://www.lifewithqmail.org/ldap/)
 - [NO STARTTLS](https://nostarttls.secvuln.info)
 - [SMTP Smuggling](https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/)
