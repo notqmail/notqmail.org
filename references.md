@@ -18,7 +18,7 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 - [qmail.org](https://qmail.notqmail.org/top.html)
 - Debian's [netqmail](https://sources.debian.org/src/netqmail/)
 - pkgsrc's [qmail](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) and [qmail-run](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail-run)
-- [schmonz](https://github.com/schmonz)'s [patch page](https://schmonz.com/qmail/)
+- [schmonz](https://github.com/schmonz)'s [patch page](https://schmonz.com/software/)
 - [Roberto Puzzanghera](https://github.com/sagredo-dev)'s [qmail notes](https://notes.sagredo.eu)
 - John M. Simpson's [combined patch](https://qmail.jms1.net/patches/combined-details.shtml)
 - [Bruce Guenter](https://github.com/bruceg)'s [software page](http://untroubled.org/software.php)
@@ -30,8 +30,8 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## Add-ons
 
-- [schmonz](https://github.com/schmonz)'s [acceptutils](https://schmonz.com/qmail/acceptutils)
-- [schmonz](https://github.com/schmonz)'s [rejectutils](https://schmonz.com/qmail/rejectutils)
+- [schmonz](https://github.com/schmonz)'s [acceptutils](https://schmonz.com/software/acceptutils)
+- [schmonz](https://github.com/schmonz)'s [rejectutils](https://schmonz.com/software/rejectutils)
 - [DerDakon](https://github.com/DerDakon)'s [Qsmtp](https://github.com/DerDakon/Qsmtp)
 - [Jan Mojžíš](https://github.com/janmojzis)'s [qremote](https://mojzis.com/software/qremote/)
 

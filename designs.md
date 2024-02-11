@@ -12,7 +12,7 @@ Here are some sketches for how we can get features by making qmail more like its
 We can follow and extend the design of qmail's POP3 service.
 Amitai has been running (a slightly more complicated version of) this in production for a couple years.
 
-1. Import some of [acceptutils](https://schmonz.com/qmail/acceptutils/):
+1. Import some of [acceptutils](https://schmonz.com/software/acceptutils/):
     - For SMTP AUTH and TLS, import `qmail-authup`
         - Also supersedes `qmail-popup`; make that a one-line compatibility wrapper
 		- (We drop APOP support, that's all)
