@@ -19,6 +19,7 @@
       [check](https://libcheck.github.io/check),
       now that warnings are no longer rampant
     - Write more tests
+        - Integrated tests, too (such as [swaks](https://jetmore.org/john/code/swaks/))
 - Make a small change, then cut another release, for the sole purpose of
   smoothing out the release process
 
