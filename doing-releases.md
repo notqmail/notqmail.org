@@ -99,7 +99,7 @@ Merge the local (or prod) branch to `main`.
 2. [Gentoo](https://gitweb.gentoo.org/repo/gentoo.git/tree/mail-mta/notqmail) (`DerDakon`)
 3. [pkgsrc](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) (`schmonz`)
 
-## 12. Post everywhere about the new release
+## 9. Post everywhere about the new release
 
 1. Mailing lists:
     - the qmail list
@@ -114,7 +114,7 @@ Merge the local (or prod) branch to `main`.
     - [Twitter @notqmail](https://twitter.com/notqmail)
     - maybe a new Fediverse @notqmail@social.notqmail.org?
 
-## 13. Review and adjust the [[roadmap]]
+## 10. Review and adjust the [[roadmap]]
 
 - Remember where we thought we wanted to go from here
 - Add/change/defer/remove as needed
