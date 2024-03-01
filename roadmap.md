@@ -4,16 +4,22 @@
 
 ## Process improvements
 
-- Start a `notqmail.org` page for `next-release`, excluding it from the releases RSS feed
-- Discuss whether to keep maintaining an in-tree `CHANGES.md`
-    - If yes, make PRs fail checks when we forget
-    - Eike: let's keep `CHANGES.md` for changes that are _not_ user-facing, e.g.
-        - autobuild workflow changes
-        - information about _how_ we made it that isn't information about what's in there
-- Switch the default branch (and references in CI, website, etc.) from `master` to `main`
-- Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
-- Discuss whether to retire `.md` docs to `notqmail.org` for historical preservation
+### Website
+
+- Discuss: historically remove many/most/all DJB-era `.md` docs from the source tree and preserve them on the website
+    - Possibly false assumption: we were never going to update them
+    - Possibly false assumption: they're not needed to grok/navigate the code
+- Start a `next-release` page (excluding it from the [[releases]] feed)
+
+### Git
+
+- Switch default branch from `master` to `main`
+    - Chase references from CI, website, etc.
+
+### Smoother PRs
+
 - Focus for a while on automating sources of confidence:
+    - Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
     - [[!template id=pr number=189]] Turn up warnings in local builds,
       fix everything that doesn't break patches, ratchet CI `conf-cc`
       `-Wthis -Wthat` to match
@@ -23,6 +29,14 @@
       now that warnings are no longer rampant
     - Write more tests
         - Integrated tests, too (such as [swaks](https://jetmore.org/john/code/swaks/))
+- Discuss whether to keep maintaining an in-tree `CHANGES.md`
+    - If yes, make PRs fail checks when we forget
+    - Eike: let's keep `CHANGES.md` for changes that are _not_ user-facing, e.g.
+        - autobuild workflow changes
+        - information about _how_ we made it that isn't information about what's in there
+
+### Smoother releases
+
 - Make a small change, then cut another release, for the sole purpose of
   smoothing out the release process
 
