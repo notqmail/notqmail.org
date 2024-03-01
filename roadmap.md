@@ -7,9 +7,12 @@
 - Start a `notqmail.org` page for `next-release`, excluding it from the releases RSS feed
 - Discuss whether to keep maintaining an in-tree `CHANGES.md`
     - If yes, make PRs fail checks when we forget
+    - Eike: let's keep `CHANGES.md` for changes that are _not_ user-facing, e.g.
+        - autobuild workflow changes
+        - information about _how_ we made it that isn't information about what's in there
 - Switch the default branch (and references in CI, website, etc.) from `master` to `main`
 - Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
-- Retire `.md` docs to `notqmail.org` for historical preservation
+- Discuss whether to retire `.md` docs to `notqmail.org` for historical preservation
 - Focus for a while on automating sources of confidence:
     - [[!template id=pr number=189]] Turn up warnings in local builds,
       fix everything that doesn't break patches, ratchet CI `conf-cc`
