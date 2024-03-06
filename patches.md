@@ -9,10 +9,9 @@ As notqmail gains features, you'll need fewer patches.
 
 ## notqmail might break patches by mistake
 
-If your local patches apply, but compiling fails, it might be due to a deprecated function.
-Add `-DDEPRECATED_FUNCTIONS_AVAILABLE` to `conf-cc` and try again.
-If this makes your build succeed, we need to know!
-Please [file an issue](https://github.com/notqmail/notqmail/issues/new/choose) with the build error you had seen and the patch(es) involved.
+Even if your local patches are building fine, they might rely on functions we plan to remove soon.
+If adding `-DDEPRECATED_FUNCTIONS_REMOVED` to `conf-cc` makes your build fail, we need to know!
+Please [file an issue](https://github.com/notqmail/notqmail/issues/new/choose) with the build error and the patch(es) involved.
 
 ## Everyone maintains patches
 
