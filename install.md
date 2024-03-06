@@ -4,7 +4,13 @@
 
 Fetch [the latest release](https://github.com/notqmail/notqmail/releases) in your preferred archive format.
 
-[Life with qmail](http://www.lifewithqmail.org/lwq.html#installation) continues to apply. Note that some modern systems -- we've seen at least OpenBSD, FreeBSD, and Void Linux -- don't provide `nroff`. [GNU troff](https://www.gnu.org/software/groff/) (aka `groff`) should do the trick. Also, please read our notes about [[patches]].
+[Life with qmail](http://www.lifewithqmail.org/lwq.html#installation) continues to apply.
+Note that some modern systems -- we've seen at least OpenBSD, FreeBSD, and Void Linux -- don't provide `nroff`.
+[mandoc](https://mandoc.bsd.lv)
+or
+[GNU troff](https://www.gnu.org/software/groff/)
+(aka `groff`) should do the trick.
+Please also review our notes about [[patches]].
 
 ## From source, to many hosts
 
