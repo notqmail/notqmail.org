@@ -20,6 +20,7 @@
 
 - Focus for a while on automating sources of confidence:
     - Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
+    - Make sure _automatically_ that `Makefile` rules listing dependencies on local include files are accurate
     - [[!template id=pr number=189]] Turn up warnings in local builds,
       fix everything that doesn't break patches, ratchet CI `conf-cc`
       `-Wthis -Wthat` to match
@@ -31,7 +32,7 @@
         - Integrated tests, too (such as [swaks](https://jetmore.org/john/code/swaks/))
 - Discuss whether to keep maintaining an in-tree `CHANGES.md`
     - If yes, make PRs fail checks when we forget
-    - Eike: let's keep `CHANGES.md` for changes that are _not_ user-facing, e.g.
+    - Eike: let's keep `CHANGES.md` for changes that are user-facing, e.g.
         - autobuild workflow changes
         - information about _how_ we made it that isn't information about what's in there
 
