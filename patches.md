@@ -3,23 +3,25 @@
 ## Everyone has patches
 
 You've been running qmail, so you've got a local set of patches you rely on.
-Your patches will mostly continue to apply to notqmail.
-(See [[!template id=issue number=17]] for more about our intent.)
-As notqmail gains features, you'll need fewer patches.
-
-## notqmail might break patches by mistake
-
-Even if your local patches are building fine, they might rely on functions we plan to remove soon.
-If adding `-DDEPRECATED_FUNCTIONS_REMOVED` to `conf-cc` makes your build fail, we need to know!
-Please [file an issue](https://github.com/notqmail/notqmail/issues/new/choose) with the build error and the patch(es) involved.
-
-## Everyone maintains patches
-
-When qmail stopped being updated, your patches stopped needing updating.
-As notqmail's code evolves, your local patches may need to be "rebased".
-Sometimes this is easy and mechanical.
+In the years when qmail wasn't being updated, your patches easily applied (and re-applied) to a non-moving target.
+As notqmail's code evolves, some of your patches will no longer be needed, and others may need to be "rebased" to apply.
+(Sometimes this is easy and mechanical.
 Other times it will require deeper understanding of C, Unix, and qmail's design and implementation.
-In either case, Git can be a helpful tool.
+In either case, Git can be a helpful tool.)
+
+On balance, over time, we intend to reduce your patch-related maintenance effort.
+For more about our intent, see
+[[!template id=issue number=17]].
+
+## Check our work
+
+Once your patched notqmail is happily compiling, please help it stay
+that way: add `-DDEPRECATED_FUNCTIONS_REMOVED` to `conf-cc` and
+[report an issue](https://github.com/notqmail/notqmail/issues/new/choose)
+if the build now fails.
+Otherwise, we may unknowingly remove functions your patches are relying on in an upcoming release.
+
+## Let us help
 
 For your convenience, we've rebased several popular patches onto notqmail, each on its own git branch.
 How to use:
@@ -36,7 +38,6 @@ Branch | Original Patch
 [notqmail-badmailfrom-x-relayclient](https://github.com/notqmail/notqmail/commits/notqmail-badmailfrom-x-relayclient) | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
 [notqmail-big-concurrency](https://github.com/notqmail/notqmail/commits/notqmail-big-concurrency) | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
 [notqmail-big-todo](https://github.com/notqmail/notqmail/commits/notqmail-big-todo) | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
-[notqmail-dns-oversize](https://github.com/notqmail/notqmail/commits/notqmail-dns-oversize) | Christopher K. Davis's oversize DNS packet
 [notqmail-ext-todo](https://github.com/notqmail/notqmail/commits/patches/notqmail/ext-todo) | André Opperman's ext_todo or "silly qmail syndrome"
 [notqmail-smtp-auth](https://github.com/notqmail/notqmail/commits/patches/notqmail/smtp-auth) | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
 [notqmail-smtp-tls](https://github.com/notqmail/notqmail/commits/patches/notqmail/smtp-tls) | Frederik Vermeulen's [qmail-smtp-tls](http://inoa.net/qmail-tls/)
