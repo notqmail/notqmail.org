@@ -4,15 +4,12 @@
 
 ### A week(ish) before
 
-- Ask folks to stop merging changes (so there's a non-moving target
-  against which to test the expected popular [[patches]], and time to
-  rebase them if needed)
-- Prepare draft release notes
-
-### A few days before
-
-- Merge something trivial to make sure autobuilds are green (if it's
-  been too long since we merged anything)
+- Validate autobuilds: green recently?
+- Stop merging things
+- Prepare and review release notes
+- File an issue for results of patch testing (and rebasing)
+- Manually test that popular [[patches]] apply and build, and perhaps
+  even that their runtime behavior looks right
 
 ### During
 
