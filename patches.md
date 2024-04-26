@@ -30,6 +30,9 @@ How to use:
 2. Read the subsequent commits on the branch to see what we've changed and why.
 3. Diff the branch against `master`, and apply _that_ patch to notqmail.
 
+Please note that the patch branches are likely to be _re_-rebased from time to time (for instance, around notqmail release time).
+Take care when fetching these git branches, especially if you have local changes you need to preserve.
+
 ## notqmail patch branches
 
 [[!table data="""
