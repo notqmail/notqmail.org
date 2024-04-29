@@ -64,9 +64,23 @@ The rest of that description are the bullet points from the wiki page. It does n
 
 [here](https://github.com/notqmail/notqmail/releases/new)
 
-Use the tag, copy all the text, click edit release, paste the text. Add spaces around the dashes at the beginning of each line so that they will show up as real bullet points when shown. Upload the 4 files (2 tarballs, 2 signatures). Publish release.
+Choose the already created tag.
+Copy release notes from locally staged website:
 
-("paste the text" needs to be Markdown that GitHub can parse -- so commit release notes to ikiwiki, then convert the generated HTML to Markdown, such as with `html2text`. Also make sure lines are not hard-wrapped, make sure they're long)
+```sh
+cat html/releases/1.09/index.html \
+| sed -e 's| href="\.\.\/\.\.\/| href="https://notqmail.org/|g' \
+    -e 's| href="\.\./| href="https://notqmail.org/releases/|g' \
+| html2text --body-width 0 \
+| sed -e '1d' \
+| grep -v '^Last edited ' \
+| grep -v '^Mirror: ' \
+| pbcopy
+```
+
+Paste the release notes.
+Upload the 4 files (2 tarballs, 2 signatures).
+Publish release.
 
 ## 6. Create, PGP-sign, and upload tarballs to GitHub
 
