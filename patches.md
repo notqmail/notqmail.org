@@ -41,11 +41,11 @@ Branch | Original Patch
 [notqmail-badmailfrom-x-relayclient](https://github.com/notqmail/notqmail/commits/notqmail-badmailfrom-x-relayclient) | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
 [notqmail-big-concurrency](https://github.com/notqmail/notqmail/commits/notqmail-big-concurrency) | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
 [notqmail-big-todo](https://github.com/notqmail/notqmail/commits/notqmail-big-todo) | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
-[notqmail-ext-todo](https://github.com/notqmail/notqmail/commits/patches/notqmail/ext-todo) | Claudio Jeker's and André Oppermann's ext_todo or "silly qmail syndrome"
-[notqmail-smtp-auth](https://github.com/notqmail/notqmail/commits/patches/notqmail/smtp-auth) | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
-[notqmail-smtp-tls](https://github.com/notqmail/notqmail/commits/patches/notqmail/smtp-tls) | Frederik Vermeulen's [qmail-smtp-tls](http://inoa.net/qmail-tls/)
-[notqmail-smtpd-logging](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-logging) | Andrew Richards' [qmail-logmsg](http://free.acrconsulting.co.uk/email/qmail-logmsg.html)
-[notqmail-smtpd-spf](https://github.com/notqmail/notqmail/commits/notqmail-smtpd-spf) | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/)
-[qmail-spp-0.42](https://github.com/notqmail/notqmail/tree/patches/notqmail/qmail-spp-0.42) | [qmail spp](http://qmail-spp.sourceforge.net/)
-[rcptcheck](https://github.com/notqmail/notqmail/tree/patches/notqmail/rcptcheck) | Jay Soffian's [rcptcheck](https://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html)
+[[!template id=patch name=ext-todo]] | Claudio Jeker's and André Oppermann's ext_todo or "silly qmail syndrome"
+[[!template id=patch name=smtp-auth]] | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
+[[!template id=patch name=smtp-tls]] | Frederik Vermeulen's [qmail-smtp-tls](https://inoa.net/qmail-tls/)
+[[!template id=patch name=smtpd-logging]] | Andrew Richards' [qmail-logmsg](https://free.acrconsulting.co.uk/email/qmail-logmsg.html)
+[[!template id=patch name=smtpd-spf]] | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/)
+[[!template id=patch name=qmail-spp-0.42]] | Paweł Foremski's [qmail-spp](https://qmail-spp.sourceforge.net/)
+[[!template id=patch name=rcptcheck]] | Jay Soffian's [rcptcheck](https://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html)
 """]]
