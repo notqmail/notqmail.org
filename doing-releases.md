@@ -67,7 +67,7 @@ The rest of that description are the bullet points from the wiki page. It does n
 Choose the already created tag.
 Copy release notes from locally staged website:
 
-```sh
+[[!format sh """
 cat html/releases/1.09/index.html \
 | sed -e 's| href="\.\.\/\.\.\/| href="https://notqmail.org/|g' \
     -e 's| href="\.\./| href="https://notqmail.org/releases/|g' \
@@ -76,7 +76,7 @@ cat html/releases/1.09/index.html \
 | grep -v '^Last edited ' \
 | grep -v '^Mirror: ' \
 | pbcopy
-```
+"""]]
 
 Paste the release notes.
 Upload the 4 files (2 tarballs, 2 signatures).
