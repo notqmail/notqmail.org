@@ -15,6 +15,10 @@
 
 - Switch default branch from `master` to `main`
     - Chase references from CI, website, etc.
+- Redo patch branches (where needed) like so:
+    1. Commit (if needed) to restore context we've changed
+    2. Commit-with-attribution: upstream patch, as verbatim as possible
+    3. Commit (if needed) to fix compilation, style, etc.
 
 ### Smoother PRs
 
