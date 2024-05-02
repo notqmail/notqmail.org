@@ -37,10 +37,10 @@ Take care when fetching these git branches, especially if you have local changes
 
 [[!table data="""
 Branch | Original Patch
-[notqmail-badmailfrom-wildcard](https://github.com/notqmail/notqmail/commits/notqmail-badmailfrom-wildcard) | Tom Clegg's [badmailfrom wildcard](https://tomclegg.ca/qmail/#qmail-badmailfrom-wildcard)
-[notqmail-badmailfrom-x-relayclient](https://github.com/notqmail/notqmail/commits/notqmail-badmailfrom-x-relayclient) | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
-[notqmail-big-concurrency](https://github.com/notqmail/notqmail/commits/notqmail-big-concurrency) | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
-[notqmail-big-todo](https://github.com/notqmail/notqmail/commits/notqmail-big-todo) | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
+[[!template id=patch name=badmailfrom-wildcard]] | Tom Clegg's [badmailfrom wildcard](https://tomclegg.ca/qmail/#qmail-badmailfrom-wildcard)
+[[!template id=patch name=badmailfrom-x-relayclient]] | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
+[[!template id=patch name=big-concurrency]] | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
+[[!template id=patch name=big-todo]] | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
 [[!template id=patch name=ext-todo]] | Claudio Jeker's and André Oppermann's ext_todo or "silly qmail syndrome"
 [[!template id=patch name=smtp-auth]] | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
 [[!template id=patch name=smtp-tls]] | Frederik Vermeulen's [qmail-smtp-tls](https://inoa.net/qmail-tls/)
