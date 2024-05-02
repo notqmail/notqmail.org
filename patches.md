@@ -41,7 +41,7 @@ Branch | Original Patch
 [[!template id=patch name=badmailfrom-x-relayclient]] | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
 [[!template id=patch name=big-concurrency]] | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
 [[!template id=patch name=big-todo]] | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
-[[!template id=patch name=ext-todo]] | Claudio Jeker's and André Oppermann's ext_todo or "silly qmail syndrome"
+[[!template id=patch name=ext-todo]] | Claudio Jeker's and André Oppermann's [ext-todo](http://www.nrg4u.com/qmail/ext_todo-20030105.patch) (for "silly qmail syndrome")
 [[!template id=patch name=smtp-auth]] | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
 [[!template id=patch name=smtp-tls]] | Frederik Vermeulen's [qmail-smtp-tls](https://inoa.net/qmail-tls/)
 [[!template id=patch name=smtpd-logging]] | Andrew Richards' [qmail-logmsg](https://free.acrconsulting.co.uk/email/qmail-logmsg.html)
