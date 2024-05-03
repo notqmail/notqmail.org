@@ -46,8 +46,8 @@ Branch | Original Patch
 [[!template id=patch name=smtp-auth]] | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
 [[!template id=patch name=smtp-tls]] | Frederik Vermeulen's [qmail-smtp-tls](https://inoa.net/qmail-tls/)
 [[!template id=patch name=smtpd-logging]] | Andrew Richards' [qmail-logmsg](https://free.acrconsulting.co.uk/email/qmail-logmsg.html)
+[[!template id=patch name=smtpd-rcptcheck]] | Jay Soffian's [rcptcheck](https://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html)
 [[!template id=patch name=smtpd-spf]] | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/)
 [[!template id=patch name=smtpd-spp]] | Paweł Foremski's [qmail-spp](https://qmail-spp.sourceforge.net/)
-[[!template id=patch name=rcptcheck]] | Jay Soffian's [rcptcheck](https://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html)
 [[!template id=patch name=tai-leapsecs]] | Toby Betts' [tai-leapsecs](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
 """]]
