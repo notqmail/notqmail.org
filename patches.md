@@ -37,14 +37,14 @@ Take care when fetching these git branches, especially if you have local changes
 
 [[!table data="""
 Branch | Original Patch
-[[!template id=patch name=badmailfrom-wildcard]] | Tom Clegg's [badmailfrom wildcard](https://tomclegg.ca/qmail/#qmail-badmailfrom-wildcard)
-[[!template id=patch name=badmailfrom-x-relayclient]] | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
 [[!template id=patch name=big-concurrency]] | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
 [[!template id=patch name=big-todo]] | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
 [[!template id=patch name=ext-todo]] | Claudio Jeker's and André Oppermann's [ext-todo](http://www.nrg4u.com/qmail/ext_todo-20030105.patch) (for "silly qmail syndrome")
 [[!template id=patch name=maildir-uniqueness]] | Toby Betts' [maildir-uniq](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
 [[!template id=patch name=smtp-auth]] | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
 [[!template id=patch name=smtp-tls]] | Frederik Vermeulen's [qmail-smtp-tls](https://inoa.net/qmail-tls/)
+[[!template id=patch name=smtpd-badmailfrom-wildcard]] | Tom Clegg's [badmailfrom wildcard](https://tomclegg.ca/qmail/#qmail-badmailfrom-wildcard)
+[[!template id=patch name=smtpd-badmailfrom-x-relayclient]] | Jeremy Kitchen's [badmailfrom-x-relayclient](https://web.archive.org/web/20080907071938/http://scriptkitchen.com/qmail/badmailfrom-x-relayclient.patch)
 [[!template id=patch name=smtpd-logging]] | Andrew Richards' [qmail-logmsg](https://free.acrconsulting.co.uk/email/qmail-logmsg.html)
 [[!template id=patch name=smtpd-rcptcheck]] | Jay Soffian's [rcptcheck](https://www.soffian.org/downloads/qmail/qmail-smtpd-doc.html)
 [[!template id=patch name=smtpd-spf]] | Jana Saout's [qmail-spf](https://www.saout.de/misc/spf/)
