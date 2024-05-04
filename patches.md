@@ -39,6 +39,7 @@ Take care when fetching these git branches, especially if you have local changes
 Branch | Original Patch
 [[!template id=patch name=big-concurrency]] | Johannes Erdfelt's [big-concurrency](https://qmail.notqmail.org/big-concurrency.patch)
 [[!template id=patch name=big-todo]] | Russell Nelson's [big-todo](https://qmail.notqmail.org/big-todo.103.patch)
+[[!template id=patch name=dkim]] | Manvendra Bhangui's [dkim](https://sourceforge.net/projects/indimail/files/netqmail-addons/qmail-dkim-1.0/dkim-netqmail-1.06.patch-1.48.gz)
 [[!template id=patch name=ext-todo]] | Claudio Jeker's and André Oppermann's [ext-todo](http://www.nrg4u.com/qmail/ext_todo-20030105.patch) (for "silly qmail syndrome")
 [[!template id=patch name=maildir-uniqueness]] | Toby Betts' [maildir-uniq](https://su.bze.ro/software/qmail-1.03-maildir-uniq.patch)
 [[!template id=patch name=smtp-auth]] | Erwin Hoffmann's [smtpauth](https://www.fehcom.de/qmail/smtpauth.html##PATCHES)
