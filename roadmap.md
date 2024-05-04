@@ -33,8 +33,8 @@
     - Reconsider alternatives to
       [check](https://libcheck.github.io/check),
       now that warnings are no longer rampant
+        - For instance, [AceUnit](https://github.com/nelkinda/aceunit)
     - Write more tests
-        - Possibly [switch to AceUnit](https://github.com/nelkinda/aceunit)
         - Integrated tests, too (such as [swaks](https://jetmore.org/john/code/swaks/))
 - Discuss whether to keep maintaining an in-tree `CHANGES.md`
     - If yes, make PRs fail checks when we forget
