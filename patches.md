@@ -23,17 +23,7 @@ Otherwise, we may unknowingly remove functions your patches are relying on in an
 
 ## Let us help
 
-For your convenience, we've rebased several popular patches onto notqmail, each on its own git branch.
-How to use:
-
-1. Make sure the first commit on the branch is identical to the patch you were trying to apply.
-2. Read the subsequent commits on the branch to see what we've changed and why.
-3. Diff the branch against `master`, and apply _that_ patch to notqmail.
-
-Please note that the patch branches are likely to be _re_-rebased from time to time (for instance, around notqmail release time).
-Take care when fetching these git branches, especially if you have local changes you need to preserve.
-
-## notqmail patch branches
+For your convenience, we've rebased several popular patches onto notqmail, each on its own git branch:
 
 [[!table data="""
 Branch | Original Patch
@@ -52,3 +42,12 @@ Branch | Original Patch
 [[!template id=patch name=smtpd-spp]] | Paweł Foremski's [qmail-spp](https://qmail-spp.sourceforge.net/)
 [[!template id=patch name=tai-leapsecs]] | Toby Betts' [tai-leapsecs](https://su.bze.ro/software/netqmail-1.05-TAI-leapsecs.patch)
 """]]
+
+How to use:
+
+1. Make sure the first commit on the branch is identical to the patch you were trying to apply.
+2. Read the subsequent commits on the branch to see what we've changed and why.
+3. Diff the branch against `master`, and apply _that_ patch to notqmail.
+
+Please note that the patch branches are likely to be _re_-rebased from time to time (for instance, around notqmail release time).
+Take care when fetching these branches, especially if you have local changes you need to preserve.
