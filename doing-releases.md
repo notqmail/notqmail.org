@@ -121,9 +121,10 @@ Merge the local (or prod) branch to `main`.
     - [Slashdot](https://slashdot.org/submission)
     - [LWN](https://lwn.net/Articles/796794/)
     - [UnitedBSD](https://www.unitedbsd.com/d/863-bsd-news-thread/138)
+    - [Phoronix](https://www.phoronix.com/)
 3. Social media
     - [Twitter @notqmail](https://twitter.com/notqmail)
-    - maybe a new Fediverse @notqmail@social.notqmail.org?
+    - [Fediverse @notqmail](https://social.notqmail.org/notqmail)
 
 ## 10. Review and adjust the [[roadmap]]
 
