@@ -33,7 +33,7 @@
 
 - Sync release notes with `CHANGES.md`
 	- If we are still trying to manage change entries in two places
-- Bump `RELEASE_VERSION` in `Makefile, then:
+- Bump `RELEASE_VERSION` in `Makefile`, then:
     - `make release-changes release-copyright`
     - `git diff`
     - `make release-commit`
