@@ -33,10 +33,10 @@
 
 - Sync release notes with `CHANGES.md`
 	- If we are still trying to manage change entries in two places
-- Add new version to `CHANGES.md`, e.g. using this `gmake(1)` syntax:
-    - `sed -i "1i - $(shell date +%Y%m%d) version: notqmail $(RELEASE_VERSION)" CHANGES.md`
-    - `git commit -S -m "notqmail $(RELEASE_VERSION)" CHANGES.md`
-	- etc. (this will be automated in `Makefile` by Dakon)
+- Bump `RELEASE_VERSION` in `Makefile, then:
+    - `make release-changes release-copyright`
+    - `git diff`
+    - `make release-commit`
 - `COPYRIGHT` with an updated claim (or lack thereof)
 - Add any new specific `-Werror` classes of warning that we've eradicated to all the autobuilds, if we haven't done so already (better to do it at the time)
 
