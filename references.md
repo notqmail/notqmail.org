@@ -58,6 +58,12 @@ Code and documents relevant to the design, implementation, and use of notqmail.
 
 ## News & Social Media
 
+### 1.09
+
+- Lobste.rs, Mon 6 May 2024: [notqmail 1.09 released](https://lobste.rs/s/mqyu8s)
+- Hacker News, Mon 6 May 2024: [notqmail 1.09 released](https://news.ycombinator.com/item?id=40278331)
+- Reddit, Mon 6 May 2024: [notqmail 1.09 released](https://www.reddit.com/r/qmail/comments/1clrn0n/notqmail_109_released/)
+
 ### 1.08
 
 - Linux Weekly News, Wed 20 May 2020: [A remote code execution vulnerability in qmail](https://lwn.net/Articles/820969/)
