@@ -4,9 +4,11 @@
 
 ### A week(ish) before
 
-- Validate autobuilds: green recently?
+- Validate autobuilds: green recently? updated with all `-Werror` classes that we've eradicated recently?
 - Stop merging things
-- Prepare and review release notes
+- Create a draft "pre-release" "Save draft"
+  [via GitHub's release GUI](https://github.com/notqmail/notqmail/releases/new),
+  converting ikiwiki release notes to GitHub via the `html2text` pipeline below
 - File an issue for results of patch testing (and rebasing)
 - Manually test that popular [[patches]] apply and build, and perhaps
   even that their runtime behavior looks right
@@ -29,43 +31,55 @@
 
 -----
 
-## 1. Submit a PR for the version-bump changes
+## 1. Submit a version-bump PR
 
-- Sync release notes with `CHANGES.md`
-	- If we are still trying to manage change entries in two places
-- Bump `RELEASE_VERSION` in `Makefile`, then:
-    - `make release-changes release-copyright`
-    - `git diff`
-    - `make release-commit`
-- `COPYRIGHT` with an updated claim (or lack thereof)
-- Add any new specific `-Werror` classes of warning that we've eradicated to all the autobuilds, if we haven't done so already (better to do it at the time)
+Ensure release notes and `CHANGES.md` are in sync (if we're still using both), then:
+
+[[!format sh """
+vi Makefile	# bump RELEASE_VERSION
+make release-changes release-copyright
+git diff
+make release-commit
+"""]]
 
 ## 2. Have the version-bump PR merged
 
-- Requires 2 reviewers (as any PR)
+Requires 2 reviewers (as any PR).
 
 ## 3. Create the release tag
 
-- Not from the release notes GUI, from the command line (in order to PGP-sign)
+Don't use GitHub's release notes GUI for this (can't PGP-sign tags).
+Instead:
 
 [[!format sh """
-git tag -s notqmail-1.09
+make release-tag
+make release-tag-push
 """]]
 
-The first line of the tag description is the release name without the dash, i.e. `notqmail 1.09`.
-
-The rest of that description are the bullet points from the wiki page. It does not include the intermediate headlines and other comments.
+The first line of the tag description is the release name without the dash, i.e. "notqmail 1.09".
+The rest of it is a reduced version of the release notes:
+just the bullet points, no intermediate headlines or other comments.
 
 ## 4. Trivially re-rebase our patch branches
 
-- On top of the new tag
+Don't automate this, but do walk the list like so:
 
-## 5. Put release notes in GitHub
+[[!format sh """
+for i in $(git branch -r | grep origin/patches/notqmail/ | sed -e 's|origin/||'); do
+    git checkout $i
+    git rebase master
+    git push -f origin HEAD
+done
+"""]]
 
-[here](https://github.com/notqmail/notqmail/releases/new)
+## 5. Create the release
 
-Choose the already created tag.
-Copy release notes from locally staged website:
+[[!format sh """
+make release-tarballs
+make release-signatures
+"""]]
+
+Copy the website's release notes to clipboard in GitHub format one last time:
 
 [[!format sh """
 cat html/releases/1.09/index.html \
@@ -78,39 +92,23 @@ cat html/releases/1.09/index.html \
 | pbcopy
 """]]
 
-Paste the release notes.
-Upload the 4 files (2 tarballs, 2 signatures).
-Publish release.
+From the
+[release notes GUI](https://github.com/notqmail/notqmail/releases):
 
-## 6. Create, PGP-sign, and upload tarballs to GitHub
+1. Find the draft release already in progress.
+2. Edit it.
+3. At top, for "Choose a tag", choose the newly created tag.
+4. At bottom, for "Attach binaries", upload the 4 artifacts (2 tarballs, 2 sigs).
+5. At center, for the release notes, select-all and paste
+6. At bottom, set as the latest release, and publish!
 
-[[!format sh """
-RELEASE=1.08
-git archive --prefix=notqmail-${RELEASE}/ -o notqmail-${RELEASE}.tar notqmail-${RELEASE}
-gzip --best --keep notqmail-${RELEASE}.tar
-xz --best notqmail-${RELEASE}.tar
-gpg --detach-sign -a -o notqmail-${RELEASE}.tar.xz.sig notqmail-${RELEASE}.tar.xz
-gpg --detach-sign -a -o notqmail-${RELEASE}.tar.gz.sig notqmail-${RELEASE}.tar.gz
-"""]]
-
-Web-upload them [here again](https://github.com/notqmail/notqmail/releases)
-
-Maybe self-host copies of the release tarballs?
-
-## 7. Push release notes to the website
+## 6. Push release notes to the website
 
 Merge the local (or prod) branch to `main`.
 
-## 8. Update packages we control
+Maybe also push copies of the release artifacts?
 
-1. [Open Build Service](https://build.opensuse.org/package/show/home:notqmail/notqmail)
-    - RPM builds: `notqmail.spec` (bump version number)
-    - Debian builds: `notqmail.dsc` (bump version number)
-    - for the `.tar.gz` link: `_service` (update tarball link)
-2. [Gentoo](https://gitweb.gentoo.org/repo/gentoo.git/tree/mail-mta/notqmail) (`DerDakon`)
-3. [pkgsrc](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) (`schmonz`)
-
-## 9. Post everywhere about the new release
+## 7. Post everywhere about the new release
 
 1. Mailing lists:
     - the qmail list
@@ -126,7 +124,16 @@ Merge the local (or prod) branch to `main`.
     - [Twitter @notqmail](https://twitter.com/notqmail)
     - [Fediverse @notqmail](https://social.notqmail.org/notqmail)
 
-## 10. Review and adjust the [[roadmap]]
+## 8. Update packages we control
+
+1. [Open Build Service](https://build.opensuse.org/package/show/home:notqmail/notqmail)
+    - RPM builds: `notqmail.spec` (bump version number)
+    - Debian builds: `notqmail.dsc` (bump version number)
+    - for the `.tar.gz` link: `_service` (update tarball link)
+2. [Gentoo](https://gitweb.gentoo.org/repo/gentoo.git/tree/mail-mta/notqmail) (`DerDakon`)
+3. [pkgsrc](https://github.com/NetBSD/pkgsrc/tree/trunk/mail/qmail) (`schmonz`)
+
+## 9. Review and adjust the [[roadmap]]
 
 - Remember where we thought we wanted to go from here
 - Add/change/defer/remove as needed
