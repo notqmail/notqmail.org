@@ -1,5 +1,5 @@
 [[!templatebody <<ENDBODY
-[<TMPL_IF DESC><TMPL_VAR NAME="desc"><TMPL_ELSE><TMPL_VAR NAME="name"></TMPL_IF>](https://github.com/notqmail/notqmail/compare/master...patches/notqmail/<TMPL_VAR ESCAPE=URL NAME="name">)
+[<TMPL_IF DESC><TMPL_VAR NAME="desc"><TMPL_ELSE><TMPL_VAR NAME="name"></TMPL_IF>](https://github.com/notqmail/notqmail/compare/main...patches/notqmail/<TMPL_VAR ESCAPE=URL NAME="name">)
 ENDBODY]]
 
 ## Description

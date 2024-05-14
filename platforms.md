@@ -20,7 +20,7 @@ Help us fill this in!
 ### amd64 ELF
 
 [[!table data="""
-Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod
+Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/main/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/main/TEST.receive) | In Prod
 Alpine Linux |       3.10.0 |               |              |              |
 Arch Linux   |   2019.07.01 |               |              |              |
 CentOS       |            6 | y+pkgsrc      | y+pkgsrc     |              |
@@ -47,7 +47,7 @@ Void Linux   |    4.19.66_1 | y+pkgsrc      | y+pkgsrc     |              |
 ### amd64 Mach-O
 
 [[!table data="""
-Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod
+Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/main/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/main/TEST.receive) | In Prod
 macOS        | Sierra 10.12 |               |              |              |
 macOS        | Mojave 10.14 | y+pkgsrc      | y+pkgsrc     |              |
 macOS        | Big Sur 11.5 | y+pkgsrc      | y+pkgsrc     |              |
@@ -56,14 +56,14 @@ macOS        | Big Sur 11.5 | y+pkgsrc      | y+pkgsrc     |              |
 ### aarch64 Mach-O
 
 [[!table data="""
-Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod
+Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/main/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/main/TEST.receive) | In Prod
 macOS        | Big Sur 11.5 | y+pkgsrc      | y+pkgsrc     |              |
 """]]
 
 ### aarch64 ELF
 
 [[!table data="""
-Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod
+Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/main/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/main/TEST.receive) | In Prod
 NetBSD       | 9.2          | y+pkgsrc      | y+pkgsrc     |              |
 Ubuntu       | Bionic 18.04 | y+pkgsrc      | y+pkgsrc     |              |
 """]]
@@ -71,20 +71,20 @@ Ubuntu       | Bionic 18.04 | y+pkgsrc      | y+pkgsrc     |              |
 ### hppa ELF
 
 [[!table data="""
-Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod
+Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/main/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/main/TEST.receive) | In Prod
 Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon
 """]]
 
 ### pmax ELF
 
 [[!table data="""
-Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod
+Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/main/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/main/TEST.receive) | In Prod
 NetBSD       |          8.1 | y             |              |              |
 """]]
 
 ### sparc ELF
 
 [[!table data="""
-Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/master/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/master/TEST.receive) | In Prod
+Platform     | Version      | [[Build+Package|install]] | [TEST.deliver](https://github.com/notqmail/notqmail/blob/main/TEST.deliver) | [TEST.receive](https://github.com/notqmail/notqmail/blob/main/TEST.receive) | In Prod
 Gentoo       |              | y+Gentoo patches | y+Gentoo  | y+Gentoo     | @DerDakon
 """]]

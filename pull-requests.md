@@ -24,13 +24,13 @@
 # To iterate on a PR, we...
 
 - Respond to each piece of feedback
-- Squash commits into the sequence we'd want merged to `master`
+- Squash commits into the sequence we'd want merged to `main`
 - Force-push to the feature branch
 
 # To merge a PR, we...
 
 - merge the branch on the commandline if the branch does *not* need rebase (i.e. is a fast-forward), this preserves e.g. signed commits
-  - git checkout master
+  - git checkout main
   - git merge --ff-only that-branch
   - git push
 - rebase and merge otherwise

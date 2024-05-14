@@ -67,7 +67,7 @@ Don't automate this, but do walk the list like so:
 [[!format sh """
 for i in $(git branch -r | grep origin/patches/notqmail/ | sed -e 's|origin/||'); do
     git checkout $i
-    git rebase master
+    git rebase main
     git push -f origin HEAD
 done
 """]]

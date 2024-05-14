@@ -31,7 +31,7 @@ Copy over `notqmail-bin-VERSION.tar.gz`, `instchown`, and `instcheck` from the b
 
     # tar -C / --no-overwrite-dir -xzf notqmail-bin-VERSION.tar.gz
 
-[Create users and groups](https://github.com/notqmail/notqmail/blob/master/INSTALL.ids.md) with names to match the build. Set permissions on installed files:
+[Create users and groups](https://github.com/notqmail/notqmail/blob/main/INSTALL.ids.md) with names to match the build. Set permissions on installed files:
 
     # ./instchown
 

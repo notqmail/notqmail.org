@@ -48,7 +48,7 @@ How to use:
 
 1. Make sure the first commit on the branch is identical to the patch you were trying to apply.
 2. Read the subsequent commits on the branch to see what we've changed and why.
-3. Diff the branch against `master`, and apply _that_ patch to notqmail.
+3. Diff the branch against `main`, and apply _that_ patch to notqmail.
 
 Please note that the patch branches are likely to be _re_-rebased from time to time (for instance, around notqmail release time).
 Take care when fetching these branches, especially if you have local changes you need to preserve.
