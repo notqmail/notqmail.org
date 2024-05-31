@@ -24,7 +24,6 @@
     - Integrate [[!template id=pr number=225]] (the patch checker) into GitHub Actions
     - Make sure _automatically_ that `Makefile` rules listing dependencies on local include files are accurate
         - Also that `"foo.h"` includes come before `<foo.h>`
-    - Automate noticing new versions of autobuilders
     - [[!template id=pr number=189]] Turn up warnings in local builds,
       fix everything that doesn't break patches, ratchet CI `conf-cc`
       `-Wthis -Wthat` to match
