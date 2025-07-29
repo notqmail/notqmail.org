@@ -120,9 +120,11 @@ Maybe also push copies of the release artifacts?
     - [LWN](https://lwn.net/Articles/796794/)
     - [UnitedBSD](https://www.unitedbsd.com/d/863-bsd-news-thread/138)
     - [Phoronix](https://www.phoronix.com/)
+    - [Reddit /r/qmail](https://www.reddit.com/r/qmail)
 3. Social media
     - [Twitter @notqmail](https://twitter.com/notqmail)
     - [Fediverse @notqmail](https://social.notqmail.org/notqmail)
+    - [Bluesky @notqmail.org](https://bsky.app/profile/notqmail.org)
 
 ## 8. Update packages we control
 
