@@ -25,6 +25,11 @@ url.redirect		= (
 
 	# the latter is "standard", offer a top-level redirect to it
 	"^/security.txt"=> "/.well-known/security.txt",
+
+	# a few redirects for ActivityPub service:
+	#"^/.well-known/webfinger"	=> "https://social.notqmail.org/.well-known/webfinger",
+	#"^/.well-known/nodeinfo"	=> "https://social.notqmail.org/.well-known/nodeinfo",
+	#"^/.well-known/host-meta"	=> "https://social.notqmail.org/.well-known/host-meta",
 )
 
 server.modules		+= ("mod_cgi")
