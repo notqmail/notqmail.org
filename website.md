@@ -4,7 +4,7 @@
 
 1. Be a notqmail developer
 2. Send site admins your SSH public key
-3. `git clone notqmail@notqmail.org:/home/notqmail/sites/notqmail.org/www/git/notqmail.org.git`
+3. `git clone notqmail@notqmail.org:sites/notqmail.org/www/git/notqmail.org.git`
 4. Optionally, run a
    [local ikiwiki instance](http://ikiwiki.info/tips/laptop_wiki_with_git/)
    to have your own copy and/or preview locally before pushing
